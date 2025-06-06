@@ -14,6 +14,50 @@ merge_files() {
 # GF180 layout files
 echo "Merging GF180 layout files..."
 
+# clock_divider
+merge_files "layout/gf180/clock_divider/split" "layout/gf180/clock_divider/clock_divider.def" "clock_divider.def.part_"
+merge_files "layout/gf180/clock_divider/split" "layout/gf180/clock_divider/clock_divider.gds" "clock_divider.gds.part_"
+
+# fwft_fifo
+merge_files "layout/gf180/fwft_fifo/split" "layout/gf180/fwft_fifo/fwft_fifo.def" "fwft_fifo.def.part_"
+merge_files "layout/gf180/fwft_fifo/split" "layout/gf180/fwft_fifo/fwft_fifo.gds" "fwft_fifo.gds.part_"
+
+# true_random_generator
+merge_files "layout/gf180/true_random_generator/split" "layout/gf180/true_random_generator/true_random_generator.def" "true_random_generator.def.part_"
+merge_files "layout/gf180/true_random_generator/split" "layout/gf180/true_random_generator/true_random_generator.gds" "true_random_generator.gds.part_"
+
+# configurable_sync_fifo
+merge_files "layout/gf180/configurable_sync_fifo/split" "layout/gf180/configurable_sync_fifo/configurable_sync_fifo.def" "configurable_sync_fifo.def.part_"
+merge_files "layout/gf180/configurable_sync_fifo/split" "layout/gf180/configurable_sync_fifo/configurable_sync_fifo.gds" "configurable_sync_fifo.gds.part_"
+
+# fifo
+merge_files "layout/gf180/fifo/split" "layout/gf180/fifo/fifo.def" "fifo.def.part_"
+merge_files "layout/gf180/fifo/split" "layout/gf180/fifo/fifo.gds" "fifo.gds.part_"
+
+# showahead_fifo
+merge_files "layout/gf180/showahead_fifo/split" "layout/gf180/showahead_fifo/showahead_fifo.def" "showahead_fifo.def.part_"
+merge_files "layout/gf180/showahead_fifo/split" "layout/gf180/showahead_fifo/showahead_fifo.gds" "showahead_fifo.gds.part_"
+
+# sync_fifo
+merge_files "layout/gf180/sync_fifo/split" "layout/gf180/sync_fifo/sync_fifo.def" "sync_fifo.def.part_"
+merge_files "layout/gf180/sync_fifo/split" "layout/gf180/sync_fifo/sync_fifo.gds" "sync_fifo.gds.part_"
+
+# parameterized_barrel_rotator
+merge_files "layout/gf180/parameterized_barrel_rotator/split" "layout/gf180/parameterized_barrel_rotator/parameterized_barrel_rotator.def" "parameterized_barrel_rotator.def.part_"
+merge_files "layout/gf180/parameterized_barrel_rotator/split" "layout/gf180/parameterized_barrel_rotator/parameterized_barrel_rotator.gds" "parameterized_barrel_rotator.gds.part_"
+
+# configurable_param_fifo
+merge_files "layout/gf180/configurable_param_fifo/split" "layout/gf180/configurable_param_fifo/configurable_param_fifo.def" "configurable_param_fifo.def.part_"
+merge_files "layout/gf180/configurable_param_fifo/split" "layout/gf180/configurable_param_fifo/configurable_param_fifo.gds" "configurable_param_fifo.gds.part_"
+
+# axi_lite_master
+merge_files "layout/gf180/axi_lite_master/split" "layout/gf180/axi_lite_master/axi_lite_master.def" "axi_lite_master.def.part_"
+merge_files "layout/gf180/axi_lite_master/split" "layout/gf180/axi_lite_master/axi_lite_master.gds" "axi_lite_master.gds.part_"
+
+# network_interface_cdc
+merge_files "layout/gf180/network_interface_cdc/split" "layout/gf180/network_interface_cdc/network_interface_cdc.def" "network_interface_cdc.def.part_"
+merge_files "layout/gf180/network_interface_cdc/split" "layout/gf180/network_interface_cdc/network_interface_cdc.gds" "network_interface_cdc.gds.part_"
+
 # async_fifo
 merge_files "layout/gf180/async_fifo/split" "layout/gf180/async_fifo/async_fifo.def" "async_fifo.def.part_"
 merge_files "layout/gf180/async_fifo/split" "layout/gf180/async_fifo/async_fifo.gds" "async_fifo.gds.part_"

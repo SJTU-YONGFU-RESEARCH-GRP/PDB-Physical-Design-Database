@@ -438,10 +438,10 @@ def generate_markdown(KDE_figure_name, scatter_figure_name):
         for design_name in platform_design_list:
             design_data[design_name] = {
                 "name": design_name,
-                "analysis_image": os.path.join(PROJECT_ROOT, "layout", platform, design_name, "analysis_results.png")
+                "analysis_image": os.path.join("layout", platform, design_name, "analysis_results.png")
             }
             
-            if os.path.exists(design_data[design_name]['analysis_image']):
+            if os.path.exists(os.path.join(PROJECT_ROOT, design_data[design_name]['analysis_image'])):
                 markdown_content += f"#### {design_data[design_name]['name']}\n"
                 markdown_content += f"![{design_data[design_name]['name']} Analysis Results]({design_data[design_name]['analysis_image']})\n\n"
             else:
@@ -459,7 +459,7 @@ def main():
     print("\n=== Starting analysis process ===")
     # Comment out PPA line plot generation
     collect_data()
-    # analyze_data_all()
+    analyze_data_all()
 
     # cell comparison plot generation
     plot_stdcell_kde(platform_stdcell_dir, platform_stdcell_coverage_dir, KDE_figure_name)

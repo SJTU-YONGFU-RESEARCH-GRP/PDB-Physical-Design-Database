@@ -1,0 +1,152 @@
+
+==========================================================================
+floorplan final report_tns
+--------------------------------------------------------------------------
+tns 0.00
+
+==========================================================================
+floorplan final report_wns
+--------------------------------------------------------------------------
+wns 0.00
+
+==========================================================================
+floorplan final report_worst_slack
+--------------------------------------------------------------------------
+worst slack 0.00
+
+==========================================================================
+floorplan final report_checks -path_delay min
+--------------------------------------------------------------------------
+Startpoint: clk_in (clock source 'core_clock')
+Endpoint: clk_out (output port clocked by core_clock)
+Path Group: core_clock
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+     2    0.02    0.00    0.00    0.00 ^ clk_in (in)
+                                         clk_in (net)
+                  0.00    0.00    0.00 ^ _2_/A2 (gf180mcu_fd_sc_mcu9t5v0__and2_2)
+     1    0.00    0.03    0.11    0.11 ^ _2_/Z (gf180mcu_fd_sc_mcu9t5v0__and2_2)
+                                         clk_out (net)
+                  0.03    0.00    0.11 ^ clk_out (out)
+                                  0.11   data arrival time
+
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                         -0.20   -0.20   output external delay
+                                 -0.20   data required time
+-----------------------------------------------------------------------------
+                                 -0.20   data required time
+                                 -0.11   data arrival time
+-----------------------------------------------------------------------------
+                                  0.31   slack (MET)
+
+
+
+==========================================================================
+floorplan final report_checks -path_delay max
+--------------------------------------------------------------------------
+Startpoint: enable (input port clocked by core_clock)
+Endpoint: gen_latch.latch_out$_DLATCH_N_
+          (positive level-sensitive latch clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.20    0.20 v input external delay
+     1    0.01    0.00    0.00    0.20 v enable (in)
+                                         enable (net)
+                  0.00    0.00    0.20 v _1_/A2 (gf180mcu_fd_sc_mcu9t5v0__or2_2)
+     1    0.00    0.06    0.17    0.37 v _1_/Z (gf180mcu_fd_sc_mcu9t5v0__or2_2)
+                                         _0_ (net)
+                  0.06    0.00    0.37 v gen_latch.latch_out$_DLATCH_N_/D (gf180mcu_fd_sc_mcu9t5v0__latsnq_1)
+                                  0.37   data arrival time
+
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                                  0.00 ^ gen_latch.latch_out$_DLATCH_N_/E (gf180mcu_fd_sc_mcu9t5v0__latsnq_1)
+                          0.37    0.37   time borrowed from endpoint
+                                  0.37   data required time
+-----------------------------------------------------------------------------
+                                  0.37   data required time
+                                 -0.37   data arrival time
+-----------------------------------------------------------------------------
+                                  0.00   slack (MET)
+
+Time Borrowing Information
+--------------------------------------------
+core_clock pulse width                  5.00
+library setup time                     -0.22
+--------------------------------------------
+max time borrow                         4.78
+actual time borrow                      0.37
+--------------------------------------------
+
+
+
+==========================================================================
+floorplan final report_checks -unconstrained
+--------------------------------------------------------------------------
+Startpoint: enable (input port clocked by core_clock)
+Endpoint: gen_latch.latch_out$_DLATCH_N_
+          (positive level-sensitive latch clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.20    0.20 v input external delay
+     1    0.01    0.00    0.00    0.20 v enable (in)
+                                         enable (net)
+                  0.00    0.00    0.20 v _1_/A2 (gf180mcu_fd_sc_mcu9t5v0__or2_2)
+     1    0.00    0.06    0.17    0.37 v _1_/Z (gf180mcu_fd_sc_mcu9t5v0__or2_2)
+                                         _0_ (net)
+                  0.06    0.00    0.37 v gen_latch.latch_out$_DLATCH_N_/D (gf180mcu_fd_sc_mcu9t5v0__latsnq_1)
+                                  0.37   data arrival time
+
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                                  0.00 ^ gen_latch.latch_out$_DLATCH_N_/E (gf180mcu_fd_sc_mcu9t5v0__latsnq_1)
+                          0.37    0.37   time borrowed from endpoint
+                                  0.37   data required time
+-----------------------------------------------------------------------------
+                                  0.37   data required time
+                                 -0.37   data arrival time
+-----------------------------------------------------------------------------
+                                  0.00   slack (MET)
+
+Time Borrowing Information
+--------------------------------------------
+core_clock pulse width                  5.00
+library setup time                     -0.22
+--------------------------------------------
+max time borrow                         4.78
+actual time borrow                      0.37
+--------------------------------------------
+
+
+
+==========================================================================
+floorplan final report_power
+--------------------------------------------------------------------------
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             3.48e-05   9.89e-07   3.31e-10   3.57e-05  28.8%
+Combinational          5.45e-06   6.05e-07   1.73e-10   6.06e-06   4.9%
+Clock                  8.24e-05   0.00e+00   1.87e-10   8.24e-05  66.4%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  1.23e-04   1.59e-06   6.90e-10   1.24e-04 100.0%
+                          98.7%       1.3%       0.0%

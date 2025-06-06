@@ -1,0 +1,2504 @@
+
+* cell dual_port_ram
+* pin data_a[6]
+* pin addr_a[0]
+* pin data_a[3]
+* pin q_a[6]
+* pin q_b[6]
+* pin q_b[4]
+* pin q_b[7]
+* pin PWELL
+* pin NWELL
+* pin data_a[7]
+* pin data_b[7]
+* pin data_b[3]
+* pin q_b[2]
+* pin q_b[3]
+* pin q_b[5]
+* pin addr_b[1]
+* pin q_b[1]
+* pin data_a[2]
+* pin we_a
+* pin addr_b[3]
+* pin addr_b[2]
+* pin q_a[7]
+* pin q_a[3]
+* pin addr_a[2]
+* pin addr_b[0]
+* pin data_b[2]
+* pin q_a[2]
+* pin we_b
+* pin addr_a[1]
+* pin data_b[6]
+* pin clk
+* pin data_a[1]
+* pin q_a[5]
+* pin data_b[1]
+* pin data_a[0]
+* pin data_b[0]
+* pin data_a[5]
+* pin data_a[4]
+* pin data_b[4]
+* pin data_b[5]
+* pin addr_a[3]
+* pin q_a[0]
+* pin q_a[4]
+* pin q_b[0]
+* pin q_a[1]
+.SUBCKT dual_port_ram 1 2 3 4 5 6 7 8 9 13 73 88 184 185 207 238 345 352 353
++ 368 369 370 373 391 392 393 401 402 429 441 482 549 621 812 813 816 822 823
++ 825 827 828 830 831 832 834
+* net 1 data_a[6]
+* net 2 addr_a[0]
+* net 3 data_a[3]
+* net 4 q_a[6]
+* net 5 q_b[6]
+* net 6 q_b[4]
+* net 7 q_b[7]
+* net 8 PWELL
+* net 9 NWELL
+* net 13 data_a[7]
+* net 73 data_b[7]
+* net 88 data_b[3]
+* net 184 q_b[2]
+* net 185 q_b[3]
+* net 207 q_b[5]
+* net 238 addr_b[1]
+* net 345 q_b[1]
+* net 352 data_a[2]
+* net 353 we_a
+* net 368 addr_b[3]
+* net 369 addr_b[2]
+* net 370 q_a[7]
+* net 373 q_a[3]
+* net 391 addr_a[2]
+* net 392 addr_b[0]
+* net 393 data_b[2]
+* net 401 q_a[2]
+* net 402 we_b
+* net 429 addr_a[1]
+* net 441 data_b[6]
+* net 482 clk
+* net 549 data_a[1]
+* net 621 q_a[5]
+* net 812 data_b[1]
+* net 813 data_a[0]
+* net 816 data_b[0]
+* net 822 data_a[5]
+* net 823 data_a[4]
+* net 825 data_b[4]
+* net 827 data_b[5]
+* net 828 addr_a[3]
+* net 830 q_a[0]
+* net 831 q_a[4]
+* net 832 q_b[0]
+* net 834 q_a[1]
+* cell instance $2 m0 *1 248.52,250.6
+X$2 1 8 9 49 BUF_X2
+* cell instance $8 r0 *1 262.01,242.2
+X$8 2 9 78 8 BUF_X4
+* cell instance $14 r0 *1 267.52,247.8
+X$14 3 8 9 23 BUF_X2
+* cell instance $20 r0 *1 286.33,1.4
+X$20 10 8 9 4 BUF_X1
+* cell instance $26 r0 *1 292.98,1.4
+X$26 11 8 9 5 BUF_X1
+* cell instance $32 r0 *1 296.4,1.4
+X$32 12 8 9 6 BUF_X1
+* cell instance $38 r0 *1 296.97,1.4
+X$38 87 8 9 7 BUF_X1
+* cell instance $43 m0 *1 250.99,317.8
+X$43 8 669 667 668 9 DFF_X1
+* cell instance $44 m0 *1 247.76,317.8
+X$44 8 682 666 668 9 DFF_X1
+* cell instance $46 m0 *1 255.74,317.8
+X$46 8 670 677 668 9 DFF_X1
+* cell instance $50 m0 *1 262.96,317.8
+X$50 524 281 680 8 9 681 MUX2_X1
+* cell instance $51 m0 *1 264.29,317.8
+X$51 8 671 681 725 9 DFF_X1
+* cell instance $54 m0 *1 269.8,317.8
+X$54 679 264 529 8 9 687 MUX2_X1
+* cell instance $60 m0 *1 288.61,317.8
+X$60 8 695 676 704 9 DFF_X1
+* cell instance $63 m0 *1 299.44,317.8
+X$63 673 340 655 8 9 716 MUX2_X1
+* cell instance $64 m0 *1 300.77,317.8
+X$64 673 131 655 8 9 674 MUX2_X1
+* cell instance $98 r0 *1 247.95,317.8
+X$98 494 281 691 8 9 666 MUX2_X1
+* cell instance $102 r0 *1 250.61,317.8
+X$102 682 264 489 8 9 691 MUX2_X1
+* cell instance $107 r0 *1 257.64,317.8
+X$107 682 302 670 8 9 683 MUX2_X1
+* cell instance $108 r0 *1 258.97,317.8
+X$108 682 283 670 8 9 684 MUX2_X1
+* cell instance $109 r0 *1 260.3,317.8
+X$109 684 301 739 8 9 694 MUX2_X1
+* cell instance $111 r0 *1 267.71,317.8
+X$111 671 283 685 8 9 686 MUX2_X1
+* cell instance $112 r0 *1 269.04,317.8
+X$112 686 301 762 8 9 693 MUX2_X1
+* cell instance $113 r0 *1 270.37,317.8
+X$113 537 281 687 8 9 699 MUX2_X1
+* cell instance $114 r0 *1 271.7,317.8
+X$114 8 679 699 725 9 DFF_X1
+* cell instance $118 r0 *1 280.25,317.8
+X$118 698 359 552 8 9 688 MUX2_X1
+* cell instance $119 r0 *1 281.58,317.8
+X$119 697 336 531 8 9 698 MUX2_X1
+* cell instance $122 r0 *1 289.18,317.8
+X$122 695 336 489 8 9 696 MUX2_X1
+* cell instance $125 r0 *1 291.46,317.8
+X$125 288 707 694 289 8 9 560 AOI22_X2
+* cell instance $126 r0 *1 293.17,317.8
+X$126 288 718 693 289 8 9 533 AOI22_X2
+* cell instance $130 r0 *1 297.54,317.8
+X$130 288 692 289 732 8 9 589 AOI22_X1
+* cell instance $132 r0 *1 299.25,317.8
+X$132 689 175 674 8 9 692 MUX2_X1
+* cell instance $136 r0 *1 304.57,317.8
+X$136 712 336 492 8 9 690 MUX2_X1
+* cell instance $137 r0 *1 305.9,317.8
+X$137 690 359 497 8 9 713 MUX2_X1
+* cell instance $550 m0 *1 295.07,558.6
+X$550 829 8 9 832 BUF_X1
+* cell instance $601 m0 *1 296.78,558.6
+X$601 833 8 9 831 BUF_X1
+* cell instance $603 m0 *1 300.58,558.6
+X$603 826 8 9 834 BUF_X1
+* cell instance $1508 r0 *1 250.8,315
+X$1508 569 281 675 8 9 667 MUX2_X1
+* cell instance $1511 r0 *1 252.7,315
+X$1511 669 264 531 8 9 675 MUX2_X1
+* cell instance $1517 r0 *1 256.88,315
+X$1517 678 219 488 8 9 677 MUX2_X1
+* cell instance $1518 r0 *1 258.21,315
+X$1518 670 266 630 8 9 678 MUX2_X1
+* cell instance $1523 r0 *1 264.29,315
+X$1523 671 264 492 8 9 680 MUX2_X1
+* cell instance $1535 r0 *1 288.99,315
+X$1535 696 359 488 8 9 676 MUX2_X1
+* cell instance $1542 m0 *1 298.11,315
+X$1542 516 8 9 CLKBUF_X1
+* cell instance $1547 m0 *1 300.77,315
+X$1547 673 362 529 8 9 656 MUX2_X1
+* cell instance $1549 r0 *1 301.72,315
+X$1549 8 673 659 516 9 DFF_X1
+* cell instance $1550 m0 *1 302.1,315
+X$1550 656 337 592 8 9 659 MUX2_X1
+* cell instance $1553 m0 *1 304,315
+X$1553 657 359 592 8 9 658 MUX2_X1
+* cell instance $1555 m0 *1 305.33,315
+X$1555 655 336 529 8 9 657 MUX2_X1
+* cell instance $1685 r0 *1 3.8,284.2
+X$1685 392 9 395 8 BUF_X4
+* cell instance $1765 m0 *1 234.27,284.2
+X$1765 238 9 394 8 BUF_X4
+* cell instance $1781 r0 *1 263.34,284.2
+X$1781 394 9 123 8 BUF_X4
+* cell instance $1786 r0 *1 266,284.2
+X$1786 8 125 9 395 BUF_X8
+* cell instance $1787 r0 *1 268.47,284.2
+X$1787 395 8 9 412 INV_X1
+* cell instance $1795 m0 *1 281.96,284.2
+X$1795 125 9 301 8 BUF_X4
+* cell instance $1800 r0 *1 290.51,284.2
+X$1800 396 8 9 398 INV_X4
+* cell instance $1804 m0 *1 296.4,284.2
+X$1804 223 417 8 9 406 NAND2_X1
+* cell instance $1814 m0 *1 316.92,284.2
+X$1814 8 406 251 404 9 DFF_X2
+* cell instance $1818 m0 *1 326.99,284.2
+X$1818 368 9 396 8 BUF_X4
+* cell instance $1826 r0 *1 341.05,284.2
+X$1826 402 9 397 8 BUF_X4
+* cell instance $1846 r0 *1 393.11,284.2
+X$1846 8 400 9 369 BUF_X8
+* cell instance $1903 m0 *1 554.42,284.2
+X$1903 404 8 9 401 BUF_X1
+* cell instance $2971 r0 *1 246.81,273
+X$2971 8 265 273 202 9 DFF_X1
+* cell instance $2975 r0 *1 251.37,273
+X$2975 265 264 58 8 9 274 MUX2_X1
+* cell instance $2979 m0 *1 261.63,273
+X$2979 202 8 9 847 INV_X1
+* cell instance $2980 m0 *1 262.01,273
+X$2980 155 8 9 202 CLKBUF_X3
+* cell instance $2981 m0 *1 262.96,273
+X$2981 267 266 30 8 9 240 MUX2_X1
+* cell instance $2986 r0 *1 262.77,273
+X$2986 265 283 267 8 9 322 MUX2_X1
+* cell instance $2987 r0 *1 264.1,273
+X$2987 265 62 267 8 9 285 MUX2_X1
+* cell instance $2990 r0 *1 267.33,273
+X$2990 8 268 278 237 9 DFF_X1
+* cell instance $2991 m0 *1 267.9,273
+X$2991 23 281 279 8 9 278 MUX2_X1
+* cell instance $2993 m0 *1 269.23,273
+X$2993 155 8 9 237 CLKBUF_X3
+* cell instance $2994 m0 *1 270.18,273
+X$2994 237 8 9 838 INV_X2
+* cell instance $2997 m0 *1 273.03,273
+X$2997 241 266 61 8 9 258 MUX2_X1
+* cell instance $3000 r0 *1 270.56,273
+X$3000 268 264 89 8 9 279 MUX2_X1
+* cell instance $3003 m0 *1 277.78,273
+X$3003 51 243 269 8 9 262 MUX2_X1
+* cell instance $3004 m0 *1 280.63,273
+X$3004 269 75 246 8 9 280 MUX2_X1
+* cell instance $3005 m0 *1 281.96,273
+X$3005 269 270 246 8 9 277 MUX2_X1
+* cell instance $3011 m0 *1 289.56,273
+X$3011 235 270 221 8 9 271 MUX2_X1
+* cell instance $3012 m0 *1 288.23,273
+X$3012 235 75 221 8 9 276 MUX2_X1
+* cell instance $3018 r0 *1 290.13,273
+X$3018 271 175 364 8 9 275 MUX2_X1
+* cell instance $3023 r0 *1 299.63,273
+X$3023 155 8 9 251 CLKBUF_X3
+* cell instance $3024 r0 *1 300.58,273
+X$3024 251 8 9 CLKBUF_X1
+* cell instance $3026 m0 *1 302.86,273
+X$3026 272 60 170 8 9 253 MUX2_X1
+* cell instance $3030 m0 *1 304.57,273
+X$3030 250 40 174 8 9 272 MUX2_X1
+* cell instance $3283 r0 *1 248.9,278.6
+X$3283 49 354 372 8 9 371 MUX2_X1
+* cell instance $3285 r0 *1 250.61,278.6
+X$3285 332 355 97 8 9 372 MUX2_X1
+* cell instance $3288 m0 *1 256.31,278.6
+X$3288 320 219 28 8 9 319 MUX2_X1
+* cell instance $3291 m0 *1 258.4,278.6
+X$3291 298 62 282 8 9 300 MUX2_X1
+* cell instance $3292 m0 *1 259.73,278.6
+X$3292 300 299 380 8 9 309 MUX2_X1
+* cell instance $3295 m0 *1 263.34,278.6
+X$3295 303 283 304 8 9 324 MUX2_X1
+* cell instance $3296 m0 *1 264.67,278.6
+X$3296 303 302 304 8 9 326 MUX2_X1
+* cell instance $3301 r0 *1 257.83,278.6
+X$3301 332 302 350 8 9 380 MUX2_X1
+* cell instance $3302 r0 *1 259.16,278.6
+X$3302 332 333 350 8 9 381 MUX2_X1
+* cell instance $3305 r0 *1 262.77,278.6
+X$3305 304 357 30 8 9 383 MUX2_X1
+* cell instance $3306 r0 *1 264.1,278.6
+X$3306 8 304 382 237 9 DFF_X1
+* cell instance $3308 m0 *1 266.38,278.6
+X$3308 285 299 326 8 9 343 MUX2_X1
+* cell instance $3312 r0 *1 268.28,278.6
+X$3312 8 334 351 237 9 DFF_X1
+* cell instance $3313 m0 *1 270.18,278.6
+X$3313 334 355 89 8 9 327 MUX2_X1
+* cell instance $3314 m0 *1 268.85,278.6
+X$3314 23 354 327 8 9 351 MUX2_X1
+* cell instance $3317 m0 *1 273.22,278.6
+X$3317 334 302 305 8 9 330 MUX2_X1
+* cell instance $3319 m0 *1 274.74,278.6
+X$3319 329 299 330 8 9 323 MUX2_X1
+* cell instance $3323 m0 *1 280.06,278.6
+X$3323 306 340 328 8 9 331 MUX2_X1
+* cell instance $3324 m0 *1 281.39,278.6
+X$3324 307 308 309 310 8 9 204 AOI22_X2
+* cell instance $3330 r0 *1 272.46,278.6
+X$3330 305 357 61 8 9 386 MUX2_X1
+* cell instance $3331 r0 *1 273.79,278.6
+X$3331 334 333 305 8 9 335 MUX2_X1
+* cell instance $3334 r0 *1 279.68,278.6
+X$3334 306 362 97 8 9 358 MUX2_X1
+* cell instance $3335 r0 *1 281.01,278.6
+X$3335 8 306 360 232 9 DFF_X1
+* cell instance $3337 r0 *1 284.24,278.6
+X$3337 328 336 97 8 9 390 MUX2_X1
+* cell instance $3340 r0 *1 287.85,278.6
+X$3340 338 337 26 8 9 363 MUX2_X1
+* cell instance $3341 r0 *1 289.18,278.6
+X$3341 339 131 341 8 9 364 MUX2_X1
+* cell instance $3342 m0 *1 290.51,278.6
+X$3342 276 129 342 8 9 311 MUX2_X1
+* cell instance $3344 m0 *1 291.84,278.6
+X$3344 307 311 310 343 8 9 325 AOI22_X1
+* cell instance $3348 r0 *1 290.51,278.6
+X$3348 339 340 341 8 9 342 MUX2_X1
+* cell instance $3349 r0 *1 291.84,278.6
+X$3349 341 336 58 8 9 389 MUX2_X1
+* cell instance $3352 m0 *1 296.4,278.6
+X$3352 163 321 8 9 314 NAND2_X1
+* cell instance $3353 m0 *1 295.45,278.6
+X$3353 307 385 310 323 8 9 321 AOI22_X1
+* cell instance $3354 m0 *1 296.97,278.6
+X$3354 349 242 36 8 9 348 MUX2_X1
+* cell instance $3359 r0 *1 296.02,278.6
+X$3359 61 243 318 8 9 349 MUX2_X1
+* cell instance $3360 r0 *1 297.35,278.6
+X$3360 8 318 348 232 9 DFF_X1
+* cell instance $3361 m0 *1 299.63,278.6
+X$3361 318 340 313 8 9 347 MUX2_X1
+* cell instance $3363 m0 *1 300.96,278.6
+X$3363 312 133 316 8 9 317 MUX2_X1
+* cell instance $3412 r0 *1 300.58,278.6
+X$3412 347 106 384 8 9 385 MUX2_X1
+* cell instance $3414 r0 *1 302.29,278.6
+X$3414 344 131 365 8 9 316 MUX2_X1
+* cell instance $3417 r0 *1 305.33,278.6
+X$3417 366 337 36 8 9 377 MUX2_X1
+* cell instance $3418 r0 *1 306.66,278.6
+X$3418 8 344 377 251 9 DFF_X1
+* cell instance $3422 r0 *1 313.88,278.6
+X$3422 8 314 251 375 9 DFF_X2
+* cell instance $3425 r0 *1 319.77,278.6
+X$3425 8 290 251 374 9 DFF_X2
+* cell instance $3472 r0 *1 558.79,278.6
+X$3472 346 8 9 345 BUF_X1
+* cell instance $3610 r0 *1 254.41,264.6
+X$3610 8 173 171 31 9 DFF_X1
+* cell instance $3612 m0 *1 266.95,264.6
+X$3612 168 156 58 8 9 195 MUX2_X1
+* cell instance $3613 m0 *1 263.72,264.6
+X$3613 8 168 194 31 9 DFF_X1
+* cell instance $3616 m0 *1 269.99,264.6
+X$3616 125 9 175 8 BUF_X4
+* cell instance $3620 m0 *1 271.89,264.6
+X$3620 8 128 197 16 9 DFF_X1
+* cell instance $3624 m0 *1 278.92,264.6
+X$3624 49 165 199 8 9 177 MUX2_X1
+* cell instance $3625 m0 *1 280.25,264.6
+X$3625 97 158 132 8 9 199 MUX2_X1
+* cell instance $3635 m0 *1 287.47,264.6
+X$3635 8 136 180 25 9 DFF_X1
+* cell instance $3672 r0 *1 291.27,264.6
+X$3672 155 8 9 25 CLKBUF_X3
+* cell instance $3673 r0 *1 292.22,264.6
+X$3673 25 8 9 845 INV_X2
+* cell instance $3678 r0 *1 298.3,264.6
+X$3678 155 8 9 65 CLKBUF_X3
+* cell instance $3679 r0 *1 299.25,264.6
+X$3679 65 8 9 844 INV_X2
+* cell instance $3847 m0 *1 252.89,267.4
+X$3847 174 148 172 8 9 188 MUX2_X1
+* cell instance $3848 m0 *1 254.22,267.4
+X$3848 190 154 170 8 9 171 MUX2_X1
+* cell instance $3849 m0 *1 255.55,267.4
+X$3849 173 156 174 8 9 190 MUX2_X1
+* cell instance $3851 m0 *1 257.07,267.4
+X$3851 172 76 173 8 9 191 MUX2_X1
+* cell instance $3852 m0 *1 258.4,267.4
+X$3852 172 99 173 8 9 214 MUX2_X1
+* cell instance $3859 m0 *1 283.29,267.4
+X$3859 123 9 131 8 BUF_X4
+* cell instance $3867 r0 *1 246.43,267.4
+X$3867 8 200 208 202 9 DFF_X1
+* cell instance $3868 r0 *1 249.66,267.4
+X$3868 217 22 201 8 9 208 MUX2_X1
+* cell instance $3869 r0 *1 250.99,267.4
+X$3869 201 95 188 8 9 210 MUX2_X1
+* cell instance $3871 r0 *1 252.51,267.4
+X$3871 8 172 210 202 9 DFF_X1
+* cell instance $3874 r0 *1 256.31,267.4
+X$3874 203 33 212 8 9 218 MUX2_X1
+* cell instance $3876 r0 *1 258.02,267.4
+X$3876 200 75 212 8 9 215 MUX2_X1
+* cell instance $3877 r0 *1 259.35,267.4
+X$3877 214 129 215 8 9 216 MUX2_X1
+* cell instance $3881 r0 *1 268.47,267.4
+X$3881 78 9 129 8 BUF_X4
+* cell instance $3885 r0 *1 282.34,267.4
+X$3885 125 9 133 8 BUF_X4
+* cell instance $3886 r0 *1 283.67,267.4
+X$3886 123 9 59 8 BUF_X4
+* cell instance $3892 r0 *1 296.78,267.4
+X$3892 257 18 170 8 9 231 MUX2_X1
+* cell instance $3894 r0 *1 298.3,267.4
+X$3894 213 133 249 8 9 229 MUX2_X1
+* cell instance $3895 m0 *1 298.87,267.4
+X$3895 193 182 8 9 187 NAND2_X1
+* cell instance $3899 m0 *1 305.71,267.4
+X$3899 183 103 170 8 9 211 MUX2_X1
+* cell instance $3904 r0 *1 300.2,267.4
+X$3904 206 59 205 8 9 213 MUX2_X1
+* cell instance $3907 r0 *1 302.48,267.4
+X$3907 174 158 205 8 9 228 MUX2_X1
+* cell instance $3911 r0 *1 305.14,267.4
+X$3911 206 178 174 8 9 183 MUX2_X1
+* cell instance $3913 r0 *1 307.23,267.4
+X$3913 8 206 211 65 9 DFF_X1
+* cell instance $3915 r0 *1 310.84,267.4
+X$3915 8 226 65 209 9 DFF_X2
+* cell instance $3917 m0 *1 313.5,267.4
+X$3917 8 187 65 186 9 DFF_X2
+* cell instance $4007 m0 *1 552.33,267.4
+X$4007 186 8 9 185 BUF_X1
+* cell instance $4011 r0 *1 556.32,267.4
+X$4011 209 8 9 184 BUF_X1
+* cell instance $5536 m0 *1 247.95,261.8
+X$5536 8 124 140 31 9 DFF_X1
+* cell instance $5538 m0 *1 251.18,261.8
+X$5538 8 98 96 31 9 DFF_X1
+* cell instance $5544 r0 *1 251.37,261.8
+X$5544 58 148 124 8 9 94 MUX2_X1
+* cell instance $5546 m0 *1 255.74,261.8
+X$5546 122 156 97 8 9 153 MUX2_X1
+* cell instance $5548 m0 *1 257.07,261.8
+X$5548 8 122 121 31 9 DFF_X1
+* cell instance $5550 m0 *1 260.49,261.8
+X$5550 98 123 122 8 9 144 MUX2_X1
+* cell instance $5555 r0 *1 257.64,261.8
+X$5555 153 154 28 8 9 121 MUX2_X1
+* cell instance $5559 m0 *1 262.96,261.8
+X$5559 144 125 119 8 9 114 MUX2_X1
+* cell instance $5561 m0 *1 265.24,261.8
+X$5561 124 123 168 8 9 126 MUX2_X1
+* cell instance $5562 m0 *1 266.57,261.8
+X$5562 126 125 79 8 9 151 MUX2_X1
+* cell instance $5563 m0 *1 267.9,261.8
+X$5563 147 78 100 8 9 176 MUX2_X1
+* cell instance $5564 m0 *1 269.23,261.8
+X$5564 23 95 150 8 9 101 MUX2_X1
+* cell instance $5567 r0 *1 263.91,261.8
+X$5567 155 8 9 31 CLKBUF_X3
+* cell instance $5568 r0 *1 264.86,261.8
+X$5568 31 8 9 839 INV_X2
+* cell instance $5571 r0 *1 266,261.8
+X$5571 124 99 168 8 9 147 MUX2_X1
+* cell instance $5572 r0 *1 267.33,261.8
+X$5572 195 154 26 8 9 194 MUX2_X1
+* cell instance $5576 r0 *1 269.99,261.8
+X$5576 16 8 9 843 INV_X2
+* cell instance $5577 r0 *1 270.56,261.8
+X$5577 155 8 9 16 CLKBUF_X3
+* cell instance $5578 m0 *1 271.13,261.8
+X$5578 89 148 127 8 9 150 MUX2_X1
+* cell instance $5582 r0 *1 271.51,261.8
+X$5582 196 154 36 8 9 197 MUX2_X1
+* cell instance $5583 r0 *1 272.84,261.8
+X$5583 128 156 89 8 9 196 MUX2_X1
+* cell instance $5584 m0 *1 274.93,261.8
+X$5584 127 99 128 8 9 130 MUX2_X1
+* cell instance $5585 m0 *1 273.6,261.8
+X$5585 127 76 128 8 9 198 MUX2_X1
+* cell instance $5587 m0 *1 276.45,261.8
+X$5587 130 129 120 8 9 113 MUX2_X1
+* cell instance $5588 m0 *1 277.78,261.8
+X$5588 78 9 106 8 BUF_X4
+* cell instance $5592 r0 *1 274.55,261.8
+X$5592 198 175 80 8 9 192 MUX2_X1
+* cell instance $5595 r0 *1 279.68,261.8
+X$5595 8 132 177 16 9 DFF_X1
+* cell instance $5596 m0 *1 283.48,261.8
+X$5596 105 131 132 8 9 134 MUX2_X1
+* cell instance $5597 m0 *1 280.25,261.8
+X$5597 8 105 102 16 9 DFF_X1
+* cell instance $5599 m0 *1 285,261.8
+X$5599 134 133 152 8 9 169 MUX2_X1
+* cell instance $5602 m0 *1 288.04,261.8
+X$5602 58 158 136 8 9 159 MUX2_X1
+* cell instance $5604 r0 *1 282.91,261.8
+X$5604 105 178 97 8 9 118 MUX2_X1
+* cell instance $5607 r0 *1 286.14,261.8
+X$5607 160 114 164 169 8 9 179 AOI22_X1
+* cell instance $5608 r0 *1 287.09,261.8
+X$5608 179 157 8 9 116 NAND2_X1
+* cell instance $5610 r0 *1 287.85,261.8
+X$5610 27 165 159 8 9 180 MUX2_X1
+* cell instance $5611 r0 *1 289.18,261.8
+X$5611 160 151 164 112 8 9 181 AOI22_X1
+* cell instance $5612 m0 *1 289.94,261.8
+X$5612 149 107 136 8 9 146 MUX2_X1
+* cell instance $5615 m0 *1 291.46,261.8
+X$5615 149 131 136 8 9 108 MUX2_X1
+* cell instance $5616 m0 *1 292.79,261.8
+X$5616 145 103 26 8 9 162 MUX2_X1
+* cell instance $5621 r0 *1 291.27,261.8
+X$5621 81 176 104 161 8 9 222 AOI22_X1
+* cell instance $5622 r0 *1 292.22,261.8
+X$5622 149 178 58 8 9 145 MUX2_X1
+* cell instance $5623 r0 *1 293.55,261.8
+X$5623 8 149 162 65 9 DFF_X1
+* cell instance $5625 m0 *1 295.26,261.8
+X$5625 81 113 104 143 8 9 163 AOI22_X1
+* cell instance $5629 r0 *1 297.54,261.8
+X$5629 160 192 164 167 8 9 193 AOI22_X1
+* cell instance $5631 m0 *1 299.06,261.8
+X$5631 142 133 110 8 9 167 MUX2_X1
+* cell instance $5633 m0 *1 300.39,261.8
+X$5633 137 59 141 8 9 142 MUX2_X1
+* cell instance $5634 m0 *1 301.72,261.8
+X$5634 137 107 141 8 9 109 MUX2_X1
+* cell instance $5638 r0 *1 300.58,261.8
+X$5638 8 141 166 65 9 DFF_X1
+* cell instance $5639 m0 *1 304.76,261.8
+X$5639 137 178 89 8 9 138 MUX2_X1
+* cell instance $5640 m0 *1 303.43,261.8
+X$5640 89 158 141 8 9 189 MUX2_X1
+* cell instance $5642 r0 *1 303.81,261.8
+X$5642 23 165 189 8 9 166 MUX2_X1
+* cell instance $5644 m0 *1 307.8,261.8
+X$5644 8 137 139 65 9 DFF_X1
+* cell instance $5645 m0 *1 306.47,261.8
+X$5645 138 103 36 8 9 139 MUX2_X1
+* cell instance $5871 m0 *1 237.31,259
+X$5871 73 8 9 30 BUF_X2
+* cell instance $5881 r0 *1 248.71,259
+X$5881 27 95 94 8 9 140 MUX2_X1
+* cell instance $5884 r0 *1 251.18,259
+X$5884 49 95 115 8 9 96 MUX2_X1
+* cell instance $5885 r0 *1 252.51,259
+X$5885 97 148 98 8 9 115 MUX2_X1
+* cell instance $5887 m0 *1 254.03,259
+X$5887 30 8 9 58 BUF_X2
+* cell instance $5892 r0 *1 260.68,259
+X$5892 98 99 122 8 9 77 MUX2_X1
+* cell instance $5893 m0 *1 261.44,259
+X$5893 77 78 92 8 9 93 MUX2_X1
+* cell instance $5904 r0 *1 269.8,259
+X$5904 8 127 101 16 9 DFF_X1
+* cell instance $5909 m0 *1 280.82,259
+X$5909 81 93 104 117 8 9 82 AOI22_X1
+* cell instance $5910 m0 *1 281.77,259
+X$5910 82 204 8 9 14 NAND2_X1
+* cell instance $5914 r0 *1 281.2,259
+X$5914 118 103 28 8 9 102 MUX2_X1
+* cell instance $5916 r0 *1 282.72,259
+X$5916 105 107 132 8 9 83 MUX2_X1
+* cell instance $5921 m0 *1 283.48,259
+X$5921 83 106 84 8 9 117 MUX2_X1
+* cell instance $5926 m0 *1 302.29,259
+X$5926 88 8 9 61 BUF_X2
+* cell instance $5976 r0 *1 290.32,259
+X$5976 181 135 8 9 91 NAND2_X1
+* cell instance $5977 r0 *1 290.89,259
+X$5977 146 106 85 8 9 161 MUX2_X1
+* cell instance $5978 r0 *1 292.22,259
+X$5978 108 133 86 8 9 112 MUX2_X1
+* cell instance $5981 r0 *1 298.11,259
+X$5981 109 106 111 8 9 143 MUX2_X1
+* cell instance $6152 m0 *1 288.42,247.8
+X$6152 8 116 25 11 9 DFF_X2
+* cell instance $6365 m0 *1 261.06,253.4
+X$6365 29 22 27 8 9 46 MUX2_X1
+* cell instance $6368 m0 *1 264.1,253.4
+X$6368 49 8 9 28 BUF_X2
+* cell instance $6370 m0 *1 265.62,253.4
+X$6370 48 52 26 8 9 47 MUX2_X1
+* cell instance $6371 m0 *1 266.95,253.4
+X$6371 30 33 53 8 9 48 MUX2_X1
+* cell instance $6373 m0 *1 271.32,253.4
+X$6373 34 22 23 8 9 15 MUX2_X1
+* cell instance $6382 r0 *1 257.26,253.4
+X$6382 69 52 28 8 9 68 MUX2_X1
+* cell instance $6383 r0 *1 258.59,253.4
+X$6383 51 33 70 8 9 69 MUX2_X1
+* cell instance $6386 r0 *1 260.49,253.4
+X$6386 32 50 30 8 9 29 MUX2_X1
+* cell instance $6388 r0 *1 262.01,253.4
+X$6388 8 32 46 31 9 DFF_X1
+* cell instance $6390 r0 *1 265.43,253.4
+X$6390 8 53 47 31 9 DFF_X1
+* cell instance $6394 r0 *1 270.75,253.4
+X$6394 17 50 61 8 9 34 MUX2_X1
+* cell instance $6397 r0 *1 272.65,253.4
+X$6397 27 8 9 26 BUF_X2
+* cell instance $6398 r0 *1 273.41,253.4
+X$6398 8 55 35 16 9 DFF_X1
+* cell instance $6400 r0 *1 276.83,253.4
+X$6400 23 8 9 36 BUF_X2
+* cell instance $6402 m0 *1 279.68,253.4
+X$6402 37 18 28 8 9 19 MUX2_X1
+* cell instance $6403 m0 *1 278.35,253.4
+X$6403 51 21 20 8 9 37 MUX2_X1
+* cell instance $6404 m0 *1 281.01,253.4
+X$6404 8 56 24 25 9 DFF_X1
+* cell instance $6409 r0 *1 280.82,253.4
+X$6409 72 60 28 8 9 24 MUX2_X1
+* cell instance $6413 m0 *1 287.09,253.4
+X$6413 30 21 39 8 9 38 MUX2_X1
+* cell instance $6415 m0 *1 288.42,253.4
+X$6415 38 18 26 8 9 45 MUX2_X1
+* cell instance $6417 r0 *1 287.09,253.4
+X$6417 8 39 45 25 9 DFF_X1
+* cell instance $6419 m0 *1 290.13,253.4
+X$6419 8 57 71 25 9 DFF_X1
+* cell instance $6421 r0 *1 290.32,253.4
+X$6421 57 40 58 8 9 41 MUX2_X1
+* cell instance $6422 r0 *1 291.65,253.4
+X$6422 41 60 26 8 9 71 MUX2_X1
+* cell instance $6425 r0 *1 295.26,253.4
+X$6425 61 21 43 8 9 42 MUX2_X1
+* cell instance $6426 r0 *1 296.59,253.4
+X$6426 42 18 36 8 9 44 MUX2_X1
+* cell instance $6427 m0 *1 296.97,253.4
+X$6427 8 43 44 65 9 DFF_X1
+* cell instance $6478 r0 *1 301.72,253.4
+X$6478 66 60 36 8 9 64 MUX2_X1
+* cell instance $6479 r0 *1 303.05,253.4
+X$6479 8 63 64 65 9 DFF_X1
+* cell instance $6647 m0 *1 248.52,270.2
+X$6647 200 50 203 8 9 217 MUX2_X1
+* cell instance $6650 m0 *1 253.84,270.2
+X$6650 203 8 9 174 CLKBUF_X3
+* cell instance $6652 m0 *1 254.98,270.2
+X$6652 201 8 9 170 CLKBUF_X3
+* cell instance $6653 m0 *1 255.93,270.2
+X$6653 218 52 170 8 9 239 MUX2_X1
+* cell instance $6655 m0 *1 258.02,270.2
+X$6655 200 76 212 8 9 233 MUX2_X1
+* cell instance $6660 r0 *1 255.93,270.2
+X$6660 8 212 239 202 9 DFF_X1
+* cell instance $6663 m0 *1 259.73,270.2
+X$6663 191 175 233 8 9 234 MUX2_X1
+* cell instance $6664 m0 *1 264.1,270.2
+X$6664 240 219 26 8 9 256 MUX2_X1
+* cell instance $6670 r0 *1 263.34,270.2
+X$6670 8 267 256 237 9 DFF_X1
+* cell instance $6674 r0 *1 270.56,270.2
+X$6674 8 241 259 237 9 DFF_X1
+* cell instance $6676 m0 *1 272.65,270.2
+X$6676 258 219 36 8 9 259 MUX2_X1
+* cell instance $6678 m0 *1 277.21,270.2
+X$6678 8 269 236 237 9 DFF_X1
+* cell instance $6679 m0 *1 280.44,270.2
+X$6679 8 246 220 25 9 DFF_X1
+* cell instance $6684 r0 *1 277.59,270.2
+X$6684 262 242 28 8 9 236 MUX2_X1
+* cell instance $6685 r0 *1 278.92,270.2
+X$6685 49 244 263 8 9 220 MUX2_X1
+* cell instance $6688 r0 *1 280.82,270.2
+X$6688 246 245 97 8 9 263 MUX2_X1
+* cell instance $6690 m0 *1 285,270.2
+X$6690 8 221 247 25 9 DFF_X1
+* cell instance $6694 m0 *1 289.18,270.2
+X$6694 8 235 260 232 9 DFF_X1
+* cell instance $6698 r0 *1 285.38,270.2
+X$6698 27 244 261 8 9 247 MUX2_X1
+* cell instance $6702 r0 *1 288.04,270.2
+X$6702 221 245 58 8 9 261 MUX2_X1
+* cell instance $6703 r0 *1 289.37,270.2
+X$6703 30 243 235 8 9 248 MUX2_X1
+* cell instance $6704 r0 *1 290.7,270.2
+X$6704 248 242 26 8 9 260 MUX2_X1
+* cell instance $6706 m0 *1 294.5,270.2
+X$6706 160 234 164 229 8 9 230 AOI22_X1
+* cell instance $6708 m0 *1 295.45,270.2
+X$6708 81 216 104 255 8 9 223 AOI22_X1
+* cell instance $6709 m0 *1 296.4,270.2
+X$6709 8 224 231 232 9 DFF_X1
+* cell instance $6710 m0 *1 299.63,270.2
+X$6710 230 387 8 9 226 NAND2_X1
+* cell instance $6712 m0 *1 300.96,270.2
+X$6712 206 107 205 8 9 225 MUX2_X1
+* cell instance $6715 r0 *1 295.83,270.2
+X$6715 203 21 224 8 9 257 MUX2_X1
+* cell instance $6716 r0 *1 297.16,270.2
+X$6716 224 283 250 8 9 249 MUX2_X1
+* cell instance $6717 r0 *1 298.49,270.2
+X$6717 224 62 250 8 9 254 MUX2_X1
+* cell instance $6719 r0 *1 300.58,270.2
+X$6719 225 106 254 8 9 255 MUX2_X1
+* cell instance $6722 r0 *1 302.48,270.2
+X$6722 8 250 253 251 9 DFF_X1
+* cell instance $6723 m0 *1 302.86,270.2
+X$6723 201 165 228 8 9 227 MUX2_X1
+* cell instance $6725 m0 *1 304.19,270.2
+X$6725 8 205 227 251 9 DFF_X1
+* cell instance $6818 r0 *1 553.85,270.2
+X$6818 252 8 9 207 BUF_X1
+* cell instance $6964 m0 *1 247.76,275.8
+X$6964 27 281 274 8 9 273 MUX2_X1
+* cell instance $6967 r0 *1 248.71,275.8
+X$6967 8 298 292 202 9 DFF_X1
+* cell instance $6969 m0 *1 249.47,275.8
+X$6969 49 281 294 8 9 292 MUX2_X1
+* cell instance $6970 m0 *1 250.99,275.8
+X$6970 298 264 97 8 9 294 MUX2_X1
+* cell instance $6977 r0 *1 255.36,275.8
+X$6977 8 282 319 237 9 DFF_X1
+* cell instance $6979 m0 *1 258.02,275.8
+X$6979 282 266 51 8 9 320 MUX2_X1
+* cell instance $6983 r0 *1 258.59,275.8
+X$6983 298 283 282 8 9 284 MUX2_X1
+* cell instance $6984 r0 *1 259.92,275.8
+X$6984 284 301 381 8 9 296 MUX2_X1
+* cell instance $6988 r0 *1 263.72,275.8
+X$6988 322 301 324 8 9 295 MUX2_X1
+* cell instance $6992 r0 *1 273.03,275.8
+X$6992 268 302 241 8 9 329 MUX2_X1
+* cell instance $6993 m0 *1 273.6,275.8
+X$6993 268 283 241 8 9 286 MUX2_X1
+* cell instance $6998 m0 *1 284.24,275.8
+X$6998 277 175 287 8 9 297 MUX2_X1
+* cell instance $7000 m0 *1 285.76,275.8
+X$7000 288 297 296 289 8 9 157 AOI22_X2
+* cell instance $7003 r0 *1 274.36,275.8
+X$7003 286 301 335 8 9 293 MUX2_X1
+* cell instance $7007 r0 *1 280.44,275.8
+X$7007 280 129 331 8 9 308 MUX2_X1
+* cell instance $7013 r0 *1 284.05,275.8
+X$7013 306 131 328 8 9 287 MUX2_X1
+* cell instance $7015 m0 *1 289.56,275.8
+X$7015 288 275 289 295 8 9 135 AOI22_X1
+* cell instance $7019 m0 *1 293.74,275.8
+X$7019 155 8 9 232 CLKBUF_X3
+* cell instance $7020 m0 *1 294.69,275.8
+X$7020 232 8 9 836 INV_X2
+* cell instance $7054 r0 *1 291.84,275.8
+X$7054 222 325 8 9 290 NAND2_X1
+* cell instance $7056 r0 *1 298.49,275.8
+X$7056 288 317 289 293 8 9 182 AOI22_X1
+* cell instance $7059 r0 *1 300.58,275.8
+X$7059 318 270 313 8 9 312 MUX2_X1
+* cell instance $7060 r0 *1 301.91,275.8
+X$7060 313 245 89 8 9 291 MUX2_X1
+* cell instance $7061 r0 *1 303.24,275.8
+X$7061 23 244 291 8 9 315 MUX2_X1
+* cell instance $7065 r0 *1 305.9,275.8
+X$7065 8 313 315 251 9 DFF_X1
+* cell instance $7229 m0 *1 248.14,256.2
+X$7229 90 22 49 8 9 67 MUX2_X1
+* cell instance $7230 m0 *1 249.47,256.2
+X$7230 8 74 67 31 9 DFF_X1
+* cell instance $7232 m0 *1 253.46,256.2
+X$7232 74 50 51 8 9 90 MUX2_X1
+* cell instance $7238 m0 *1 256.88,256.2
+X$7238 51 8 9 97 BUF_X2
+* cell instance $7240 m0 *1 257.64,256.2
+X$7240 8 70 68 31 9 DFF_X1
+* cell instance $7247 r0 *1 259.92,256.2
+X$7247 74 75 70 8 9 92 MUX2_X1
+* cell instance $7248 r0 *1 261.25,256.2
+X$7248 74 76 70 8 9 119 MUX2_X1
+* cell instance $7252 r0 *1 266.57,256.2
+X$7252 32 75 53 8 9 100 MUX2_X1
+* cell instance $7254 m0 *1 266.57,256.2
+X$7254 32 76 53 8 9 79 MUX2_X1
+* cell instance $7257 m0 *1 271.89,256.2
+X$7257 61 33 55 8 9 54 MUX2_X1
+* cell instance $7259 m0 *1 273.41,256.2
+X$7259 54 52 36 8 9 35 MUX2_X1
+* cell instance $7260 m0 *1 274.74,256.2
+X$7260 17 76 55 8 9 80 MUX2_X1
+* cell instance $7267 r0 *1 274.74,256.2
+X$7267 17 75 55 8 9 120 MUX2_X1
+* cell instance $7269 m0 *1 281.96,256.2
+X$7269 56 40 97 8 9 72 MUX2_X1
+* cell instance $7271 m0 *1 283.29,256.2
+X$7271 20 62 56 8 9 84 MUX2_X1
+* cell instance $7272 m0 *1 284.62,256.2
+X$7272 20 59 56 8 9 152 MUX2_X1
+* cell instance $7277 m0 *1 289.56,256.2
+X$7277 39 62 57 8 9 85 MUX2_X1
+* cell instance $7282 m0 *1 291.27,256.2
+X$7282 39 59 57 8 9 86 MUX2_X1
+* cell instance $7287 r0 *1 293.36,256.2
+X$7287 8 91 25 87 9 DFF_X2
+* cell instance $7289 m0 *1 297.73,256.2
+X$7289 43 62 63 8 9 111 MUX2_X1
+* cell instance $7292 m0 *1 299.63,256.2
+X$7292 43 59 63 8 9 110 MUX2_X1
+* cell instance $7294 m0 *1 300.96,256.2
+X$7294 61 8 9 89 BUF_X2
+* cell instance $7296 m0 *1 303.24,256.2
+X$7296 63 40 89 8 9 66 MUX2_X1
+* cell instance $7526 m0 *1 244.72,250.6
+X$7526 13 8 9 27 BUF_X2
+* cell instance $7588 r0 *1 271.89,250.6
+X$7588 8 17 15 16 9 DFF_X1
+* cell instance $7592 r0 *1 279.87,250.6
+X$7592 8 20 19 16 9 DFF_X1
+* cell instance $13667 r0 *1 281.96,245
+X$13667 8 14 25 10 9 DFF_X2
+* cell instance $27250 r0 *1 273.22,399
+X$27250 8 471 9 828 BUF_X8
+* cell instance $31429 m0 *1 249.66,323.4
+X$31429 494 354 753 8 9 752 MUX2_X1
+* cell instance $31430 m0 *1 250.99,323.4
+X$31430 701 355 489 8 9 753 MUX2_X1
+* cell instance $31438 r0 *1 250.61,323.4
+X$31438 8 701 752 668 9 DFF_X1
+* cell instance $31440 r0 *1 256.88,323.4
+X$31440 669 465 747 8 9 756 MUX2_X1
+* cell instance $31441 m0 *1 258.21,323.4
+X$31441 669 333 747 8 9 748 MUX2_X1
+* cell instance $31443 m0 *1 259.54,323.4
+X$31443 748 301 749 8 9 737 MUX2_X1
+* cell instance $31447 m0 *1 265.62,323.4
+X$31447 760 219 497 8 9 759 MUX2_X1
+* cell instance $31448 m0 *1 266.95,323.4
+X$31448 685 266 633 8 9 760 MUX2_X1
+* cell instance $31452 r0 *1 260.11,323.4
+X$31452 756 299 767 8 9 758 MUX2_X1
+* cell instance $31455 r0 *1 264.86,323.4
+X$31455 8 685 759 725 9 DFF_X1
+* cell instance $31456 r0 *1 268.09,323.4
+X$31456 779 302 761 8 9 763 MUX2_X1
+* cell instance $31457 m0 *1 268.85,323.4
+X$31457 764 299 763 8 9 740 MUX2_X1
+* cell instance $31466 r0 *1 273.03,323.4
+X$31466 702 266 650 8 9 780 MUX2_X1
+* cell instance $31467 r0 *1 274.36,323.4
+X$31467 768 302 769 8 9 741 MUX2_X1
+* cell instance $31471 m0 *1 278.92,323.4
+X$31471 307 755 758 310 8 9 757 AOI22_X1
+* cell instance $31472 m0 *1 280.06,323.4
+X$31472 8 705 727 704 9 DFF_X1
+* cell instance $31477 m0 *1 288.8,323.4
+X$31477 8 706 750 704 9 DFF_X1
+* cell instance $31512 r0 *1 280.82,323.4
+X$31512 771 106 754 8 9 755 MUX2_X1
+* cell instance $31518 r0 *1 288.99,323.4
+X$31518 155 8 9 704 CLKBUF_X3
+* cell instance $31519 r0 *1 289.94,323.4
+X$31519 704 8 9 842 INV_X2
+* cell instance $31523 r0 *1 295.83,323.4
+X$31523 155 8 9 714 CLKBUF_X3
+* cell instance $31524 r0 *1 296.78,323.4
+X$31524 714 8 9 848 INV_X1
+* cell instance $31526 r0 *1 297.54,323.4
+X$31526 650 8 9 529 BUF_X2
+* cell instance $31711 m0 *1 250.99,329
+X$31711 8 766 796 668 9 DFF_X1
+* cell instance $31714 m0 *1 254.98,329
+X$31714 8 747 797 668 9 DFF_X1
+* cell instance $31721 m0 *1 264.1,329
+X$31721 524 354 793 8 9 804 MUX2_X1
+* cell instance $31730 r0 *1 270.75,329
+X$31730 537 354 800 8 9 810 MUX2_X1
+* cell instance $31733 r0 *1 278.54,329
+X$31733 569 244 802 8 9 794 MUX2_X1
+* cell instance $31735 m0 *1 278.73,329
+X$31735 8 782 794 704 9 DFF_X1
+* cell instance $31739 m0 *1 287.47,329
+X$31739 8 786 784 704 9 DFF_X1
+* cell instance $31741 m0 *1 296.78,329
+X$31741 524 244 798 8 9 799 MUX2_X1
+* cell instance $31742 m0 *1 298.11,329
+X$31742 8 787 799 714 9 DFF_X1
+* cell instance $31751 r0 *1 287.66,329
+X$31751 807 242 488 8 9 803 MUX2_X1
+* cell instance $31752 r0 *1 288.99,329
+X$31752 8 801 803 714 9 DFF_X1
+* cell instance $31757 r0 *1 296.59,329
+X$31757 650 243 788 8 9 809 MUX2_X1
+* cell instance $31760 r0 *1 298.87,329
+X$31760 537 8 9 592 CLKBUF_X3
+* cell instance $31762 m0 *1 303.81,329
+X$31762 8 789 795 714 9 DFF_X1
+* cell instance $31763 m0 *1 302.48,329
+X$31763 537 244 790 8 9 795 MUX2_X1
+* cell instance $32213 r0 *1 251.37,334.6
+X$32213 812 8 9 630 BUF_X2
+* cell instance $32216 r0 *1 253.08,334.6
+X$32216 816 8 9 647 BUF_X2
+* cell instance $32219 m0 *1 264.67,334.6
+X$32219 8 761 821 725 9 DFF_X1
+* cell instance $32223 m0 *1 268.85,334.6
+X$32223 822 8 9 537 BUF_X2
+* cell instance $32230 m0 *1 300.2,334.6
+X$32230 827 8 9 650 BUF_X2
+* cell instance $32284 r0 *1 281.01,334.6
+X$32284 823 8 9 524 BUF_X2
+* cell instance $32291 r0 *1 283.86,334.6
+X$32291 825 8 9 633 BUF_X2
+* cell instance $32293 r0 *1 290.7,334.6
+X$32293 8 824 714 829 9 DFF_X2
+* cell instance $32466 m0 *1 279.3,340.2
+X$32466 8 726 704 835 9 DFF_X2
+* cell instance $32748 r0 *1 293.74,343
+X$32748 8 731 714 833 9 DFF_X2
+* cell instance $32938 m0 *1 296.02,337.4
+X$32938 8 785 714 826 9 DFF_X2
+* cell instance $33413 r0 *1 241.11,303.8
+X$33413 549 8 9 494 BUF_X2
+* cell instance $33419 m0 *1 251.37,303.8
+X$33419 569 95 540 8 9 550 MUX2_X1
+* cell instance $33428 r0 *1 255.36,303.8
+X$33428 8 551 570 457 9 DFF_X1
+* cell instance $33429 m0 *1 255.55,303.8
+X$33429 505 76 551 8 9 571 MUX2_X1
+* cell instance $33431 m0 *1 256.88,303.8
+X$33431 525 154 552 8 9 570 MUX2_X1
+* cell instance $33432 m0 *1 258.21,303.8
+X$33432 505 99 551 8 9 573 MUX2_X1
+* cell instance $33437 r0 *1 258.78,303.8
+X$33437 507 129 582 8 9 558 MUX2_X1
+* cell instance $33442 r0 *1 265.24,303.8
+X$33442 599 129 583 8 9 562 MUX2_X1
+* cell instance $33444 m0 *1 266.95,303.8
+X$33444 528 175 584 8 9 542 MUX2_X1
+* cell instance $33450 m0 *1 271.13,303.8
+X$33450 547 154 592 8 9 553 MUX2_X1
+* cell instance $33453 m0 *1 273.98,303.8
+X$33453 545 99 548 8 9 604 MUX2_X1
+* cell instance $33455 m0 *1 278.35,303.8
+X$33455 569 165 580 8 9 555 MUX2_X1
+* cell instance $33457 m0 *1 279.87,303.8
+X$33457 531 158 557 8 9 580 MUX2_X1
+* cell instance $33458 m0 *1 281.2,303.8
+X$33458 546 103 552 8 9 577 MUX2_X1
+* cell instance $33459 m0 *1 282.53,303.8
+X$33459 8 556 577 481 9 DFF_X1
+* cell instance $33465 r0 *1 271.7,303.8
+X$33465 8 548 553 554 9 DFF_X1
+* cell instance $33466 r0 *1 274.93,303.8
+X$33466 604 129 579 8 9 607 MUX2_X1
+* cell instance $33468 r0 *1 277.02,303.8
+X$33468 578 175 605 8 9 606 MUX2_X1
+* cell instance $33471 r0 *1 278.92,303.8
+X$33471 8 557 555 554 9 DFF_X1
+* cell instance $33480 r0 *1 286.71,303.8
+X$33480 81 558 576 104 8 9 640 AOI22_X2
+* cell instance $33482 m0 *1 288.42,303.8
+X$33482 511 301 559 8 9 575 MUX2_X1
+* cell instance $33483 r0 *1 288.42,303.8
+X$33483 512 299 609 8 9 576 MUX2_X1
+* cell instance $33486 m0 *1 290.13,303.8
+X$33486 160 543 164 575 8 9 574 AOI22_X1
+* cell instance $33487 m0 *1 291.84,303.8
+X$33487 574 560 8 9 483 NAND2_X1
+* cell instance $33494 r0 *1 294.88,303.8
+X$33494 81 562 572 104 8 9 561 AOI22_X2
+* cell instance $33497 r0 *1 297.73,303.8
+X$33497 563 589 8 9 567 NAND2_X1
+* cell instance $33500 r0 *1 298.87,303.8
+X$33500 594 133 598 8 9 601 MUX2_X1
+* cell instance $33501 m0 *1 299.82,303.8
+X$33501 8 565 539 516 9 DFF_X1
+* cell instance $33504 m0 *1 303.81,303.8
+X$33504 568 103 592 8 9 566 MUX2_X1
+* cell instance $33505 m0 *1 305.14,303.8
+X$33505 564 178 529 8 9 568 MUX2_X1
+* cell instance $33539 r0 *1 300.77,303.8
+X$33539 564 59 565 8 9 594 MUX2_X1
+* cell instance $33543 r0 *1 304.76,303.8
+X$33543 8 564 566 516 9 DFF_X1
+* cell instance $33725 m0 *1 257.45,306.6
+X$33725 581 75 614 8 9 582 MUX2_X1
+* cell instance $33726 m0 *1 258.78,306.6
+X$33726 571 175 616 8 9 597 MUX2_X1
+* cell instance $33727 m0 *1 260.11,306.6
+X$33727 573 129 625 8 9 596 MUX2_X1
+* cell instance $33735 r0 *1 257.64,306.6
+X$33735 581 270 614 8 9 527 MUX2_X1
+* cell instance $33736 r0 *1 258.97,306.6
+X$33736 615 75 613 8 9 625 MUX2_X1
+* cell instance $33738 m0 *1 265.05,306.6
+X$33738 617 75 602 8 9 583 MUX2_X1
+* cell instance $33740 m0 *1 266.38,306.6
+X$33740 617 76 602 8 9 584 MUX2_X1
+* cell instance $33746 m0 *1 272.84,306.6
+X$33746 585 75 603 8 9 579 MUX2_X1
+* cell instance $33748 m0 *1 274.17,306.6
+X$33748 585 76 603 8 9 605 MUX2_X1
+* cell instance $33752 m0 *1 278.35,306.6
+X$33752 81 596 104 608 8 9 672 AOI22_X2
+* cell instance $33754 m0 *1 280.06,306.6
+X$33754 556 465 557 8 9 586 MUX2_X1
+* cell instance $33755 m0 *1 281.39,306.6
+X$33755 556 333 557 8 9 610 MUX2_X1
+* cell instance $33759 r0 *1 280.06,306.6
+X$33759 586 299 638 8 9 608 MUX2_X1
+* cell instance $33761 m0 *1 285.19,306.6
+X$33761 160 597 164 612 8 9 728 AOI22_X2
+* cell instance $33762 m0 *1 283.86,306.6
+X$33762 610 301 587 8 9 612 MUX2_X1
+* cell instance $33766 m0 *1 289.37,306.6
+X$33766 611 62 588 8 9 609 MUX2_X1
+* cell instance $33767 m0 *1 288.04,306.6
+X$33767 611 283 588 8 9 559 MUX2_X1
+* cell instance $33771 r0 *1 288.23,306.6
+X$33771 588 40 489 8 9 627 MUX2_X1
+* cell instance $33773 m0 *1 296.59,306.6
+X$33773 160 606 164 601 8 9 563 AOI22_X1
+* cell instance $33774 m0 *1 295.64,306.6
+X$33774 81 607 104 595 8 9 619 AOI22_X1
+* cell instance $33775 m0 *1 297.54,306.6
+X$33775 600 59 590 8 9 598 MUX2_X1
+* cell instance $33776 m0 *1 298.87,306.6
+X$33776 600 62 590 8 9 624 MUX2_X1
+* cell instance $33778 m0 *1 300.96,306.6
+X$33778 564 107 565 8 9 620 MUX2_X1
+* cell instance $33783 r0 *1 296.97,306.6
+X$33783 619 710 8 9 623 NAND2_X1
+* cell instance $33786 r0 *1 299.82,306.6
+X$33786 620 106 624 8 9 595 MUX2_X1
+* cell instance $33790 r0 *1 302.48,306.6
+X$33790 8 590 591 516 9 DFF_X1
+* cell instance $33791 m0 *1 302.86,306.6
+X$33791 593 60 592 8 9 591 MUX2_X1
+* cell instance $33825 r0 *1 310.27,306.6
+X$33825 8 623 516 622 9 DFF_X2
+* cell instance $33888 r0 *1 555.37,306.6
+X$33888 622 8 9 621 BUF_X1
+* cell instance $34030 m0 *1 251.18,326.2
+X$34030 766 355 531 8 9 765 MUX2_X1
+* cell instance $34033 m0 *1 256.31,326.2
+X$34033 647 8 9 531 BUF_X2
+* cell instance $34040 r0 *1 251.75,326.2
+X$34040 569 354 765 8 9 796 MUX2_X1
+* cell instance $34044 r0 *1 257.26,326.2
+X$34044 791 219 552 8 9 797 MUX2_X1
+* cell instance $34045 m0 *1 258.78,326.2
+X$34045 766 333 778 8 9 749 MUX2_X1
+* cell instance $34046 m0 *1 257.45,326.2
+X$34046 747 266 647 8 9 791 MUX2_X1
+* cell instance $34047 m0 *1 260.11,326.2
+X$34047 766 465 778 8 9 767 MUX2_X1
+* cell instance $34051 m0 *1 266.76,326.2
+X$34051 779 333 761 8 9 762 MUX2_X1
+* cell instance $34054 m0 *1 269.8,326.2
+X$34054 633 8 9 492 CLKBUF_X3
+* cell instance $34057 m0 *1 273.03,326.2
+X$34057 780 219 592 8 9 781 MUX2_X1
+* cell instance $34058 m0 *1 274.36,326.2
+X$34058 768 333 769 8 9 770 MUX2_X1
+* cell instance $34067 r0 *1 259.92,326.2
+X$34067 494 8 9 488 BUF_X2
+* cell instance $34071 r0 *1 264.86,326.2
+X$34071 779 355 492 8 9 793 MUX2_X1
+* cell instance $34075 r0 *1 270.37,326.2
+X$34075 768 355 529 8 9 800 MUX2_X1
+* cell instance $34079 r0 *1 273.79,326.2
+X$34079 8 702 781 725 9 DFF_X1
+* cell instance $34083 r0 *1 279.68,326.2
+X$34083 783 340 782 8 9 771 MUX2_X1
+* cell instance $34084 r0 *1 281.01,326.2
+X$34084 782 245 531 8 9 802 MUX2_X1
+* cell instance $34085 r0 *1 282.34,326.2
+X$34085 783 270 782 8 9 772 MUX2_X1
+* cell instance $34092 r0 *1 287.28,326.2
+X$34092 494 244 792 8 9 784 MUX2_X1
+* cell instance $34093 r0 *1 288.61,326.2
+X$34093 786 245 489 8 9 792 MUX2_X1
+* cell instance $34094 r0 *1 289.94,326.2
+X$34094 801 340 786 8 9 773 MUX2_X1
+* cell instance $34095 r0 *1 291.27,326.2
+X$34095 801 270 786 8 9 774 MUX2_X1
+* cell instance $34098 m0 *1 297.16,326.2
+X$34098 777 270 787 8 9 775 MUX2_X1
+* cell instance $34099 m0 *1 295.83,326.2
+X$34099 777 340 787 8 9 751 MUX2_X1
+* cell instance $34147 r0 *1 296.4,326.2
+X$34147 787 245 492 8 9 798 MUX2_X1
+* cell instance $34150 r0 *1 299.63,326.2
+X$34150 788 340 789 8 9 776 MUX2_X1
+* cell instance $34151 r0 *1 300.96,326.2
+X$34151 788 270 789 8 9 689 MUX2_X1
+* cell instance $34152 r0 *1 302.29,326.2
+X$34152 789 245 529 8 9 790 MUX2_X1
+* cell instance $34263 r0 *1 5.7,289.8
+X$34263 8 460 9 391 BUF_X8
+* cell instance $34319 m0 *1 247.38,289.8
+X$34319 429 9 462 8 BUF_X4
+* cell instance $34323 m0 *1 251.18,289.8
+X$34323 8 408 442 202 9 DFF_X1
+* cell instance $34329 r0 *1 250.42,289.8
+X$34329 201 354 463 8 9 455 MUX2_X1
+* cell instance $34330 r0 *1 251.75,289.8
+X$34330 456 355 174 8 9 463 MUX2_X1
+* cell instance $34333 r0 *1 254.98,289.8
+X$34333 464 356 170 8 9 476 MUX2_X1
+* cell instance $34334 r0 *1 256.31,289.8
+X$34334 458 357 203 8 9 464 MUX2_X1
+* cell instance $34336 r0 *1 257.83,289.8
+X$34336 456 465 458 8 9 430 MUX2_X1
+* cell instance $34337 r0 *1 259.16,289.8
+X$34337 456 333 458 8 9 425 MUX2_X1
+* cell instance $34338 m0 *1 259.54,289.8
+X$34338 443 299 430 8 9 452 MUX2_X1
+* cell instance $34346 m0 *1 265.24,289.8
+X$34346 353 9 431 8 BUF_X4
+* cell instance $34351 r0 *1 266.19,289.8
+X$34351 462 9 62 8 BUF_X4
+* cell instance $34353 m0 *1 267.9,289.8
+X$34353 394 412 8 433 9 NAND2_X4
+* cell instance $34355 m0 *1 269.61,289.8
+X$34355 432 428 355 8 9 NOR2_X4
+* cell instance $34357 m0 *1 272.08,289.8
+X$34357 432 433 266 8 9 NOR2_X4
+* cell instance $34358 m0 *1 273.79,289.8
+X$34358 432 434 357 8 9 NOR2_X4
+* cell instance $34365 m0 *1 282.91,289.8
+X$34365 450 8 9 158 CLKBUF_X3
+* cell instance $34366 m0 *1 281.2,289.8
+X$34366 414 433 245 8 9 NOR2_X4
+* cell instance $34367 m0 *1 283.86,289.8
+X$34367 415 428 8 9 451 OR2_X1
+* cell instance $34368 m0 *1 284.62,289.8
+X$34368 451 9 21 8 BUF_X4
+* cell instance $34372 m0 *1 288.42,289.8
+X$34372 416 398 397 8 415 9 NAND3_X4
+* cell instance $34373 m0 *1 290.89,289.8
+X$34373 400 398 160 8 9 NOR2_X4
+* cell instance $34376 m0 *1 294.88,289.8
+X$34376 453 242 170 8 9 454 MUX2_X1
+* cell instance $34377 m0 *1 296.21,289.8
+X$34377 8 435 454 232 9 DFF_X1
+* cell instance $34378 m0 *1 299.44,289.8
+X$34378 435 270 419 8 9 449 MUX2_X1
+* cell instance $34379 m0 *1 300.77,289.8
+X$34379 449 133 447 8 9 448 MUX2_X1
+* cell instance $34381 m0 *1 302.29,289.8
+X$34381 418 131 437 8 9 447 MUX2_X1
+* cell instance $34383 m0 *1 303.81,289.8
+X$34383 201 244 438 8 9 444 MUX2_X1
+* cell instance $34385 m0 *1 305.33,289.8
+X$34385 437 336 174 8 9 420 MUX2_X1
+* cell instance $34387 r0 *1 282.72,289.8
+X$34387 462 9 107 8 BUF_X4
+* cell instance $34396 r0 *1 289.94,289.8
+X$34396 416 398 288 8 9 NOR2_X4
+* cell instance $34401 r0 *1 301.34,289.8
+X$34401 8 419 444 251 9 DFF_X1
+* cell instance $34404 m0 *1 307.04,289.8
+X$34404 439 337 170 8 9 440 MUX2_X1
+* cell instance $34406 m0 *1 308.75,289.8
+X$34406 8 418 440 251 9 DFF_X1
+* cell instance $34615 m0 *1 250.61,292.6
+X$34615 8 456 455 457 9 DFF_X1
+* cell instance $34616 m0 *1 253.84,292.6
+X$34616 8 458 476 457 9 DFF_X1
+* cell instance $34617 m0 *1 257.07,292.6
+X$34617 462 9 75 8 BUF_X4
+* cell instance $34620 m0 *1 259.35,292.6
+X$34620 462 9 99 8 BUF_X4
+* cell instance $34627 m0 *1 261.06,292.6
+X$34627 462 9 302 8 BUF_X4
+* cell instance $34629 r0 *1 261.25,292.6
+X$34629 123 9 333 8 BUF_X4
+* cell instance $34631 m0 *1 263.72,292.6
+X$34631 462 9 465 8 BUF_X4
+* cell instance $34633 m0 *1 265.05,292.6
+X$34633 78 9 299 8 BUF_X4
+* cell instance $34635 m0 *1 267.9,292.6
+X$34635 459 431 460 8 466 9 NAND3_X4
+* cell instance $34636 m0 *1 270.37,292.6
+X$34636 78 8 9 459 INV_X2
+* cell instance $34639 r0 *1 269.04,292.6
+X$34639 78 431 460 8 485 9 NAND3_X4
+* cell instance $34640 m0 *1 271.51,292.6
+X$34640 461 478 8 9 467 OR2_X1
+* cell instance $34643 m0 *1 273.03,292.6
+X$34643 478 468 22 8 9 NOR2_X4
+* cell instance $34645 r0 *1 271.51,292.6
+X$34645 477 461 154 8 9 NOR2_X4
+* cell instance $34647 r0 *1 273.41,292.6
+X$34647 78 431 470 8 468 9 NAND3_X4
+* cell instance $34649 m0 *1 275.12,292.6
+X$34649 473 462 8 478 9 OR2_X4
+* cell instance $34650 m0 *1 277.02,292.6
+X$34650 460 471 104 8 9 NOR2_X4
+* cell instance $34651 m0 *1 278.73,292.6
+X$34651 460 473 81 8 9 NOR2_X4
+* cell instance $34656 r0 *1 276.83,292.6
+X$34656 477 466 8 9 472 OR2_X1
+* cell instance $34657 r0 *1 277.59,292.6
+X$34657 471 8 9 473 INV_X4
+* cell instance $34658 r0 *1 278.54,292.6
+X$34658 460 8 9 470 INV_X4
+* cell instance $34660 r0 *1 279.68,292.6
+X$34660 8 465 471 468 18 9 NOR3_X4
+* cell instance $34661 r0 *1 282.34,292.6
+X$34661 461 469 8 9 474 OR2_X1
+* cell instance $34662 m0 *1 282.53,292.6
+X$34662 462 9 340 8 BUF_X4
+* cell instance $34706 r0 *1 293.17,292.6
+X$34706 8 475 232 12 9 DFF_X2
+* cell instance $34710 r0 *1 304.76,292.6
+X$34710 8 483 251 346 9 DFF_X2
+* cell instance $34892 m0 *1 251.18,287
+X$34892 408 264 174 8 9 407 MUX2_X1
+* cell instance $34895 m0 *1 255.74,287
+X$34895 424 219 170 8 9 409 MUX2_X1
+* cell instance $34897 m0 *1 257.26,287
+X$34897 410 266 203 8 9 424 MUX2_X1
+* cell instance $34899 r0 *1 241.3,287
+X$34899 441 8 9 51 BUF_X2
+* cell instance $34904 r0 *1 251.75,287
+X$34904 201 281 407 8 9 442 MUX2_X1
+* cell instance $34909 r0 *1 255.93,287
+X$34909 8 410 409 202 9 DFF_X1
+* cell instance $34910 m0 *1 259.16,287
+X$34910 408 283 410 8 9 411 MUX2_X1
+* cell instance $34914 r0 *1 259.16,287
+X$34914 408 302 410 8 9 443 MUX2_X1
+* cell instance $34915 r0 *1 260.49,287
+X$34915 411 301 425 8 9 423 MUX2_X1
+* cell instance $34917 m0 *1 262.58,287
+X$34917 394 9 76 8 BUF_X4
+* cell instance $34923 r0 *1 262.77,287
+X$34923 394 9 270 8 BUF_X4
+* cell instance $34927 r0 *1 265.43,287
+X$34927 8 125 123 432 264 9 NOR3_X4
+* cell instance $34929 m0 *1 269.04,287
+X$34929 394 412 8 428 9 OR2_X4
+* cell instance $34930 m0 *1 268.09,287
+X$34930 125 394 413 8 9 426 OR3_X1
+* cell instance $34931 m0 *1 270.75,287
+X$34931 428 413 50 8 9 NOR2_X4
+* cell instance $34934 r0 *1 268.28,287
+X$34934 426 9 148 8 BUF_X4
+* cell instance $34936 r0 *1 269.8,287
+X$34936 413 433 156 8 9 NOR2_X4
+* cell instance $34938 r0 *1 272.27,287
+X$34938 445 9 33 8 BUF_X4
+* cell instance $34939 r0 *1 273.6,287
+X$34939 413 434 8 9 445 OR2_X1
+* cell instance $34940 r0 *1 274.36,287
+X$34940 394 125 8 434 9 NAND2_X4
+* cell instance $34941 m0 *1 276.07,287
+X$34941 125 394 414 8 9 427 OR3_X1
+* cell instance $34943 m0 *1 277.02,287
+X$34943 8 243 9 427 BUF_X8
+* cell instance $34947 m0 *1 281.96,287
+X$34947 8 125 123 415 178 9 NOR3_X4
+* cell instance $34951 m0 *1 289.37,287
+X$34951 400 396 397 8 414 9 NAND3_X4
+* cell instance $34952 m0 *1 291.84,287
+X$34952 400 8 9 416 INV_X8
+* cell instance $34955 m0 *1 295.26,287
+X$34955 400 396 164 8 9 NOR2_X4
+* cell instance $34962 r0 *1 279.3,287
+X$34962 428 414 362 8 9 NOR2_X4
+* cell instance $34965 r0 *1 281.58,287
+X$34965 415 433 8 9 450 OR2_X1
+* cell instance $34972 r0 *1 283.67,287
+X$34972 414 434 336 8 9 NOR2_X4
+* cell instance $34973 r0 *1 285.38,287
+X$34973 434 415 40 8 9 NOR2_X4
+* cell instance $34976 r0 *1 288.23,287
+X$34976 416 396 397 8 413 9 NAND3_X4
+* cell instance $34977 r0 *1 290.7,287
+X$34977 400 398 397 8 432 9 NAND3_X4
+* cell instance $34978 r0 *1 293.17,287
+X$34978 416 396 289 8 9 NOR2_X4
+* cell instance $34979 r0 *1 294.88,287
+X$34979 203 243 435 8 9 453 MUX2_X1
+* cell instance $34981 r0 *1 296.59,287
+X$34981 307 422 310 452 8 9 417 AOI22_X1
+* cell instance $34982 r0 *1 297.54,287
+X$34982 288 448 423 289 8 9 387 AOI22_X2
+* cell instance $34983 r0 *1 299.25,287
+X$34983 435 340 419 8 9 436 MUX2_X1
+* cell instance $34984 r0 *1 300.58,287
+X$34984 436 106 446 8 9 422 MUX2_X1
+* cell instance $34986 r0 *1 302.1,287
+X$34986 418 107 437 8 9 446 MUX2_X1
+* cell instance $34988 r0 *1 303.81,287
+X$34988 419 245 174 8 9 438 MUX2_X1
+* cell instance $34990 r0 *1 305.52,287
+X$34990 418 362 174 8 9 439 MUX2_X1
+* cell instance $34991 m0 *1 305.9,287
+X$34991 420 359 170 8 9 421 MUX2_X1
+* cell instance $35024 r0 *1 307.23,287
+X$35024 8 437 421 251 9 DFF_X1
+* cell instance $35188 m0 *1 247.38,309.4
+X$35188 8 581 643 457 9 DFF_X1
+* cell instance $35194 r0 *1 246.43,309.4
+X$35194 642 22 494 8 9 643 MUX2_X1
+* cell instance $35196 r0 *1 248.14,309.4
+X$35196 581 50 630 8 9 642 MUX2_X1
+* cell instance $35198 r0 *1 250.23,309.4
+X$35198 8 615 644 457 9 DFF_X1
+* cell instance $35199 m0 *1 251.94,309.4
+X$35199 648 22 569 8 9 644 MUX2_X1
+* cell instance $35201 m0 *1 253.27,309.4
+X$35201 615 50 647 8 9 648 MUX2_X1
+* cell instance $35205 r0 *1 254.22,309.4
+X$35205 8 613 646 457 9 DFF_X1
+* cell instance $35206 m0 *1 256.69,309.4
+X$35206 647 33 613 8 9 631 MUX2_X1
+* cell instance $35208 m0 *1 258.02,309.4
+X$35208 615 270 613 8 9 616 MUX2_X1
+* cell instance $35213 r0 *1 257.45,309.4
+X$35213 631 52 552 8 9 646 MUX2_X1
+* cell instance $35216 r0 *1 259.35,309.4
+X$35216 630 33 614 8 9 632 MUX2_X1
+* cell instance $35218 r0 *1 261.06,309.4
+X$35218 155 8 9 457 CLKBUF_X3
+* cell instance $35222 r0 *1 264.48,309.4
+X$35222 8 602 629 554 9 DFF_X1
+* cell instance $35223 m0 *1 266.38,309.4
+X$35223 633 33 602 8 9 634 MUX2_X1
+* cell instance $35224 m0 *1 265.05,309.4
+X$35224 617 50 633 8 9 628 MUX2_X1
+* cell instance $35225 m0 *1 267.71,309.4
+X$35225 634 52 497 8 9 629 MUX2_X1
+* cell instance $35229 m0 *1 271.51,309.4
+X$35229 8 585 618 554 9 DFF_X1
+* cell instance $35233 r0 *1 268.09,309.4
+X$35233 155 8 9 554 CLKBUF_X3
+* cell instance $35234 r0 *1 269.04,309.4
+X$35234 554 8 9 841 INV_X2
+* cell instance $35236 r0 *1 269.99,309.4
+X$35236 585 50 650 8 9 635 MUX2_X1
+* cell instance $35237 r0 *1 271.32,309.4
+X$35237 635 22 537 8 9 618 MUX2_X1
+* cell instance $35242 r0 *1 280.06,309.4
+X$35242 636 465 637 8 9 638 MUX2_X1
+* cell instance $35243 m0 *1 281.39,309.4
+X$35243 637 40 531 8 9 649 MUX2_X1
+* cell instance $35248 r0 *1 281.39,309.4
+X$35248 649 60 552 8 9 639 MUX2_X1
+* cell instance $35251 r0 *1 283.29,309.4
+X$35251 636 333 637 8 9 587 MUX2_X1
+* cell instance $35253 m0 *1 287.85,309.4
+X$35253 627 60 488 8 9 626 MUX2_X1
+* cell instance $35255 m0 *1 289.18,309.4
+X$35255 8 588 626 481 9 DFF_X1
+* cell instance $35258 m0 *1 304.57,309.4
+X$35258 590 40 529 8 9 593 MUX2_X1
+* cell instance $35294 r0 *1 295.07,309.4
+X$35294 645 18 592 8 9 641 MUX2_X1
+* cell instance $35295 r0 *1 296.4,309.4
+X$35295 650 21 600 8 9 645 MUX2_X1
+* cell instance $35499 m0 *1 252.89,301
+X$35499 8 505 550 457 9 DFF_X1
+* cell instance $35500 m0 *1 251.56,301
+X$35500 489 148 506 8 9 504 MUX2_X1
+* cell instance $35502 m0 *1 256.31,301
+X$35502 506 76 479 8 9 526 MUX2_X1
+* cell instance $35505 r0 *1 252.13,301
+X$35505 531 148 505 8 9 540 MUX2_X1
+* cell instance $35508 r0 *1 255.74,301
+X$35508 551 156 531 8 9 525 MUX2_X1
+* cell instance $35511 r0 *1 257.64,301
+X$35511 526 175 527 8 9 543 MUX2_X1
+* cell instance $35512 m0 *1 258.21,301
+X$35512 506 99 479 8 9 507 MUX2_X1
+* cell instance $35517 m0 *1 261.63,301
+X$35517 8 509 508 457 9 DFF_X1
+* cell instance $35519 m0 *1 264.86,301
+X$35519 492 148 509 8 9 522 MUX2_X1
+* cell instance $35525 r0 *1 264.29,301
+X$35525 509 99 491 8 9 599 MUX2_X1
+* cell instance $35526 r0 *1 265.62,301
+X$35526 509 123 491 8 9 528 MUX2_X1
+* cell instance $35528 r0 *1 267.33,301
+X$35528 8 545 544 554 9 DFF_X1
+* cell instance $35530 m0 *1 270.37,301
+X$35530 529 148 545 8 9 530 MUX2_X1
+* cell instance $35536 r0 *1 270.56,301
+X$35536 537 95 530 8 9 544 MUX2_X1
+* cell instance $35538 r0 *1 272.65,301
+X$35538 548 156 529 8 9 547 MUX2_X1
+* cell instance $35539 r0 *1 273.98,301
+X$35539 545 123 548 8 9 578 MUX2_X1
+* cell instance $35544 r0 *1 281.01,301
+X$35544 556 178 531 8 9 546 MUX2_X1
+* cell instance $35552 r0 *1 292.6,301
+X$35552 160 542 164 541 8 9 532 AOI22_X1
+* cell instance $35553 r0 *1 293.55,301
+X$35553 532 533 8 9 475 NAND2_X1
+* cell instance $35556 m0 *1 298.49,301
+X$35556 535 59 514 8 9 536 MUX2_X1
+* cell instance $35557 m0 *1 297.16,301
+X$35557 535 62 514 8 9 534 MUX2_X1
+* cell instance $35560 m0 *1 302.1,301
+X$35560 514 40 492 8 9 517 MUX2_X1
+* cell instance $35561 m0 *1 303.43,301
+X$35561 517 60 497 8 9 519 MUX2_X1
+* cell instance $35607 r0 *1 297.35,301
+X$35607 521 106 534 8 9 572 MUX2_X1
+* cell instance $35608 r0 *1 298.68,301
+X$35608 496 133 536 8 9 541 MUX2_X1
+* cell instance $35609 r0 *1 300.01,301
+X$35609 537 165 538 8 9 539 MUX2_X1
+* cell instance $35610 r0 *1 301.34,301
+X$35610 529 158 565 8 9 538 MUX2_X1
+* cell instance $35614 r0 *1 310.46,301
+X$35614 8 567 516 252 9 DFF_X2
+* cell instance $35780 m0 *1 255.17,312.2
+X$35780 630 8 9 489 BUF_X2
+* cell instance $35782 m0 *1 256.69,312.2
+X$35782 8 614 660 457 9 DFF_X1
+* cell instance $35783 m0 *1 259.92,312.2
+X$35783 632 52 488 8 9 660 MUX2_X1
+* cell instance $35790 m0 *1 262.58,312.2
+X$35790 628 22 524 8 9 661 MUX2_X1
+* cell instance $35792 m0 *1 263.91,312.2
+X$35792 8 617 661 554 9 DFF_X1
+* cell instance $35797 m0 *1 271.13,312.2
+X$35797 651 52 592 8 9 662 MUX2_X1
+* cell instance $35798 m0 *1 269.8,312.2
+X$35798 650 33 603 8 9 651 MUX2_X1
+* cell instance $35799 m0 *1 272.46,312.2
+X$35799 8 603 662 554 9 DFF_X1
+* cell instance $35804 r0 *1 277.78,312.2
+X$35804 647 21 636 8 9 652 MUX2_X1
+* cell instance $35805 m0 *1 279.3,312.2
+X$35805 8 637 639 481 9 DFF_X1
+* cell instance $35808 m0 *1 285.57,312.2
+X$35808 630 21 611 8 9 653 MUX2_X1
+* cell instance $35809 m0 *1 286.9,312.2
+X$35809 653 18 488 8 9 665 MUX2_X1
+* cell instance $35810 m0 *1 288.23,312.2
+X$35810 8 611 665 481 9 DFF_X1
+* cell instance $35813 m0 *1 296.02,312.2
+X$35813 8 600 641 481 9 DFF_X1
+* cell instance $35863 r0 *1 279.11,312.2
+X$35863 652 18 552 8 9 664 MUX2_X1
+* cell instance $35864 r0 *1 280.44,312.2
+X$35864 8 636 664 481 9 DFF_X1
+* cell instance $35872 r0 *1 291.08,312.2
+X$35872 155 8 9 481 CLKBUF_X3
+* cell instance $35873 r0 *1 292.03,312.2
+X$35873 481 8 9 846 INV_X2
+* cell instance $35876 r0 *1 293.74,312.2
+X$35876 633 21 535 8 9 654 MUX2_X1
+* cell instance $35877 r0 *1 295.07,312.2
+X$35877 654 18 497 8 9 663 MUX2_X1
+* cell instance $35878 r0 *1 296.4,312.2
+X$35878 8 535 663 516 9 DFF_X1
+* cell instance $35879 r0 *1 299.63,312.2
+X$35879 155 8 9 516 CLKBUF_X3
+* cell instance $35881 r0 *1 300.96,312.2
+X$35881 8 655 658 516 9 DFF_X1
+* cell instance $36037 r0 *1 250.8,331.8
+X$36037 813 8 9 569 BUF_X2
+* cell instance $36041 r0 *1 255.55,331.8
+X$36041 814 356 552 8 9 818 MUX2_X1
+* cell instance $36042 r0 *1 256.88,331.8
+X$36042 8 778 818 668 9 DFF_X1
+* cell instance $36044 m0 *1 257.64,331.8
+X$36044 778 357 647 8 9 814 MUX2_X1
+* cell instance $36047 m0 *1 262.58,331.8
+X$36047 569 8 9 552 BUF_X2
+* cell instance $36050 m0 *1 263.91,331.8
+X$36050 8 779 804 725 9 DFF_X1
+* cell instance $36052 m0 *1 267.14,331.8
+X$36052 761 357 633 8 9 817 MUX2_X1
+* cell instance $36057 r0 *1 266.38,331.8
+X$36057 817 356 497 8 9 821 MUX2_X1
+* cell instance $36060 m0 *1 274.36,331.8
+X$36060 769 357 650 8 9 819 MUX2_X1
+* cell instance $36061 m0 *1 271.13,331.8
+X$36061 8 768 810 725 9 DFF_X1
+* cell instance $36065 m0 *1 278.16,331.8
+X$36065 647 243 783 8 9 805 MUX2_X1
+* cell instance $36066 m0 *1 279.49,331.8
+X$36066 8 783 806 704 9 DFF_X1
+* cell instance $36070 m0 *1 287.47,331.8
+X$36070 630 243 801 8 9 807 MUX2_X1
+* cell instance $36073 r0 *1 271.51,331.8
+X$36073 819 356 592 8 9 820 MUX2_X1
+* cell instance $36074 r0 *1 272.84,331.8
+X$36074 8 769 820 725 9 DFF_X1
+* cell instance $36077 r0 *1 279.3,331.8
+X$36077 805 242 552 8 9 806 MUX2_X1
+* cell instance $36080 m0 *1 290.89,331.8
+X$36080 524 8 9 497 CLKBUF_X3
+* cell instance $36086 r0 *1 293.74,331.8
+X$36086 811 242 497 8 9 815 MUX2_X1
+* cell instance $36088 m0 *1 293.74,331.8
+X$36088 633 243 777 8 9 811 MUX2_X1
+* cell instance $36091 m0 *1 297.54,331.8
+X$36091 809 242 592 8 9 808 MUX2_X1
+* cell instance $36092 m0 *1 298.87,331.8
+X$36092 8 788 808 714 9 DFF_X1
+* cell instance $36125 r0 *1 295.07,331.8
+X$36125 8 777 815 714 9 DFF_X1
+* cell instance $36315 r0 *1 253.46,320.6
+X$36315 8 724 736 668 9 DFF_X1
+* cell instance $36317 m0 *1 256.12,320.6
+X$36317 724 357 630 8 9 700 MUX2_X1
+* cell instance $36318 m0 *1 257.64,320.6
+X$36318 701 465 724 8 9 719 MUX2_X1
+* cell instance $36319 m0 *1 258.97,320.6
+X$36319 683 299 719 8 9 720 MUX2_X1
+* cell instance $36322 m0 *1 261.25,320.6
+X$36322 155 8 9 668 CLKBUF_X3
+* cell instance $36323 m0 *1 262.2,320.6
+X$36323 668 8 9 837 INV_X2
+* cell instance $36327 r0 *1 256.69,320.6
+X$36327 700 356 488 8 9 736 MUX2_X1
+* cell instance $36329 r0 *1 258.21,320.6
+X$36329 701 333 724 8 9 739 MUX2_X1
+* cell instance $36333 r0 *1 267.52,320.6
+X$36333 155 8 9 725 CLKBUF_X3
+* cell instance $36334 m0 *1 267.9,320.6
+X$36334 671 302 685 8 9 764 MUX2_X1
+* cell instance $36338 r0 *1 268.47,320.6
+X$36338 725 8 9 840 INV_X2
+* cell instance $36340 m0 *1 272.84,320.6
+X$36340 679 283 702 8 9 721 MUX2_X1
+* cell instance $36342 m0 *1 274.17,320.6
+X$36342 679 302 702 8 9 703 MUX2_X1
+* cell instance $36343 m0 *1 275.5,320.6
+X$36343 703 299 741 8 9 711 MUX2_X1
+* cell instance $36346 r0 *1 275.12,320.6
+X$36346 721 301 770 8 9 732 MUX2_X1
+* cell instance $36350 r0 *1 279.11,320.6
+X$36350 672 757 8 9 726 NAND2_X1
+* cell instance $36352 r0 *1 279.87,320.6
+X$36352 743 337 552 8 9 727 MUX2_X1
+* cell instance $36353 m0 *1 280.44,320.6
+X$36353 8 697 688 704 9 DFF_X1
+* cell instance $36355 m0 *1 283.67,320.6
+X$36355 705 131 697 8 9 746 MUX2_X1
+* cell instance $36358 r0 *1 281.2,320.6
+X$36358 705 362 531 8 9 743 MUX2_X1
+* cell instance $36360 r0 *1 282.72,320.6
+X$36360 705 107 697 8 9 754 MUX2_X1
+* cell instance $36361 r0 *1 284.05,320.6
+X$36361 772 133 746 8 9 723 MUX2_X1
+* cell instance $36363 r0 *1 286.14,320.6
+X$36363 728 744 8 9 824 NAND2_X1
+* cell instance $36365 m0 *1 286.14,320.6
+X$36365 288 723 737 289 8 9 744 AOI22_X1
+* cell instance $36369 r0 *1 287.85,320.6
+X$36369 745 337 488 8 9 750 MUX2_X1
+* cell instance $36370 m0 *1 288.8,320.6
+X$36370 307 742 310 720 8 9 722 AOI22_X1
+* cell instance $36371 m0 *1 288.23,320.6
+X$36371 640 722 8 9 785 NAND2_X1
+* cell instance $36372 m0 *1 289.75,320.6
+X$36372 706 107 695 8 9 729 MUX2_X1
+* cell instance $36373 m0 *1 291.08,320.6
+X$36373 706 131 695 8 9 730 MUX2_X1
+* cell instance $36376 m0 *1 295.64,320.6
+X$36376 307 708 310 740 8 9 709 AOI22_X1
+* cell instance $36377 m0 *1 296.59,320.6
+X$36377 307 717 310 711 8 9 710 AOI22_X1
+* cell instance $36379 r0 *1 289.18,320.6
+X$36379 706 362 489 8 9 745 MUX2_X1
+* cell instance $36380 r0 *1 290.51,320.6
+X$36380 773 106 729 8 9 742 MUX2_X1
+* cell instance $36381 r0 *1 291.84,320.6
+X$36381 774 133 730 8 9 707 MUX2_X1
+* cell instance $36385 r0 *1 295.64,320.6
+X$36385 561 709 8 9 731 NAND2_X1
+* cell instance $36387 r0 *1 297.73,320.6
+X$36387 751 129 738 8 9 708 MUX2_X1
+* cell instance $36388 m0 *1 299.25,320.6
+X$36388 776 129 716 8 9 717 MUX2_X1
+* cell instance $36389 m0 *1 297.92,320.6
+X$36389 775 175 715 8 9 718 MUX2_X1
+* cell instance $36390 m0 *1 300.58,320.6
+X$36390 733 131 712 8 9 715 MUX2_X1
+* cell instance $36391 m0 *1 301.91,320.6
+X$36391 8 733 735 714 9 DFF_X1
+* cell instance $36392 m0 *1 305.14,320.6
+X$36392 8 712 713 714 9 DFF_X1
+* cell instance $36441 r0 *1 299.82,320.6
+X$36441 733 340 712 8 9 738 MUX2_X1
+* cell instance $36443 r0 *1 301.91,320.6
+X$36443 733 362 492 8 9 734 MUX2_X1
+* cell instance $36444 r0 *1 303.24,320.6
+X$36444 734 337 497 8 9 735 MUX2_X1
+* cell instance $36725 r0 *1 251.37,298.2
+X$36725 494 95 504 8 9 520 MUX2_X1
+* cell instance $36726 r0 *1 252.7,298.2
+X$36726 8 506 520 457 9 DFF_X1
+* cell instance $36728 m0 *1 257.07,298.2
+X$36728 502 154 488 8 9 500 MUX2_X1
+* cell instance $36730 m0 *1 258.4,298.2
+X$36730 479 156 489 8 9 502 MUX2_X1
+* cell instance $36733 m0 *1 264.86,298.2
+X$36733 491 156 492 8 9 493 MUX2_X1
+* cell instance $36734 m0 *1 261.63,298.2
+X$36734 8 491 490 457 9 DFF_X1
+* cell instance $36735 m0 *1 266.19,298.2
+X$36735 493 154 497 8 9 490 MUX2_X1
+* cell instance $36740 r0 *1 263.53,298.2
+X$36740 524 95 522 8 9 508 MUX2_X1
+* cell instance $36743 m0 *1 270.18,298.2
+X$36743 467 8 9 95 CLKBUF_X3
+* cell instance $36745 m0 *1 272.84,298.2
+X$36745 469 466 219 8 9 NOR2_X4
+* cell instance $36748 m0 *1 276.26,298.2
+X$36748 485 477 359 8 9 NOR2_X4
+* cell instance $36752 m0 *1 286.33,298.2
+X$36752 489 158 510 8 9 503 MUX2_X1
+* cell instance $36753 m0 *1 287.66,298.2
+X$36753 480 178 489 8 9 495 MUX2_X1
+* cell instance $36754 m0 *1 288.99,298.2
+X$36754 495 103 488 8 9 501 MUX2_X1
+* cell instance $36756 m0 *1 296.4,298.2
+X$36756 524 165 499 8 9 523 MUX2_X1
+* cell instance $36757 m0 *1 297.73,298.2
+X$36757 492 158 513 8 9 499 MUX2_X1
+* cell instance $36758 m0 *1 299.06,298.2
+X$36758 515 59 513 8 9 496 MUX2_X1
+* cell instance $36759 m0 *1 300.39,298.2
+X$36759 8 515 498 516 9 DFF_X1
+* cell instance $36760 m0 *1 303.62,298.2
+X$36760 518 103 497 8 9 498 MUX2_X1
+* cell instance $36798 r0 *1 287.85,298.2
+X$36798 480 59 510 8 9 511 MUX2_X1
+* cell instance $36799 r0 *1 289.18,298.2
+X$36799 480 62 510 8 9 512 MUX2_X1
+* cell instance $36803 r0 *1 295.83,298.2
+X$36803 8 513 523 516 9 DFF_X1
+* cell instance $36804 r0 *1 299.06,298.2
+X$36804 515 107 513 8 9 521 MUX2_X1
+* cell instance $36808 r0 *1 302.48,298.2
+X$36808 515 178 492 8 9 518 MUX2_X1
+* cell instance $36809 r0 *1 303.81,298.2
+X$36809 8 514 519 516 9 DFF_X1
+* cell instance $37012 m0 *1 268.85,295.4
+X$37012 469 485 356 8 9 NOR2_X4
+* cell instance $37013 m0 *1 270.56,295.4
+X$37013 487 9 354 8 BUF_X4
+* cell instance $37020 r0 *1 256.31,295.4
+X$37020 8 479 500 457 9 DFF_X1
+* cell instance $37026 r0 *1 268.47,295.4
+X$37026 486 8 9 281 CLKBUF_X3
+* cell instance $37027 r0 *1 269.42,295.4
+X$37027 465 471 466 8 9 486 OR3_X1
+* cell instance $37028 r0 *1 270.37,295.4
+X$37028 465 471 485 8 9 487 OR3_X1
+* cell instance $37030 r0 *1 271.7,295.4
+X$37030 468 477 52 8 9 NOR2_X4
+* cell instance $37031 m0 *1 274.74,295.4
+X$37031 473 99 8 469 9 NAND2_X4
+* cell instance $37032 m0 *1 272.27,295.4
+X$37032 459 431 470 8 461 9 NAND3_X4
+* cell instance $37033 m0 *1 276.45,295.4
+X$37033 466 478 242 8 9 NOR2_X4
+* cell instance $37034 m0 *1 278.16,295.4
+X$37034 470 473 307 8 9 NOR2_X4
+* cell instance $37035 m0 *1 279.87,295.4
+X$37035 8 465 471 461 103 9 NOR3_X4
+* cell instance $37037 m0 *1 282.72,295.4
+X$37037 474 8 9 165 CLKBUF_X3
+* cell instance $37038 m0 *1 283.67,295.4
+X$37038 482 8 9 155 CLKBUF_X3
+* cell instance $37043 r0 *1 274.17,295.4
+X$37043 471 99 8 477 9 NAND2_X4
+* cell instance $37044 r0 *1 275.88,295.4
+X$37044 485 478 337 8 9 NOR2_X4
+* cell instance $37045 r0 *1 277.59,295.4
+X$37045 472 9 244 8 BUF_X4
+* cell instance $37046 r0 *1 278.92,295.4
+X$37046 470 471 310 8 9 NOR2_X4
+* cell instance $37047 r0 *1 280.63,295.4
+X$37047 469 468 60 8 9 NOR2_X4
+* cell instance $37052 r0 *1 283.1,295.4
+X$37052 123 9 283 8 BUF_X4
+* cell instance $37057 r0 *1 287.28,295.4
+X$37057 494 165 503 8 9 484 MUX2_X1
+* cell instance $37058 r0 *1 288.61,295.4
+X$37058 8 510 484 481 9 DFF_X1
+* cell instance $37060 m0 *1 288.8,295.4
+X$37060 8 480 501 481 9 DFF_X1
+* cell instance $48941 m0 *1 282.53,558.6
+X$48941 835 8 9 830 BUF_X1
+* cell instance $49087 m0 *1 238.07,281.4
+X$49087 352 8 9 201 BUF_X2
+* cell instance $49093 m0 *1 246.62,281.4
+X$49093 8 332 371 202 9 DFF_X1
+* cell instance $49097 r0 *1 242.06,281.4
+X$49097 393 8 9 203 BUF_X2
+* cell instance $49100 m0 *1 251.56,281.4
+X$49100 303 355 58 8 9 376 MUX2_X1
+* cell instance $49101 m0 *1 250.23,281.4
+X$49101 27 354 376 8 9 403 MUX2_X1
+* cell instance $49104 m0 *1 256.69,281.4
+X$49104 379 356 28 8 9 378 MUX2_X1
+* cell instance $49105 m0 *1 258.02,281.4
+X$49105 350 357 51 8 9 379 MUX2_X1
+* cell instance $49110 r0 *1 251.18,281.4
+X$49110 8 303 403 202 9 DFF_X1
+* cell instance $49113 r0 *1 255.36,281.4
+X$49113 8 350 378 202 9 DFF_X1
+* cell instance $49115 m0 *1 264.48,281.4
+X$49115 383 356 26 8 9 382 MUX2_X1
+* cell instance $49123 m0 *1 271.7,281.4
+X$49123 386 356 36 8 9 388 MUX2_X1
+* cell instance $49125 m0 *1 273.03,281.4
+X$49125 8 305 388 237 9 DFF_X1
+* cell instance $49129 m0 *1 280.25,281.4
+X$49129 358 337 28 8 9 360 MUX2_X1
+* cell instance $49130 m0 *1 281.58,281.4
+X$49130 390 359 28 8 9 361 MUX2_X1
+* cell instance $49137 r0 *1 281.77,281.4
+X$49137 8 328 361 232 9 DFF_X1
+* cell instance $49139 m0 *1 288.42,281.4
+X$49139 8 339 363 232 9 DFF_X1
+* cell instance $49140 m0 *1 287.09,281.4
+X$49140 339 362 58 8 9 338 MUX2_X1
+* cell instance $49142 m0 *1 292.41,281.4
+X$49142 389 359 26 8 9 399 MUX2_X1
+* cell instance $49150 r0 *1 292.41,281.4
+X$49150 8 341 399 232 9 DFF_X1
+* cell instance $49153 m0 *1 303.81,281.4
+X$49153 344 362 89 8 9 366 MUX2_X1
+* cell instance $49154 m0 *1 302.48,281.4
+X$49154 344 107 365 8 9 384 MUX2_X1
+* cell instance $49155 m0 *1 305.14,281.4
+X$49155 365 336 89 8 9 367 MUX2_X1
+* cell instance $49156 m0 *1 306.47,281.4
+X$49156 367 359 36 8 9 405 MUX2_X1
+* cell instance $49200 m0 *1 552.71,281.4
+X$49200 374 8 9 370 BUF_X1
+* cell instance $49202 m0 *1 554.8,281.4
+X$49202 375 8 9 373 BUF_X1
+* cell instance $49208 r0 *1 304,281.4
+X$49208 8 365 405 251 9 DFF_X1
+.ENDS dual_port_ram
+
+* cell OR3_X1
+* pin A1
+* pin A2
+* pin A3
+* pin PWELL,VSS
+* pin NWELL,VDD
+* pin ZN
+.SUBCKT OR3_X1 1 2 3 5 6 7
+* net 1 A1
+* net 2 A2
+* net 3 A3
+* net 5 PWELL,VSS
+* net 6 NWELL,VDD
+* net 7 ZN
+* device instance $1 r0 *1 0.17,1.1525 PMOS_VTL
+M$1 9 1 4 6 PMOS_VTL L=0.05U W=0.315U AS=0.033075P AD=0.02205P PS=0.84U
++ PD=0.455U
+* device instance $2 r0 *1 0.36,1.1525 PMOS_VTL
+M$2 8 2 9 6 PMOS_VTL L=0.05U W=0.315U AS=0.02205P AD=0.02205P PS=0.455U
++ PD=0.455U
+* device instance $3 r0 *1 0.55,1.1525 PMOS_VTL
+M$3 8 3 6 6 PMOS_VTL L=0.05U W=0.315U AS=0.033075P AD=0.02205P PS=0.77U
++ PD=0.455U
+* device instance $4 r0 *1 0.74,0.995 PMOS_VTL
+M$4 7 4 6 6 PMOS_VTL L=0.05U W=0.63U AS=0.033075P AD=0.06615P PS=0.77U PD=1.47U
+* device instance $5 r0 *1 0.17,0.195 NMOS_VTL
+M$5 5 1 4 5 NMOS_VTL L=0.05U W=0.21U AS=0.02205P AD=0.0147P PS=0.63U PD=0.35U
+* device instance $6 r0 *1 0.36,0.195 NMOS_VTL
+M$6 4 2 5 5 NMOS_VTL L=0.05U W=0.21U AS=0.0147P AD=0.0147P PS=0.35U PD=0.35U
+* device instance $7 r0 *1 0.55,0.195 NMOS_VTL
+M$7 5 3 4 5 NMOS_VTL L=0.05U W=0.21U AS=0.0147P AD=0.021875P PS=0.35U PD=0.555U
+* device instance $8 r0 *1 0.74,0.2975 NMOS_VTL
+M$8 7 4 5 5 NMOS_VTL L=0.05U W=0.415U AS=0.021875P AD=0.043575P PS=0.555U
++ PD=1.04U
+.ENDS OR3_X1
+
+* cell OR2_X4
+* pin A2
+* pin A1
+* pin PWELL,VSS
+* pin ZN
+* pin NWELL,VDD
+.SUBCKT OR2_X4 1 2 3 5 6
+* net 1 A2
+* net 2 A1
+* net 3 PWELL,VSS
+* net 5 ZN
+* net 6 NWELL,VDD
+* device instance $1 r0 *1 0.17,0.995 PMOS_VTL
+M$1 8 1 6 6 PMOS_VTL L=0.05U W=0.63U AS=0.06615P AD=0.0441P PS=1.47U PD=0.77U
+* device instance $2 r0 *1 0.36,0.995 PMOS_VTL
+M$2 4 2 8 6 PMOS_VTL L=0.05U W=0.63U AS=0.0441P AD=0.0441P PS=0.77U PD=0.77U
+* device instance $3 r0 *1 0.55,0.995 PMOS_VTL
+M$3 7 2 4 6 PMOS_VTL L=0.05U W=0.63U AS=0.0441P AD=0.0441P PS=0.77U PD=0.77U
+* device instance $4 r0 *1 0.74,0.995 PMOS_VTL
+M$4 6 1 7 6 PMOS_VTL L=0.05U W=0.63U AS=0.0441P AD=0.0441P PS=0.77U PD=0.77U
+* device instance $5 r0 *1 0.93,0.995 PMOS_VTL
+M$5 5 4 6 6 PMOS_VTL L=0.05U W=2.52U AS=0.1764P AD=0.19845P PS=3.08U PD=3.78U
+* device instance $9 r0 *1 0.17,0.2975 NMOS_VTL
+M$9 4 1 3 3 NMOS_VTL L=0.05U W=0.83U AS=0.072625P AD=0.0581P PS=1.595U PD=1.11U
+* device instance $10 r0 *1 0.36,0.2975 NMOS_VTL
+M$10 3 2 4 3 NMOS_VTL L=0.05U W=0.83U AS=0.0581P AD=0.0581P PS=1.11U PD=1.11U
+* device instance $13 r0 *1 0.93,0.2975 NMOS_VTL
+M$13 5 4 3 3 NMOS_VTL L=0.05U W=1.66U AS=0.1162P AD=0.130725P PS=2.22U PD=2.705U
+.ENDS OR2_X4
+
+* cell NAND2_X4
+* pin A2
+* pin A1
+* pin PWELL,VSS
+* pin ZN
+* pin NWELL,VDD
+.SUBCKT NAND2_X4 1 2 4 5 6
+* net 1 A2
+* net 2 A1
+* net 4 PWELL,VSS
+* net 5 ZN
+* net 6 NWELL,VDD
+* device instance $1 r0 *1 0.21,0.995 PMOS_VTL
+M$1 5 1 6 6 PMOS_VTL L=0.05U W=2.52U AS=0.19845P AD=0.1764P PS=3.78U PD=3.08U
+* device instance $5 r0 *1 0.97,0.995 PMOS_VTL
+M$5 5 2 6 6 PMOS_VTL L=0.05U W=2.52U AS=0.1764P AD=0.19845P PS=3.08U PD=3.78U
+* device instance $9 r0 *1 0.21,0.2975 NMOS_VTL
+M$9 4 1 3 4 NMOS_VTL L=0.05U W=1.66U AS=0.130725P AD=0.1162P PS=2.705U PD=2.22U
+* device instance $13 r0 *1 0.97,0.2975 NMOS_VTL
+M$13 5 2 3 4 NMOS_VTL L=0.05U W=1.66U AS=0.1162P AD=0.130725P PS=2.22U PD=2.705U
+.ENDS NAND2_X4
+
+* cell BUF_X8
+* pin PWELL,VSS
+* pin Z
+* pin NWELL,VDD
+* pin A
+.SUBCKT BUF_X8 1 3 4 5
+* net 1 PWELL,VSS
+* net 3 Z
+* net 4 NWELL,VDD
+* net 5 A
+* device instance $1 r0 *1 0.17,0.995 PMOS_VTL
+M$1 2 5 4 4 PMOS_VTL L=0.05U W=2.52U AS=0.19845P AD=0.1764P PS=3.78U PD=3.08U
+* device instance $5 r0 *1 0.93,0.995 PMOS_VTL
+M$5 3 2 4 4 PMOS_VTL L=0.05U W=5.04U AS=0.3528P AD=0.37485P PS=6.16U PD=6.86U
+* device instance $13 r0 *1 0.17,0.2975 NMOS_VTL
+M$13 2 5 1 1 NMOS_VTL L=0.05U W=1.66U AS=0.130725P AD=0.1162P PS=2.705U PD=2.22U
+* device instance $17 r0 *1 0.93,0.2975 NMOS_VTL
+M$17 3 2 1 1 NMOS_VTL L=0.05U W=3.32U AS=0.2324P AD=0.246925P PS=4.44U PD=4.925U
+.ENDS BUF_X8
+
+* cell INV_X8
+* pin A
+* pin PWELL,VSS
+* pin NWELL,VDD
+* pin ZN
+.SUBCKT INV_X8 1 2 3 4
+* net 1 A
+* net 2 PWELL,VSS
+* net 3 NWELL,VDD
+* net 4 ZN
+* device instance $1 r0 *1 0.17,0.995 PMOS_VTL
+M$1 4 1 3 3 PMOS_VTL L=0.05U W=5.04U AS=0.37485P AD=0.37485P PS=6.86U PD=6.86U
+* device instance $9 r0 *1 0.17,0.2975 NMOS_VTL
+M$9 4 1 2 2 NMOS_VTL L=0.05U W=3.32U AS=0.246925P AD=0.246925P PS=4.925U
++ PD=4.925U
+.ENDS INV_X8
+
+* cell OR2_X1
+* pin A1
+* pin A2
+* pin PWELL,VSS
+* pin NWELL,VDD
+* pin ZN
+.SUBCKT OR2_X1 1 2 3 5 6
+* net 1 A1
+* net 2 A2
+* net 3 PWELL,VSS
+* net 5 NWELL,VDD
+* net 6 ZN
+* device instance $1 r0 *1 0.17,1.1525 PMOS_VTL
+M$1 7 1 4 5 PMOS_VTL L=0.05U W=0.315U AS=0.033075P AD=0.02205P PS=0.84U
++ PD=0.455U
+* device instance $2 r0 *1 0.36,1.1525 PMOS_VTL
+M$2 7 2 5 5 PMOS_VTL L=0.05U W=0.315U AS=0.033075P AD=0.02205P PS=0.77U
++ PD=0.455U
+* device instance $3 r0 *1 0.55,0.995 PMOS_VTL
+M$3 6 4 5 5 PMOS_VTL L=0.05U W=0.63U AS=0.033075P AD=0.06615P PS=0.77U PD=1.47U
+* device instance $4 r0 *1 0.17,0.195 NMOS_VTL
+M$4 4 1 3 3 NMOS_VTL L=0.05U W=0.21U AS=0.02205P AD=0.0147P PS=0.63U PD=0.35U
+* device instance $5 r0 *1 0.36,0.195 NMOS_VTL
+M$5 3 2 4 3 NMOS_VTL L=0.05U W=0.21U AS=0.0147P AD=0.021875P PS=0.35U PD=0.555U
+* device instance $6 r0 *1 0.55,0.2975 NMOS_VTL
+M$6 6 4 3 3 NMOS_VTL L=0.05U W=0.415U AS=0.021875P AD=0.043575P PS=0.555U
++ PD=1.04U
+.ENDS OR2_X1
+
+* cell NAND3_X4
+* pin A2
+* pin A1
+* pin A3
+* pin PWELL,VSS
+* pin ZN
+* pin NWELL,VDD
+.SUBCKT NAND3_X4 1 2 3 4 5 6
+* net 1 A2
+* net 2 A1
+* net 3 A3
+* net 4 PWELL,VSS
+* net 5 ZN
+* net 6 NWELL,VDD
+* device instance $1 r0 *1 0.21,0.995 PMOS_VTL
+M$1 5 3 6 6 PMOS_VTL L=0.05U W=2.52U AS=0.19845P AD=0.19845P PS=3.78U PD=3.78U
+* device instance $2 r0 *1 0.4,0.995 PMOS_VTL
+M$2 6 1 5 6 PMOS_VTL L=0.05U W=2.52U AS=0.1764P AD=0.1764P PS=3.08U PD=3.08U
+* device instance $3 r0 *1 0.59,0.995 PMOS_VTL
+M$3 5 2 6 6 PMOS_VTL L=0.05U W=2.52U AS=0.1764P AD=0.1764P PS=3.08U PD=3.08U
+* device instance $13 r0 *1 0.21,0.2975 NMOS_VTL
+M$13 13 3 4 4 NMOS_VTL L=0.05U W=0.415U AS=0.043575P AD=0.02905P PS=1.04U
++ PD=0.555U
+* device instance $14 r0 *1 0.4,0.2975 NMOS_VTL
+M$14 12 1 13 4 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.02905P PS=0.555U
++ PD=0.555U
+* device instance $15 r0 *1 0.59,0.2975 NMOS_VTL
+M$15 5 2 12 4 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.02905P PS=0.555U
++ PD=0.555U
+* device instance $16 r0 *1 0.78,0.2975 NMOS_VTL
+M$16 10 2 5 4 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.02905P PS=0.555U
++ PD=0.555U
+* device instance $17 r0 *1 0.97,0.2975 NMOS_VTL
+M$17 8 1 10 4 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.02905P PS=0.555U
++ PD=0.555U
+* device instance $18 r0 *1 1.16,0.2975 NMOS_VTL
+M$18 4 3 8 4 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.02905P PS=0.555U
++ PD=0.555U
+* device instance $19 r0 *1 1.35,0.2975 NMOS_VTL
+M$19 9 3 4 4 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.02905P PS=0.555U
++ PD=0.555U
+* device instance $20 r0 *1 1.54,0.2975 NMOS_VTL
+M$20 7 1 9 4 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.02905P PS=0.555U
++ PD=0.555U
+* device instance $21 r0 *1 1.73,0.2975 NMOS_VTL
+M$21 5 2 7 4 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.02905P PS=0.555U
++ PD=0.555U
+* device instance $22 r0 *1 1.92,0.2975 NMOS_VTL
+M$22 14 2 5 4 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.02905P PS=0.555U
++ PD=0.555U
+* device instance $23 r0 *1 2.11,0.2975 NMOS_VTL
+M$23 11 1 14 4 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.02905P PS=0.555U
++ PD=0.555U
+* device instance $24 r0 *1 2.3,0.2975 NMOS_VTL
+M$24 4 3 11 4 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.043575P PS=0.555U
++ PD=1.04U
+.ENDS NAND3_X4
+
+* cell BUF_X4
+* pin A
+* pin NWELL,VDD
+* pin Z
+* pin PWELL,VSS
+.SUBCKT BUF_X4 1 3 4 5
+* net 1 A
+* net 3 NWELL,VDD
+* net 4 Z
+* net 5 PWELL,VSS
+* device instance $1 r0 *1 0.17,0.995 PMOS_VTL
+M$1 2 1 3 3 PMOS_VTL L=0.05U W=1.26U AS=0.11025P AD=0.0882P PS=2.24U PD=1.54U
+* device instance $3 r0 *1 0.55,0.995 PMOS_VTL
+M$3 4 2 3 3 PMOS_VTL L=0.05U W=2.52U AS=0.1764P AD=0.19845P PS=3.08U PD=3.78U
+* device instance $7 r0 *1 0.17,0.2975 NMOS_VTL
+M$7 2 1 5 5 NMOS_VTL L=0.05U W=0.83U AS=0.072625P AD=0.0581P PS=1.595U PD=1.11U
+* device instance $9 r0 *1 0.55,0.2975 NMOS_VTL
+M$9 4 2 5 5 NMOS_VTL L=0.05U W=1.66U AS=0.1162P AD=0.130725P PS=2.22U PD=2.705U
+.ENDS BUF_X4
+
+* cell INV_X4
+* pin A
+* pin PWELL,VSS
+* pin NWELL,VDD
+* pin ZN
+.SUBCKT INV_X4 1 2 3 4
+* net 1 A
+* net 2 PWELL,VSS
+* net 3 NWELL,VDD
+* net 4 ZN
+* device instance $1 r0 *1 0.17,0.995 PMOS_VTL
+M$1 4 1 3 3 PMOS_VTL L=0.05U W=2.52U AS=0.19845P AD=0.19845P PS=3.78U PD=3.78U
+* device instance $5 r0 *1 0.17,0.2975 NMOS_VTL
+M$5 4 1 2 2 NMOS_VTL L=0.05U W=1.66U AS=0.130725P AD=0.130725P PS=2.705U
++ PD=2.705U
+.ENDS INV_X4
+
+* cell AOI22_X2
+* pin B2
+* pin B1
+* pin A2
+* pin A1
+* pin PWELL,VSS
+* pin NWELL,VDD
+* pin ZN
+.SUBCKT AOI22_X2 1 2 3 4 5 7 8
+* net 1 B2
+* net 2 B1
+* net 3 A2
+* net 4 A1
+* net 5 PWELL,VSS
+* net 7 NWELL,VDD
+* net 8 ZN
+* device instance $1 r0 *1 0.175,0.995 PMOS_VTL
+M$1 7 1 6 7 PMOS_VTL L=0.05U W=1.26U AS=0.11025P AD=0.0882P PS=2.24U PD=1.54U
+* device instance $2 r0 *1 0.365,0.995 PMOS_VTL
+M$2 6 2 7 7 PMOS_VTL L=0.05U W=1.26U AS=0.0882P AD=0.0882P PS=1.54U PD=1.54U
+* device instance $5 r0 *1 0.935,0.995 PMOS_VTL
+M$5 8 3 6 7 PMOS_VTL L=0.05U W=1.26U AS=0.0882P AD=0.11025P PS=1.54U PD=2.24U
+* device instance $6 r0 *1 1.125,0.995 PMOS_VTL
+M$6 6 4 8 7 PMOS_VTL L=0.05U W=1.26U AS=0.0882P AD=0.0882P PS=1.54U PD=1.54U
+* device instance $9 r0 *1 0.175,0.2975 NMOS_VTL
+M$9 12 1 5 5 NMOS_VTL L=0.05U W=0.415U AS=0.043575P AD=0.02905P PS=1.04U
++ PD=0.555U
+* device instance $10 r0 *1 0.365,0.2975 NMOS_VTL
+M$10 8 2 12 5 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.02905P PS=0.555U
++ PD=0.555U
+* device instance $11 r0 *1 0.555,0.2975 NMOS_VTL
+M$11 10 2 8 5 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.02905P PS=0.555U
++ PD=0.555U
+* device instance $12 r0 *1 0.745,0.2975 NMOS_VTL
+M$12 5 1 10 5 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.02905P PS=0.555U
++ PD=0.555U
+* device instance $13 r0 *1 0.935,0.2975 NMOS_VTL
+M$13 11 3 5 5 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.02905P PS=0.555U
++ PD=0.555U
+* device instance $14 r0 *1 1.125,0.2975 NMOS_VTL
+M$14 8 4 11 5 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.02905P PS=0.555U
++ PD=0.555U
+* device instance $15 r0 *1 1.315,0.2975 NMOS_VTL
+M$15 9 4 8 5 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.02905P PS=0.555U
++ PD=0.555U
+* device instance $16 r0 *1 1.505,0.2975 NMOS_VTL
+M$16 5 3 9 5 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.043575P PS=0.555U
++ PD=1.04U
+.ENDS AOI22_X2
+
+* cell NAND2_X1
+* pin A2
+* pin A1
+* pin PWELL,VSS
+* pin NWELL,VDD
+* pin ZN
+.SUBCKT NAND2_X1 1 2 3 4 5
+* net 1 A2
+* net 2 A1
+* net 3 PWELL,VSS
+* net 4 NWELL,VDD
+* net 5 ZN
+* device instance $1 r0 *1 0.185,0.995 PMOS_VTL
+M$1 5 1 4 4 PMOS_VTL L=0.05U W=0.63U AS=0.06615P AD=0.0441P PS=1.47U PD=0.77U
+* device instance $2 r0 *1 0.375,0.995 PMOS_VTL
+M$2 4 2 5 4 PMOS_VTL L=0.05U W=0.63U AS=0.0441P AD=0.06615P PS=0.77U PD=1.47U
+* device instance $3 r0 *1 0.185,0.2975 NMOS_VTL
+M$3 6 1 3 3 NMOS_VTL L=0.05U W=0.415U AS=0.043575P AD=0.02905P PS=1.04U
++ PD=0.555U
+* device instance $4 r0 *1 0.375,0.2975 NMOS_VTL
+M$4 5 2 6 3 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.043575P PS=0.555U
++ PD=1.04U
+.ENDS NAND2_X1
+
+* cell INV_X1
+* pin A
+* pin PWELL,VSS
+* pin NWELL,VDD
+* pin ZN
+.SUBCKT INV_X1 1 2 3 4
+* net 1 A
+* net 2 PWELL,VSS
+* net 3 NWELL,VDD
+* net 4 ZN
+* device instance $1 r0 *1 0.17,0.995 PMOS_VTL
+M$1 4 1 3 3 PMOS_VTL L=0.05U W=0.63U AS=0.06615P AD=0.06615P PS=1.47U PD=1.47U
+* device instance $2 r0 *1 0.17,0.2975 NMOS_VTL
+M$2 4 1 2 2 NMOS_VTL L=0.05U W=0.415U AS=0.043575P AD=0.043575P PS=1.04U
++ PD=1.04U
+.ENDS INV_X1
+
+* cell CLKBUF_X3
+* pin A
+* pin PWELL,VSS
+* pin NWELL,VDD
+* pin Z
+.SUBCKT CLKBUF_X3 1 3 4 5
+* net 1 A
+* net 3 PWELL,VSS
+* net 4 NWELL,VDD
+* net 5 Z
+* device instance $1 r0 *1 0.17,0.995 PMOS_VTL
+M$1 4 1 2 4 PMOS_VTL L=0.05U W=0.63U AS=0.06615P AD=0.0441P PS=1.47U PD=0.77U
+* device instance $2 r0 *1 0.36,0.995 PMOS_VTL
+M$2 5 2 4 4 PMOS_VTL L=0.05U W=1.89U AS=0.1323P AD=0.15435P PS=2.31U PD=3.01U
+* device instance $5 r0 *1 0.17,0.1875 NMOS_VTL
+M$5 3 1 2 3 NMOS_VTL L=0.05U W=0.195U AS=0.020475P AD=0.01365P PS=0.6U PD=0.335U
+* device instance $6 r0 *1 0.36,0.1875 NMOS_VTL
+M$6 5 2 3 3 NMOS_VTL L=0.05U W=0.585U AS=0.04095P AD=0.047775P PS=1.005U
++ PD=1.27U
+.ENDS CLKBUF_X3
+
+* cell INV_X2
+* pin A
+* pin PWELL,VSS
+* pin NWELL,VDD
+* pin ZN
+.SUBCKT INV_X2 1 2 3 4
+* net 1 A
+* net 2 PWELL,VSS
+* net 3 NWELL,VDD
+* net 4 ZN
+* device instance $1 r0 *1 0.185,0.995 PMOS_VTL
+M$1 4 1 3 3 PMOS_VTL L=0.05U W=1.26U AS=0.11025P AD=0.11025P PS=2.24U PD=2.24U
+* device instance $3 r0 *1 0.185,0.2975 NMOS_VTL
+M$3 4 1 2 2 NMOS_VTL L=0.05U W=0.83U AS=0.072625P AD=0.072625P PS=1.595U
++ PD=1.595U
+.ENDS INV_X2
+
+* cell AOI22_X1
+* pin B2
+* pin B1
+* pin A1
+* pin A2
+* pin PWELL,VSS
+* pin NWELL,VDD
+* pin ZN
+.SUBCKT AOI22_X1 1 2 3 4 5 7 8
+* net 1 B2
+* net 2 B1
+* net 3 A1
+* net 4 A2
+* net 5 PWELL,VSS
+* net 7 NWELL,VDD
+* net 8 ZN
+* device instance $1 r0 *1 0.185,0.995 PMOS_VTL
+M$1 7 1 6 7 PMOS_VTL L=0.05U W=0.63U AS=0.06615P AD=0.0441P PS=1.47U PD=0.77U
+* device instance $2 r0 *1 0.375,0.995 PMOS_VTL
+M$2 6 2 7 7 PMOS_VTL L=0.05U W=0.63U AS=0.0441P AD=0.0441P PS=0.77U PD=0.77U
+* device instance $3 r0 *1 0.565,0.995 PMOS_VTL
+M$3 8 3 6 7 PMOS_VTL L=0.05U W=0.63U AS=0.0441P AD=0.0441P PS=0.77U PD=0.77U
+* device instance $4 r0 *1 0.755,0.995 PMOS_VTL
+M$4 6 4 8 7 PMOS_VTL L=0.05U W=0.63U AS=0.0441P AD=0.06615P PS=0.77U PD=1.47U
+* device instance $5 r0 *1 0.185,0.2975 NMOS_VTL
+M$5 10 1 5 5 NMOS_VTL L=0.05U W=0.415U AS=0.043575P AD=0.02905P PS=1.04U
++ PD=0.555U
+* device instance $6 r0 *1 0.375,0.2975 NMOS_VTL
+M$6 8 2 10 5 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.02905P PS=0.555U
++ PD=0.555U
+* device instance $7 r0 *1 0.565,0.2975 NMOS_VTL
+M$7 9 3 8 5 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.02905P PS=0.555U
++ PD=0.555U
+* device instance $8 r0 *1 0.755,0.2975 NMOS_VTL
+M$8 5 4 9 5 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.043575P PS=0.555U
++ PD=1.04U
+.ENDS AOI22_X1
+
+* cell CLKBUF_X1
+* pin A
+* pin PWELL,VSS
+* pin NWELL,VDD
+.SUBCKT CLKBUF_X1 1 3 4
+* net 1 A
+* net 3 PWELL,VSS
+* net 4 NWELL,VDD
+* net 5 Z
+* device instance $1 r0 *1 0.19,1.1525 PMOS_VTL
+M$1 2 1 4 4 PMOS_VTL L=0.05U W=0.315U AS=0.033075P AD=0.033075P PS=0.77U
++ PD=0.84U
+* device instance $2 r0 *1 0.38,0.995 PMOS_VTL
+M$2 5 2 4 4 PMOS_VTL L=0.05U W=0.63U AS=0.033075P AD=0.06615P PS=0.77U PD=1.47U
+* device instance $3 r0 *1 0.19,0.2075 NMOS_VTL
+M$3 3 1 2 3 NMOS_VTL L=0.05U W=0.095U AS=0.009975P AD=0.01015P PS=0.4U PD=0.335U
+* device instance $4 r0 *1 0.38,0.2575 NMOS_VTL
+M$4 5 2 3 3 NMOS_VTL L=0.05U W=0.195U AS=0.01015P AD=0.020475P PS=0.335U PD=0.6U
+.ENDS CLKBUF_X1
+
+* cell DFF_X1
+* pin PWELL,VSS
+* pin Q
+* pin D
+* pin CK
+* pin NWELL,VDD
+.SUBCKT DFF_X1 1 9 14 15 16
+* net 1 PWELL,VSS
+* net 8 QN
+* net 9 Q
+* net 14 D
+* net 15 CK
+* net 16 NWELL,VDD
+* device instance $1 r0 *1 2.85,0.995 PMOS_VTL
+M$1 16 6 8 16 PMOS_VTL L=0.05U W=0.63U AS=0.06615P AD=0.0441P PS=1.47U PD=0.77U
+* device instance $2 r0 *1 3.04,0.995 PMOS_VTL
+M$2 9 7 16 16 PMOS_VTL L=0.05U W=0.63U AS=0.0441P AD=0.06615P PS=0.77U PD=1.47U
+* device instance $3 r0 *1 0.185,0.9425 PMOS_VTL
+M$3 16 5 2 16 PMOS_VTL L=0.05U W=0.315U AS=0.033075P AD=0.014175P PS=0.84U
++ PD=0.455U
+* device instance $4 r0 *1 0.375,1.055 PMOS_VTL
+M$4 17 3 16 16 PMOS_VTL L=0.05U W=0.09U AS=0.014175P AD=0.0063P PS=0.455U
++ PD=0.23U
+* device instance $5 r0 *1 0.565,1.055 PMOS_VTL
+M$5 17 5 4 16 PMOS_VTL L=0.05U W=0.09U AS=0.018075P AD=0.0063P PS=0.565U
++ PD=0.23U
+* device instance $6 r0 *1 0.76,0.975 PMOS_VTL
+M$6 18 2 4 16 PMOS_VTL L=0.05U W=0.42U AS=0.018075P AD=0.0294P PS=0.565U
++ PD=0.56U
+* device instance $7 r0 *1 0.95,0.975 PMOS_VTL
+M$7 16 14 18 16 PMOS_VTL L=0.05U W=0.42U AS=0.0294P AD=0.025725P PS=0.56U
++ PD=0.56U
+* device instance $8 r0 *1 1.14,1.0275 PMOS_VTL
+M$8 3 4 16 16 PMOS_VTL L=0.05U W=0.315U AS=0.025725P AD=0.0567P PS=0.56U
++ PD=0.99U
+* device instance $9 r0 *1 1.555,1.0275 PMOS_VTL
+M$9 16 15 5 16 PMOS_VTL L=0.05U W=0.315U AS=0.033075P AD=0.02205P PS=0.84U
++ PD=0.455U
+* device instance $10 r0 *1 1.745,1.0275 PMOS_VTL
+M$10 19 4 16 16 PMOS_VTL L=0.05U W=0.315U AS=0.02205P AD=0.02205P PS=0.455U
++ PD=0.455U
+* device instance $11 r0 *1 1.935,1.0275 PMOS_VTL
+M$11 6 5 19 16 PMOS_VTL L=0.05U W=0.315U AS=0.02205P AD=0.014175P PS=0.455U
++ PD=0.455U
+* device instance $12 r0 *1 2.125,1.14 PMOS_VTL
+M$12 20 2 6 16 PMOS_VTL L=0.05U W=0.09U AS=0.014175P AD=0.006525P PS=0.455U
++ PD=0.235U
+* device instance $13 r0 *1 2.32,1.14 PMOS_VTL
+M$13 20 7 16 16 PMOS_VTL L=0.05U W=0.09U AS=0.014175P AD=0.006525P PS=0.455U
++ PD=0.235U
+* device instance $14 r0 *1 2.51,1.0275 PMOS_VTL
+M$14 7 6 16 16 PMOS_VTL L=0.05U W=0.315U AS=0.014175P AD=0.033075P PS=0.455U
++ PD=0.84U
+* device instance $15 r0 *1 2.85,0.2975 NMOS_VTL
+M$15 1 6 8 1 NMOS_VTL L=0.05U W=0.415U AS=0.043575P AD=0.02905P PS=1.04U
++ PD=0.555U
+* device instance $16 r0 *1 3.04,0.2975 NMOS_VTL
+M$16 9 7 1 1 NMOS_VTL L=0.05U W=0.415U AS=0.02905P AD=0.043575P PS=0.555U
++ PD=1.04U
+* device instance $17 r0 *1 0.185,0.285 NMOS_VTL
+M$17 1 5 2 1 NMOS_VTL L=0.05U W=0.21U AS=0.02205P AD=0.0105P PS=0.63U PD=0.35U
+* device instance $18 r0 *1 0.375,0.345 NMOS_VTL
+M$18 10 3 1 1 NMOS_VTL L=0.05U W=0.09U AS=0.0105P AD=0.0063P PS=0.35U PD=0.23U
+* device instance $19 r0 *1 0.565,0.345 NMOS_VTL
+M$19 10 2 4 1 NMOS_VTL L=0.05U W=0.09U AS=0.013P AD=0.0063P PS=0.42U PD=0.23U
+* device instance $20 r0 *1 1.14,0.285 NMOS_VTL
+M$20 3 4 1 1 NMOS_VTL L=0.05U W=0.21U AS=0.016975P AD=0.02205P PS=0.415U
++ PD=0.63U
+* device instance $21 r0 *1 0.76,0.3175 NMOS_VTL
+M$21 11 5 4 1 NMOS_VTL L=0.05U W=0.275U AS=0.013P AD=0.01925P PS=0.42U PD=0.415U
+* device instance $22 r0 *1 0.95,0.3175 NMOS_VTL
+M$22 1 14 11 1 NMOS_VTL L=0.05U W=0.275U AS=0.01925P AD=0.016975P PS=0.415U
++ PD=0.415U
+* device instance $23 r0 *1 2.125,0.345 NMOS_VTL
+M$23 12 5 6 1 NMOS_VTL L=0.05U W=0.09U AS=0.0105P AD=0.006525P PS=0.35U
++ PD=0.235U
+* device instance $24 r0 *1 2.32,0.345 NMOS_VTL
+M$24 12 7 1 1 NMOS_VTL L=0.05U W=0.09U AS=0.0105P AD=0.006525P PS=0.35U
++ PD=0.235U
+* device instance $25 r0 *1 1.555,0.36 NMOS_VTL
+M$25 1 15 5 1 NMOS_VTL L=0.05U W=0.21U AS=0.02205P AD=0.0147P PS=0.63U PD=0.35U
+* device instance $26 r0 *1 1.745,0.36 NMOS_VTL
+M$26 13 4 1 1 NMOS_VTL L=0.05U W=0.21U AS=0.0147P AD=0.0147P PS=0.35U PD=0.35U
+* device instance $27 r0 *1 1.935,0.36 NMOS_VTL
+M$27 6 2 13 1 NMOS_VTL L=0.05U W=0.21U AS=0.0147P AD=0.0105P PS=0.35U PD=0.35U
+* device instance $28 r0 *1 2.51,0.36 NMOS_VTL
+M$28 7 6 1 1 NMOS_VTL L=0.05U W=0.21U AS=0.0105P AD=0.02205P PS=0.35U PD=0.63U
+.ENDS DFF_X1
+
+* cell DFF_X2
+* pin PWELL,VSS
+* pin D
+* pin CK
+* pin Q
+* pin NWELL,VDD
+.SUBCKT DFF_X2 1 6 8 11 16
+* net 1 PWELL,VSS
+* net 6 D
+* net 8 CK
+* net 10 QN
+* net 11 Q
+* net 16 NWELL,VDD
+* device instance $1 r0 *1 2.855,0.995 PMOS_VTL
+M$1 10 9 16 16 PMOS_VTL L=0.05U W=1.26U AS=0.11025P AD=0.0882P PS=2.24U PD=1.54U
+* device instance $3 r0 *1 3.235,0.995 PMOS_VTL
+M$3 11 2 16 16 PMOS_VTL L=0.05U W=1.26U AS=0.0882P AD=0.11025P PS=1.54U PD=2.24U
+* device instance $5 r0 *1 0.2,0.9275 PMOS_VTL
+M$5 16 7 3 16 PMOS_VTL L=0.05U W=0.315U AS=0.033075P AD=0.014175P PS=0.84U
++ PD=0.455U
+* device instance $6 r0 *1 0.39,1.04 PMOS_VTL
+M$6 17 4 16 16 PMOS_VTL L=0.05U W=0.09U AS=0.014175P AD=0.0063P PS=0.455U
++ PD=0.23U
+* device instance $7 r0 *1 0.58,1.04 PMOS_VTL
+M$7 17 7 5 16 PMOS_VTL L=0.05U W=0.09U AS=0.01785P AD=0.0063P PS=0.56U PD=0.23U
+* device instance $8 r0 *1 0.77,0.975 PMOS_VTL
+M$8 18 3 5 16 PMOS_VTL L=0.05U W=0.42U AS=0.01785P AD=0.0294P PS=0.56U PD=0.56U
+* device instance $9 r0 *1 0.96,0.975 PMOS_VTL
+M$9 16 6 18 16 PMOS_VTL L=0.05U W=0.42U AS=0.0294P AD=0.025725P PS=0.56U
++ PD=0.56U
+* device instance $10 r0 *1 1.15,1.0275 PMOS_VTL
+M$10 4 5 16 16 PMOS_VTL L=0.05U W=0.315U AS=0.025725P AD=0.0567P PS=0.56U
++ PD=0.99U
+* device instance $11 r0 *1 2.135,0.915 PMOS_VTL
+M$11 20 3 9 16 PMOS_VTL L=0.05U W=0.09U AS=0.014175P AD=0.0063P PS=0.455U
++ PD=0.23U
+* device instance $12 r0 *1 2.325,0.915 PMOS_VTL
+M$12 20 2 16 16 PMOS_VTL L=0.05U W=0.09U AS=0.0252P AD=0.0063P PS=0.77U PD=0.23U
+* device instance $13 r0 *1 1.565,1.0275 PMOS_VTL
+M$13 16 8 7 16 PMOS_VTL L=0.05U W=0.315U AS=0.033075P AD=0.02205P PS=0.84U
++ PD=0.455U
+* device instance $14 r0 *1 1.755,1.0275 PMOS_VTL
+M$14 19 5 16 16 PMOS_VTL L=0.05U W=0.315U AS=0.02205P AD=0.02205P PS=0.455U
++ PD=0.455U
+* device instance $15 r0 *1 1.945,1.0275 PMOS_VTL
+M$15 9 7 19 16 PMOS_VTL L=0.05U W=0.315U AS=0.02205P AD=0.014175P PS=0.455U
++ PD=0.455U
+* device instance $16 r0 *1 2.515,0.995 PMOS_VTL
+M$16 2 9 16 16 PMOS_VTL L=0.05U W=0.63U AS=0.0252P AD=0.06615P PS=0.77U PD=1.47U
+* device instance $17 r0 *1 2.855,0.2975 NMOS_VTL
+M$17 10 9 1 1 NMOS_VTL L=0.05U W=0.83U AS=0.072625P AD=0.0581P PS=1.595U
++ PD=1.11U
+* device instance $19 r0 *1 3.235,0.2975 NMOS_VTL
+M$19 11 2 1 1 NMOS_VTL L=0.05U W=0.83U AS=0.0581P AD=0.072625P PS=1.11U
++ PD=1.595U
+* device instance $21 r0 *1 0.39,0.31 NMOS_VTL
+M$21 12 4 1 1 NMOS_VTL L=0.05U W=0.09U AS=0.0105P AD=0.0063P PS=0.35U PD=0.23U
+* device instance $22 r0 *1 0.58,0.31 NMOS_VTL
+M$22 12 3 5 1 NMOS_VTL L=0.05U W=0.09U AS=0.012775P AD=0.0063P PS=0.415U
++ PD=0.23U
+* device instance $23 r0 *1 1.15,0.25 NMOS_VTL
+M$23 4 5 1 1 NMOS_VTL L=0.05U W=0.21U AS=0.016975P AD=0.02205P PS=0.415U
++ PD=0.63U
+* device instance $24 r0 *1 0.77,0.2825 NMOS_VTL
+M$24 13 7 5 1 NMOS_VTL L=0.05U W=0.275U AS=0.012775P AD=0.01925P PS=0.415U
++ PD=0.415U
+* device instance $25 r0 *1 0.96,0.2825 NMOS_VTL
+M$25 1 6 13 1 NMOS_VTL L=0.05U W=0.275U AS=0.01925P AD=0.016975P PS=0.415U
++ PD=0.415U
+* device instance $26 r0 *1 0.2,0.37 NMOS_VTL
+M$26 1 7 3 1 NMOS_VTL L=0.05U W=0.21U AS=0.02205P AD=0.0105P PS=0.63U PD=0.35U
+* device instance $27 r0 *1 1.565,0.35 NMOS_VTL
+M$27 1 8 7 1 NMOS_VTL L=0.05U W=0.21U AS=0.02205P AD=0.0147P PS=0.63U PD=0.35U
+* device instance $28 r0 *1 1.755,0.35 NMOS_VTL
+M$28 14 5 1 1 NMOS_VTL L=0.05U W=0.21U AS=0.0147P AD=0.0147P PS=0.35U PD=0.35U
+* device instance $29 r0 *1 1.945,0.35 NMOS_VTL
+M$29 9 3 14 1 NMOS_VTL L=0.05U W=0.21U AS=0.0147P AD=0.0105P PS=0.35U PD=0.35U
+* device instance $30 r0 *1 2.135,0.41 NMOS_VTL
+M$30 15 7 9 1 NMOS_VTL L=0.05U W=0.09U AS=0.0105P AD=0.0063P PS=0.35U PD=0.23U
+* device instance $31 r0 *1 2.325,0.41 NMOS_VTL
+M$31 15 2 1 1 NMOS_VTL L=0.05U W=0.09U AS=0.017675P AD=0.0063P PS=0.555U
++ PD=0.23U
+* device instance $32 r0 *1 2.515,0.2975 NMOS_VTL
+M$32 2 9 1 1 NMOS_VTL L=0.05U W=0.415U AS=0.017675P AD=0.043575P PS=0.555U
++ PD=1.04U
+.ENDS DFF_X2
+
+* cell BUF_X1
+* pin A
+* pin PWELL,VSS
+* pin NWELL,VDD
+* pin Z
+.SUBCKT BUF_X1 1 3 4 5
+* net 1 A
+* net 3 PWELL,VSS
+* net 4 NWELL,VDD
+* net 5 Z
+* device instance $1 r0 *1 0.17,1.1525 PMOS_VTL
+M$1 2 1 4 4 PMOS_VTL L=0.05U W=0.315U AS=0.033075P AD=0.033075P PS=0.77U
++ PD=0.84U
+* device instance $2 r0 *1 0.36,0.995 PMOS_VTL
+M$2 5 2 4 4 PMOS_VTL L=0.05U W=0.63U AS=0.033075P AD=0.06615P PS=0.77U PD=1.47U
+* device instance $3 r0 *1 0.17,0.195 NMOS_VTL
+M$3 3 1 2 3 NMOS_VTL L=0.05U W=0.21U AS=0.02205P AD=0.021875P PS=0.63U PD=0.555U
+* device instance $4 r0 *1 0.36,0.2975 NMOS_VTL
+M$4 5 2 3 3 NMOS_VTL L=0.05U W=0.415U AS=0.021875P AD=0.043575P PS=0.555U
++ PD=1.04U
+.ENDS BUF_X1
+
+* cell NOR3_X4
+* pin PWELL,VSS
+* pin A1
+* pin A2
+* pin A3
+* pin ZN
+* pin NWELL,VDD
+.SUBCKT NOR3_X4 1 2 3 4 5 8
+* net 1 PWELL,VSS
+* net 2 A1
+* net 3 A2
+* net 4 A3
+* net 5 ZN
+* net 8 NWELL,VDD
+* device instance $1 r0 *1 0.17,0.995 PMOS_VTL
+M$1 5 2 7 8 PMOS_VTL L=0.05U W=2.52U AS=0.19845P AD=0.1764P PS=3.78U PD=3.08U
+* device instance $5 r0 *1 0.93,0.995 PMOS_VTL
+M$5 6 3 7 8 PMOS_VTL L=0.05U W=2.52U AS=0.1764P AD=0.19845P PS=3.08U PD=3.78U
+* device instance $9 r0 *1 1.875,0.995 PMOS_VTL
+M$9 6 4 8 8 PMOS_VTL L=0.05U W=2.52U AS=0.19845P AD=0.19845P PS=3.78U PD=3.78U
+* device instance $13 r0 *1 1.875,0.2975 NMOS_VTL
+M$13 5 4 1 1 NMOS_VTL L=0.05U W=1.66U AS=0.130725P AD=0.130725P PS=2.705U
++ PD=2.705U
+* device instance $17 r0 *1 0.17,0.2975 NMOS_VTL
+M$17 5 2 1 1 NMOS_VTL L=0.05U W=1.66U AS=0.130725P AD=0.1162P PS=2.705U PD=2.22U
+* device instance $21 r0 *1 0.93,0.2975 NMOS_VTL
+M$21 5 3 1 1 NMOS_VTL L=0.05U W=1.66U AS=0.1162P AD=0.130725P PS=2.22U PD=2.705U
+.ENDS NOR3_X4
+
+* cell BUF_X2
+* pin A
+* pin PWELL,VSS
+* pin NWELL,VDD
+* pin Z
+.SUBCKT BUF_X2 1 3 4 5
+* net 1 A
+* net 3 PWELL,VSS
+* net 4 NWELL,VDD
+* net 5 Z
+* device instance $1 r0 *1 0.21,0.995 PMOS_VTL
+M$1 4 1 2 4 PMOS_VTL L=0.05U W=0.63U AS=0.06615P AD=0.0441P PS=1.47U PD=0.77U
+* device instance $2 r0 *1 0.4,0.995 PMOS_VTL
+M$2 5 2 4 4 PMOS_VTL L=0.05U W=1.26U AS=0.0882P AD=0.11025P PS=1.54U PD=2.24U
+* device instance $4 r0 *1 0.21,0.2975 NMOS_VTL
+M$4 3 1 2 3 NMOS_VTL L=0.05U W=0.415U AS=0.043575P AD=0.02905P PS=1.04U
++ PD=0.555U
+* device instance $5 r0 *1 0.4,0.2975 NMOS_VTL
+M$5 5 2 3 3 NMOS_VTL L=0.05U W=0.83U AS=0.0581P AD=0.072625P PS=1.11U PD=1.595U
+.ENDS BUF_X2
+
+* cell NOR2_X4
+* pin A2
+* pin A1
+* pin ZN
+* pin PWELL,VSS
+* pin NWELL,VDD
+.SUBCKT NOR2_X4 1 2 3 4 5
+* net 1 A2
+* net 2 A1
+* net 3 ZN
+* net 4 PWELL,VSS
+* net 5 NWELL,VDD
+* device instance $1 r0 *1 0.21,0.995 PMOS_VTL
+M$1 9 1 5 5 PMOS_VTL L=0.05U W=0.63U AS=0.06615P AD=0.0441P PS=1.47U PD=0.77U
+* device instance $2 r0 *1 0.4,0.995 PMOS_VTL
+M$2 3 2 9 5 PMOS_VTL L=0.05U W=0.63U AS=0.0441P AD=0.0441P PS=0.77U PD=0.77U
+* device instance $3 r0 *1 0.59,0.995 PMOS_VTL
+M$3 8 2 3 5 PMOS_VTL L=0.05U W=0.63U AS=0.0441P AD=0.0441P PS=0.77U PD=0.77U
+* device instance $4 r0 *1 0.78,0.995 PMOS_VTL
+M$4 5 1 8 5 PMOS_VTL L=0.05U W=0.63U AS=0.0441P AD=0.0441P PS=0.77U PD=0.77U
+* device instance $5 r0 *1 0.97,0.995 PMOS_VTL
+M$5 7 1 5 5 PMOS_VTL L=0.05U W=0.63U AS=0.0441P AD=0.0441P PS=0.77U PD=0.77U
+* device instance $6 r0 *1 1.16,0.995 PMOS_VTL
+M$6 3 2 7 5 PMOS_VTL L=0.05U W=0.63U AS=0.0441P AD=0.0441P PS=0.77U PD=0.77U
+* device instance $7 r0 *1 1.35,0.995 PMOS_VTL
+M$7 6 2 3 5 PMOS_VTL L=0.05U W=0.63U AS=0.0441P AD=0.0441P PS=0.77U PD=0.77U
+* device instance $8 r0 *1 1.54,0.995 PMOS_VTL
+M$8 5 1 6 5 PMOS_VTL L=0.05U W=0.63U AS=0.0441P AD=0.06615P PS=0.77U PD=1.47U
+* device instance $9 r0 *1 0.21,0.2975 NMOS_VTL
+M$9 3 1 4 4 NMOS_VTL L=0.05U W=1.66U AS=0.130725P AD=0.130725P PS=2.705U
++ PD=2.705U
+* device instance $10 r0 *1 0.4,0.2975 NMOS_VTL
+M$10 4 2 3 4 NMOS_VTL L=0.05U W=1.66U AS=0.1162P AD=0.1162P PS=2.22U PD=2.22U
+.ENDS NOR2_X4
+
+* cell MUX2_X1
+* pin A
+* pin S
+* pin B
+* pin PWELL,VSS
+* pin NWELL,VDD
+* pin Z
+.SUBCKT MUX2_X1 1 2 3 5 6 8
+* net 1 A
+* net 2 S
+* net 3 B
+* net 5 PWELL,VSS
+* net 6 NWELL,VDD
+* net 8 Z
+* device instance $1 r0 *1 0.17,1.1525 PMOS_VTL
+M$1 6 2 4 6 PMOS_VTL L=0.05U W=0.315U AS=0.033075P AD=0.02205P PS=0.84U
++ PD=0.455U
+* device instance $2 r0 *1 0.36,1.1525 PMOS_VTL
+M$2 9 1 6 6 PMOS_VTL L=0.05U W=0.315U AS=0.02205P AD=0.02205P PS=0.455U
++ PD=0.455U
+* device instance $3 r0 *1 0.55,1.1525 PMOS_VTL
+M$3 7 2 9 6 PMOS_VTL L=0.05U W=0.315U AS=0.02205P AD=0.02205P PS=0.455U
++ PD=0.455U
+* device instance $4 r0 *1 0.74,1.1525 PMOS_VTL
+M$4 10 4 7 6 PMOS_VTL L=0.05U W=0.315U AS=0.02205P AD=0.02205P PS=0.455U
++ PD=0.455U
+* device instance $5 r0 *1 0.93,1.1525 PMOS_VTL
+M$5 10 3 6 6 PMOS_VTL L=0.05U W=0.315U AS=0.033075P AD=0.02205P PS=0.77U
++ PD=0.455U
+* device instance $6 r0 *1 1.12,0.995 PMOS_VTL
+M$6 8 7 6 6 PMOS_VTL L=0.05U W=0.63U AS=0.033075P AD=0.06615P PS=0.77U PD=1.47U
+* device instance $7 r0 *1 0.17,0.195 NMOS_VTL
+M$7 5 2 4 5 NMOS_VTL L=0.05U W=0.21U AS=0.02205P AD=0.0147P PS=0.63U PD=0.35U
+* device instance $8 r0 *1 0.36,0.195 NMOS_VTL
+M$8 12 1 5 5 NMOS_VTL L=0.05U W=0.21U AS=0.0147P AD=0.0147P PS=0.35U PD=0.35U
+* device instance $9 r0 *1 0.55,0.195 NMOS_VTL
+M$9 7 4 12 5 NMOS_VTL L=0.05U W=0.21U AS=0.0147P AD=0.0147P PS=0.35U PD=0.35U
+* device instance $10 r0 *1 0.74,0.195 NMOS_VTL
+M$10 11 2 7 5 NMOS_VTL L=0.05U W=0.21U AS=0.0147P AD=0.0147P PS=0.35U PD=0.35U
+* device instance $11 r0 *1 0.93,0.195 NMOS_VTL
+M$11 5 3 11 5 NMOS_VTL L=0.05U W=0.21U AS=0.0147P AD=0.021875P PS=0.35U
++ PD=0.555U
+* device instance $12 r0 *1 1.12,0.2975 NMOS_VTL
+M$12 8 7 5 5 NMOS_VTL L=0.05U W=0.415U AS=0.021875P AD=0.043575P PS=0.555U
++ PD=1.04U
+.ENDS MUX2_X1

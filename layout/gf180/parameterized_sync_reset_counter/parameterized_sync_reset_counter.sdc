@@ -1,0 +1,26 @@
+###############################################################################
+# Created by write_sdc
+###############################################################################
+current_design parameterized_sync_reset_counter
+###############################################################################
+# Timing Constraints
+###############################################################################
+create_clock -name core_clock -period 10.0000 [get_ports {clk}]
+set_propagated_clock [get_clocks {core_clock}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {enable}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {sync_rst}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {count[0]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {count[1]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {count[2]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {count[3]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {count[4]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {count[5]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {count[6]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {count[7]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {tc}]
+###############################################################################
+# Environment
+###############################################################################
+###############################################################################
+# Design Rules
+###############################################################################

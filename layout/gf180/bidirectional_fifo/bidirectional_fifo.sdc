@@ -1,0 +1,70 @@
+###############################################################################
+# Created by write_sdc
+###############################################################################
+current_design bidirectional_fifo
+###############################################################################
+# Timing Constraints
+###############################################################################
+create_clock -name core_clock -period 10.0000 [get_ports {clk}]
+set_propagated_clock [get_clocks {core_clock}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_rd_en}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_wr_data[0]}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_wr_data[1]}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_wr_data[2]}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_wr_data[3]}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_wr_data[4]}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_wr_data[5]}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_wr_data[6]}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_wr_data[7]}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_wr_en}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_rd_en}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_wr_data[0]}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_wr_data[1]}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_wr_data[2]}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_wr_data[3]}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_wr_data[4]}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_wr_data[5]}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_wr_data[6]}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_wr_data[7]}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_wr_en}]
+set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {rst_n}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_almost_empty}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_almost_full}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_empty}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_full}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_rd_data[0]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_rd_data[1]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_rd_data[2]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_rd_data[3]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_rd_data[4]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_rd_data[5]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_rd_data[6]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_rd_data[7]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_to_b_count[0]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_to_b_count[1]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_to_b_count[2]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_to_b_count[3]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {a_to_b_count[4]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_almost_empty}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_almost_full}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_empty}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_full}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_rd_data[0]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_rd_data[1]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_rd_data[2]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_rd_data[3]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_rd_data[4]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_rd_data[5]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_rd_data[6]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_rd_data[7]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_to_a_count[0]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_to_a_count[1]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_to_a_count[2]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_to_a_count[3]}]
+set_output_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {b_to_a_count[4]}]
+###############################################################################
+# Environment
+###############################################################################
+###############################################################################
+# Design Rules
+###############################################################################

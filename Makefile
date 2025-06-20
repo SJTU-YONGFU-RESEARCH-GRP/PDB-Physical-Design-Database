@@ -18,12 +18,12 @@ include $(DESIGN_CONFIG)
 JSON_FILE = ./layout/$(PLATFORM)/$(DESIGN_NAME)/$(DESIGN_NAME).json
 .PHONY: all
 
-all: $(JSON_FILE)
+all: $(JSON_FILE) 
 
-$(JSON_FILE):
+$(JSON_FILE): scripts/generate_json.py
 	cd layout/$(PLATFORM)/$(DESIGN_NAME) && $(PYTHON) ../../../scripts/generate_json.py $(DESIGN_NAME) $(PLATFORM) $(DESIGN_NAME).gds $(DESIGN_DESCRIPTION) $(CLOCK_CYCLE)
 
-analysis:
+analysis: scripts/analyze_data.py
 	$(PYTHON) scripts/analyze_data.py
 
 clean:

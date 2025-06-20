@@ -110,7 +110,7 @@ common_timing_key = {
 # Dictionary mapping power metric keys to their display names
 common_power_key = {
     "power__internal__total": {
-        "display_name": "intenal_power",
+        "display_name": "internal_power",
         "unit": "W"
     },
     "power__switching__total": {
@@ -441,6 +441,8 @@ class LayoutDataGenerator:
         max_setup_worst_slack_stage = None
         max_setup_violation_count = 0
         max_setup_violation_stage = None
+
+        timing_repairment_ratio = None
         
         # Track previous stage's worst slack for rate calculation
         prev_ws = None
@@ -479,6 +481,7 @@ class LayoutDataGenerator:
             prev_ws = current_ws
             prev_stage = stage
         
+        final_setup_violation_count = timing_data["setup_violation_count"]["finish"]
         # Add the calculated metrics to summary
         summary["first_setup_violation"] = {
             "value": first_setup_violation_ws,
@@ -494,11 +497,27 @@ class LayoutDataGenerator:
             "value": max_setup_violation_count,
             "stage": max_setup_violation_stage,
         }
-        
         summary["slack_improvement_rate"] = slack_improvement_rate
-        
+
+        if max_setup_violation_count > 0:
+            timing_repairment_ratio = round((max_setup_violation_count - final_setup_violation_count) / final_setup_violation_count, 3)
+            summary["timing_repairment_ratio"] = timing_repairment_ratio
+        elif max_setup_violation_count == 0:
+            summary["timing_repairment_ratio"] = 1
+        else:
+            summary["timing_repairment_ratio"] = 0
         return summary
     
+    def _generate_power_summary(self, power_data: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Generate power summary metrics
+        """
+        summary = {}
+        summary["internal_power_ratio"] = round(power_data["internal_power"]["finish"] / power_data["total_power"]["finish"], 3)
+        summary["switching_power_ratio"] = round(power_data["switching_power"]["finish"] / power_data["total_power"]["finish"], 3)
+        summary["leakage_power_ratio"] = round(power_data["leakage_power"]["finish"] / power_data["total_power"]["finish"], 3)
+        return summary
+
     def _generate_overview_data(self) -> None:
         """
         Generate overview metrics data including design metrics and design files
@@ -580,6 +599,7 @@ class LayoutDataGenerator:
         Generate power metrics data using collect_power_data function
         """
         self.data["design_metrics"]["power_metrics"] = collect_power_data()
+        self.data["design_metrics"]["power_metrics"]["summary"] = self._generate_power_summary(self.data["design_metrics"]["power_metrics"])
     
     def _generate_area_data(self) -> None:
         """

@@ -1,0 +1,139 @@
+
+==========================================================================
+global place report_tns
+--------------------------------------------------------------------------
+tns max 0.00
+
+==========================================================================
+global place report_wns
+--------------------------------------------------------------------------
+wns max 0.00
+
+==========================================================================
+global place report_worst_slack
+--------------------------------------------------------------------------
+worst slack max 2.78
+
+==========================================================================
+global place report_checks -path_delay min
+--------------------------------------------------------------------------
+Startpoint: uart_tx_inst/prescale_reg[16]$_SDFFE_PP0P_
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: uart_tx_inst/prescale_reg[16]$_SDFFE_PP0P_
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ uart_tx_inst/prescale_reg[16]$_SDFFE_PP0P_/CLK (gf180mcu_fd_sc_mcu9t5v0__dffq_2)
+     3    0.04    0.18    0.41    0.41 ^ uart_tx_inst/prescale_reg[16]$_SDFFE_PP0P_/Q (gf180mcu_fd_sc_mcu9t5v0__dffq_2)
+                                         uart_tx_inst/prescale_reg[16] (net)
+                  0.18    0.00    0.41 ^ uart_tx_inst/_342_/A1 (gf180mcu_fd_sc_mcu9t5v0__aoi211_2)
+     1    0.00    0.08    0.06    0.47 v uart_tx_inst/_342_/ZN (gf180mcu_fd_sc_mcu9t5v0__aoi211_2)
+                                         uart_tx_inst/_021_ (net)
+                  0.08    0.00    0.47 v uart_tx_inst/prescale_reg[16]$_SDFFE_PP0P_/D (gf180mcu_fd_sc_mcu9t5v0__dffq_2)
+                                  0.47   data arrival time
+
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                                  0.00 ^ uart_tx_inst/prescale_reg[16]$_SDFFE_PP0P_/CLK (gf180mcu_fd_sc_mcu9t5v0__dffq_2)
+                          0.07    0.07   library hold time
+                                  0.07   data required time
+-----------------------------------------------------------------------------
+                                  0.07   data required time
+                                 -0.47   data arrival time
+-----------------------------------------------------------------------------
+                                  0.40   slack (MET)
+
+
+
+==========================================================================
+global place report_checks -path_delay max
+--------------------------------------------------------------------------
+Startpoint: prescale[0] (input port clocked by clk)
+Endpoint: uart_rx_inst (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          1.20    1.20 v input external delay
+     1    0.03    0.00    0.00    1.20 v prescale[0] (in)
+                                         prescale[0] (net)
+                  0.00    0.00    1.20 v input2/I (gf180mcu_fd_sc_mcu9t5v0__buf_2)
+     4    0.06    0.14    0.18    1.38 v input2/Z (gf180mcu_fd_sc_mcu9t5v0__buf_2)
+                                         net2 (net)
+                  0.07    0.00    1.38 v uart_rx_inst/prescale[0] (uart_rx)
+                                  1.38   data arrival time
+
+                  0.00    6.00    6.00   clock clk (rise edge)
+                          0.00    6.00   clock network delay (ideal)
+                          0.00    6.00   clock reconvergence pessimism
+                                  6.00 ^ uart_rx_inst/clk (uart_rx)
+                         -0.39    5.61   macro clock tree delay
+                         -1.45    4.16   library setup time
+                                  4.16   data required time
+-----------------------------------------------------------------------------
+                                  4.16   data required time
+                                 -1.38   data arrival time
+-----------------------------------------------------------------------------
+                                  2.78   slack (MET)
+
+
+
+==========================================================================
+global place report_checks -unconstrained
+--------------------------------------------------------------------------
+Startpoint: prescale[0] (input port clocked by clk)
+Endpoint: uart_rx_inst (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          1.20    1.20 v input external delay
+     1    0.03    0.00    0.00    1.20 v prescale[0] (in)
+                                         prescale[0] (net)
+                  0.00    0.00    1.20 v input2/I (gf180mcu_fd_sc_mcu9t5v0__buf_2)
+     4    0.06    0.14    0.18    1.38 v input2/Z (gf180mcu_fd_sc_mcu9t5v0__buf_2)
+                                         net2 (net)
+                  0.07    0.00    1.38 v uart_rx_inst/prescale[0] (uart_rx)
+                                  1.38   data arrival time
+
+                  0.00    6.00    6.00   clock clk (rise edge)
+                          0.00    6.00   clock network delay (ideal)
+                          0.00    6.00   clock reconvergence pessimism
+                                  6.00 ^ uart_rx_inst/clk (uart_rx)
+                         -0.39    5.61   macro clock tree delay
+                         -1.45    4.16   library setup time
+                                  4.16   data required time
+-----------------------------------------------------------------------------
+                                  4.16   data required time
+                                 -1.38   data arrival time
+-----------------------------------------------------------------------------
+                                  2.78   slack (MET)
+
+
+
+==========================================================================
+global place report_power
+--------------------------------------------------------------------------
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             9.28e-03   2.85e-03   2.07e-08   1.21e-02  24.8%
+Combinational          2.37e-02   1.30e-02   5.55e-08   3.67e-02  75.2%
+Clock                  0.00e+00   0.00e+00   2.15e-08   2.15e-08   0.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  3.30e-02   1.59e-02   9.77e-08   4.89e-02 100.0%
+                          67.5%      32.5%       0.0%

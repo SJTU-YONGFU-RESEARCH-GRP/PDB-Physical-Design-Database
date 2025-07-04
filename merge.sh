@@ -118,8 +118,48 @@ merge_files "layout/gf180/parameterized_freq_divider/split" "layout/gf180/parame
 merge_files "layout/gf180/smart_fifo/split" "layout/gf180/smart_fifo/smart_fifo.def" "smart_fifo.def.part_"
 merge_files "layout/gf180/smart_fifo/split" "layout/gf180/smart_fifo/smart_fifo.gds" "smart_fifo.gds.part_"
 
+# jpeg
+merge_files "layout/gf180/jpeg/split" "layout/gf180/jpeg/jpeg.def" "jpeg.def.part_"
+merge_files "layout/gf180/jpeg/split" "layout/gf180/jpeg/jpeg.gds" "jpeg.gds.part_"
+
+# Sky130 layout files
+echo "Merging Sky130HD layout files..."
+
+# chameleon
+merge_files "layout/sky130hd/chameleon/split" "layout/sky130hd/chameleon/chameleon.def" "chameleon.def.part_"
+merge_files "layout/sky130hd/chameleon/split" "layout/sky130hd/chameleon/chameleon.gds" "chameleon.gds.part_"
+
+# microwatt
+merge_files "layout/sky130hd/microwatt/split" "layout/sky130hd/microwatt/microwatt.def" "microwatt.def.part_"
+merge_files "layout/sky130hd/microwatt/split" "layout/sky130hd/microwatt/microwatt.gds" "microwatt.gds.part_"
+
+
 # Nangate45 layout files
 echo "Merging Nangate45 layout files..."
+
+# ariane133
+merge_files "layout/nangate45/ariane133/split" "layout/nangate45/ariane133/ariane133.def" "ariane133.def.part_"
+merge_files "layout/nangate45/ariane133/split" "layout/nangate45/ariane133/ariane133.gds" "ariane133.gds.part_"
+
+# ariane136
+merge_files "layout/nangate45/ariane136/split" "layout/nangate45/ariane136/ariane136.def" "ariane136.def.part_"
+merge_files "layout/nangate45/ariane136/split" "layout/nangate45/ariane136/ariane136.gds" "ariane136.gds.part_"
+
+# bp
+merge_files "layout/nangate45/bp/split" "layout/nangate45/bp/bp.def" "bp.def.part_"
+merge_files "layout/nangate45/bp/split" "layout/nangate45/bp/bp.gds" "bp.gds.part_"
+
+# bp_multi
+merge_files "layout/nangate45/bp_multi/split" "layout/nangate45/bp_multi/bp_multi.def" "bp_multi.def.part_"
+merge_files "layout/nangate45/bp_multi/split" "layout/nangate45/bp_multi/bp_multi.gds" "bp_multi.gds.part_"
+
+# mempool_group
+merge_files "layout/nangate45/mempool_group/split" "layout/nangate45/mempool_group/mempool_group.def" "mempool_group.def.part_"
+merge_files "layout/nangate45/mempool_group/split" "layout/nangate45/mempool_group/mempool_group.gds" "mempool_group.gds.part_"
+
+# swerv_wrapper
+merge_files "layout/nangate45/swerv_wrapper/split" "layout/nangate45/swerv_wrapper/swerv_wrapper.def" "swerv_wrapper.def.part_"
+merge_files "layout/nangate45/swerv_wrapper/split" "layout/nangate45/swerv_wrapper/swerv_wrapper.gds" "swerv_wrapper.gds.part_"
 
 # swerv
 merge_files "layout/nangate45/swerv/split" "layout/nangate45/swerv/swerv.def" "swerv.def.part_"

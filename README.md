@@ -66,6 +66,21 @@ The `scripts` directory provides a comprehensive suite of utilities for layout v
 - `generate_json.py`: Python utility for metadata generation
 - `analysis_data.py`: Python script for dataset analysis report generation, producing `DATASET.md` in the repository root
 
+## Dependency Installation
+To automatically install the required Python libraries, use pip.
+
+Run the following command in the root directory of the repository:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Included Dependencies:
+- numpy
+- matplotlib
+- gdspy
+- seaborn
+
 ## Usage
 
 The repository includes a Makefile for streamlined dataset collection and analysis:

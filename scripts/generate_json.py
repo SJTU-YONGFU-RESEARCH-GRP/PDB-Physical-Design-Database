@@ -4,6 +4,9 @@ import gdspy
 import sys
 import os
 
+ORFS_ROOT = "../../../thirdparty/OpenROAD-flow-scripts"
+# ORFS_ROOT = "../../../thirdparty/OpenROAD-Flow-Scripts"
+
 class SubProceJson:
     """
     A class to process and extract data from JSON files at different stages of the design flow
@@ -500,7 +503,7 @@ class LayoutDataGenerator:
         summary["slack_improvement_rate"] = slack_improvement_rate
 
         if max_setup_violation_count > 0:
-            timing_repairment_ratio = round((max_setup_violation_count - final_setup_violation_count) / final_setup_violation_count, 3)
+            timing_repairment_ratio = round((max_setup_violation_count - final_setup_violation_count) / max_setup_violation_count, 3)
             summary["timing_repairment_ratio"] = timing_repairment_ratio
         elif max_setup_violation_count == 0:
             summary["timing_repairment_ratio"] = 1
@@ -639,8 +642,8 @@ class LayoutDataGenerator:
             # Handle different PDK types
             if self.pdk == "gf180":
                 # For GF180, we need to parse LEF files
-                stdcell_lef_file = os.path.join("../../../thirdparty/OpenROAD-Flow-Scripts/flow/platforms/gf180/lef/gf180mcu_5LM_1TM_9K_9t_sc.lef")
-                tech_lef_file = os.path.join("../../../thirdparty/OpenROAD-Flow-Scripts/flow/platforms/gf180/lef/gf180mcu_5LM_1TM_9K_9t_tech.lef")
+                stdcell_lef_file = os.path.join(ORFS_ROOT, "flow/platforms/gf180/lef/gf180mcu_5LM_1TM_9K_9t_sc.lef")
+                tech_lef_file = os.path.join(ORFS_ROOT, "flow/platforms/gf180/lef/gf180mcu_5LM_1TM_9K_9t_tech.lef")
                 
                 # Parse standard cell LEF
                 with open(stdcell_lef_file, 'r') as f:
@@ -815,19 +818,18 @@ class LayoutDataGenerator:
         structure_analysis["tapcell"]["distribution"] = tapcell_data
         
         # Calculate coverage metrics
-        # pdk_cells = self._get_pdk_cells("../../thirdparty/OpenROAD-Flow-Scripts/flow/platforms/nangate45/gds/NangateOpenCellLibrary.gds")
         
         if self.pdk == "nangate45":
-            pdk_cells = self._get_pdk_cells("../../../thirdparty/OpenROAD-Flow-Scripts/flow/platforms/nangate45/gds/NangateOpenCellLibrary.gds")
+            pdk_cells = self._get_pdk_cells(os.path.join(ORFS_ROOT, "flow/platforms/nangate45/gds/NangateOpenCellLibrary.gds"))
         
         elif self.pdk == "sky130hd":
-            pdk_cells = self._get_pdk_cells("../../../thirdparty/OpenROAD-Flow-Scripts/flow/platforms/sky130hd/gds/sky130_fd_sc_hd.gds")
+            pdk_cells = self._get_pdk_cells(os.path.join(ORFS_ROOT, "flow/platforms/sky130hd/gds/sky130_fd_sc_hd.gds"))
         
         elif self.pdk == "ihp-sg13g2":
-            pdk_cells = self._get_pdk_cells("../../../thirdparty/OpenROAD-Flow-Scripts/flow/platforms/ihp-sg13g2/gds/sg13g2_stdcell.gds")
+            pdk_cells = self._get_pdk_cells(os.path.join(ORFS_ROOT, "flow/platforms/ihp-sg13g2/gds/sg13g2_stdcell.gds"))
 
         elif self.pdk == "gf180":
-            pdk_cells = self._get_pdk_cells("../../../thirdparty/OpenROAD-Flow-Scripts/flow/platforms/gf180/gds/gf180mcu_5LM_1TM_9K_9t_sc.gds")
+            pdk_cells = self._get_pdk_cells(os.path.join(ORFS_ROOT, "flow/platforms/gf180/gds/gf180mcu_5LM_1TM_9K_9t_sc.gds"))
             
         else:
             print(f"invalid pdk names {self.pdk}")
@@ -926,7 +928,8 @@ class LayoutDataGenerator:
                 
                 # Count referenced cells
                 for ref in cell.references:
-                    count_cells(ref.ref_cell)
+                    if hasattr(ref.ref_cell, 'name'):
+                        count_cells(ref.ref_cell)
             
             # Start counting from top cell
             count_cells(top_cell)

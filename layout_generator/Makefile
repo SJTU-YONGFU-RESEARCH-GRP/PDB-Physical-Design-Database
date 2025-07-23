@@ -1,5 +1,6 @@
 # Path variables
-ORFS_ROOT ?= ../thirdparty/OpenROAD-Flow-Scripts
+# ORFS_ROOT ?= ../thirdparty/OpenROAD-Flow-Scripts
+ORFS_ROOT ?= ../thirdparty/OpenROAD-flow-scripts
 DESIGN_HOME ?= $(ORFS_ROOT)/flow/designs
 BUILD_DIR ?= ./build
 

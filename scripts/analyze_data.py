@@ -22,6 +22,8 @@ platforms = [
     "gf180"
 ]
 
+enumlist = ["(a)", "(b)", "(c)"]
+
 platforms_title = {
     "nangate45": "Nangate45",
     "sky130hd": "Sky130HD",
@@ -116,7 +118,7 @@ def plot_stdcell_coverage_scatter(platform_stdcell_dir, platform_stdcell_coverag
     # Set plot style
     plt.style.use('default')
     fig, axes = plt.subplots(1, 3, figsize=(15, 5))
-    fig.suptitle('Standard Cell Coverage vs Cell Count by PDK', fontsize=24, fontweight='bold', y=1.0)
+    fig.suptitle('Standard Cell Coverage vs Standard Cell Count by PDK', fontsize=24, fontweight='bold', y=1.0)
 
     colors = ['red', 'green', 'blue']
     
@@ -138,8 +140,8 @@ def plot_stdcell_coverage_scatter(platform_stdcell_dir, platform_stdcell_coverag
                          label=f'Mean Coverage: {mean_coverage:.2%}')
         
         # Set subplot properties
-        axes[idx].set_title(platforms_title[platform], fontsize=18, fontweight='bold', pad=10)
-        axes[idx].set_xlabel('Standard Cell Count (log scale)', fontsize=18, fontweight='bold')
+        axes[idx].set_title(f'{platforms_title[platform]}', fontsize=18, fontweight='bold', pad=10)
+        axes[idx].set_xlabel('Standard Cell Count', fontsize=18, fontweight='bold')
         axes[idx].set_ylabel('Coverage Ratio', fontsize=18, fontweight='bold')
         axes[idx].grid(True, alpha=0.3)
         axes[idx].legend(fontsize=12)

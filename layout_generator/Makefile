@@ -58,6 +58,10 @@ output: $(GDS_FILE)
 	@echo "Extracting output files..."
 	@$(PYTHON) ./scripts/generate_output.py $(CONFIG_FILE) $(ORFS_ROOT)
 
+collect:
+	@echo "Collecting output files directory without generating by "make output". Please make sure you have done layout generation in the ORFS flow...."
+	@$(PYTHON) ./scripts/generate_output.py $(CONFIG_FILE) $(ORFS_ROOT)
+
 install: 
 	@echo "Installing output files to $(INSTALL_PREFIX)..."
 	@$(MKDIR) $(INSTALL_PREFIX)

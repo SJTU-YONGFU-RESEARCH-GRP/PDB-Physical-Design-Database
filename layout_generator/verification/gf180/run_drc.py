@@ -423,7 +423,7 @@ def run_check(drc_file: str, drc_name: str, path: str, run_dir: str, sws: dict):
     layout_base_name = os.path.basename(path).split(".")[0]
     new_sws = sws.copy()
     report_path = os.path.join(
-        run_dir, "{}_{}.lyrdb".format(layout_base_name, drc_name)
+        run_dir, "drc_report.lyrdb"
     )
 
     new_sws["report"] = report_path

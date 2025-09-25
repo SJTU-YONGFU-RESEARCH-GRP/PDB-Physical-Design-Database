@@ -12,7 +12,11 @@ layout_generator/
 ├── sample/         # Sample default configuration files with different pdks
 ├── scripts/        # Python scripts for layout generation
 ├── src/            # Source files and configurations
-└── verification/   # Verification tools and scripts (Nangate45 supported only)
+└── verification/   # Verification tools and scripts
+    ├── nangate45/  # Nangate45 PDK verification
+    ├── sky130hd/   # Sky130HD PDK verification
+    ├── gf180/      # GF180 PDK verification
+    └── README.md   # Detailed verification documentation
 ```
 
 ## Configuration Files
@@ -104,6 +108,45 @@ export INSTALL_PREFIX=../layout/$(PLATFORM)/$(DESIGN_NAME) # installation destin
    ```bash
    make clean DESIGN_CONFIG=path/to/config.mk
    ```
+
+## Layout Verification
+
+After generating physical layouts, you can perform Design Rule Checking (DRC) and Layout vs. Schematic (LVS) verification to ensure the correctness of your designs.
+
+### Supported PDKs
+- **Nangate45**: Standard CMOS process verification
+- **Sky130HD**: SkyWater 130nm process verification  
+- **GF180**: GlobalFoundries 180nm process verification
+
+### Quick Start
+Navigate to the verification directory for your target PDK and run verification:
+
+```bash
+# Verify all designs
+cd verification/nangate45
+python3 run.py
+
+# Verify specific design
+python3 run.py --designs your_design_name
+
+# Run only DRC verification
+python3 run.py --designs your_design_name --op DRC
+
+# Run only LVS verification  
+python3 run.py --designs your_design_name --op LVS
+```
+
+### Key Features
+- **Automated Workflow**: Automatically copies layout files, merges netlists, and runs verification
+- **Flexible Execution**: Choose to run DRC only, LVS only, or both
+- **Report Management**: Automatically installs verification reports back to the layout database
+
+### Dependencies
+- **KLayout**: Required for DRC and LVS verification
+- **Python 3**: Required for running verification scripts
+- **Make**: Required for executing DRC/LVS rules
+
+For detailed verification documentation, including command-line options, PDK-specific processing details, and troubleshooting guides, see the [Verification README](verification/README.md).
 
 ## Examples
 

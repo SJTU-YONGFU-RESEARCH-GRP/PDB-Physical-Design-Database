@@ -239,7 +239,7 @@ module configurable_mesh_router #(
                     idx = (arb_ptr[j] + $clog2(NUM_PORTS)'(k)) % $clog2(NUM_PORTS)'(NUM_PORTS);
                     if (output_request[idx][j]) begin
                         output_grant[j][idx] = 1'b1;
-                        break;
+                        //break;
                     end
                 end
             end

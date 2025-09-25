@@ -1,0 +1,235 @@
+
+==========================================================================
+global place report_tns
+--------------------------------------------------------------------------
+tns -123341.91
+
+==========================================================================
+global place report_wns
+--------------------------------------------------------------------------
+wns -118.16
+
+==========================================================================
+global place report_worst_slack
+--------------------------------------------------------------------------
+worst slack -118.16
+
+==========================================================================
+global place report_checks -path_delay min
+--------------------------------------------------------------------------
+Startpoint: rst (input port clocked by clk)
+Endpoint: fdct_zigzag.dct_mod.ddin[1]$_DFFE_PN0P_
+          (removal check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          1.60    1.60 ^ input external delay
+    65    0.50    0.00    0.00    1.60 ^ rst (in)
+                                         rst (net)
+                  0.00    0.00    1.60 ^ fdct_zigzag.dct_mod.ddin[1]$_DFFE_PN0P_/RESET_B (sky130_fd_sc_hd__dfrtp_1)
+                                  1.60   data arrival time
+
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                                  0.00 ^ fdct_zigzag.dct_mod.ddin[1]$_DFFE_PN0P_/CLK (sky130_fd_sc_hd__dfrtp_1)
+                          0.30    0.30   library removal time
+                                  0.30   data required time
+-----------------------------------------------------------------------------
+                                  0.30   data required time
+                                 -1.60   data arrival time
+-----------------------------------------------------------------------------
+                                  1.31   slack (MET)
+
+
+Startpoint: dqnr_doe$_DFFE_PP_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: rle.ddstrb$_DFF_P_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ dqnr_doe$_DFFE_PP_/CLK (sky130_fd_sc_hd__edfxtp_1)
+     1    0.00    0.05    0.29    0.29 ^ dqnr_doe$_DFFE_PP_/Q (sky130_fd_sc_hd__edfxtp_1)
+                                         dc_diff_doe (net)
+                  0.05    0.00    0.29 ^ rle.ddstrb$_DFF_P_/D (sky130_fd_sc_hd__dfxtp_1)
+                                  0.29   data arrival time
+
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                                  0.00 ^ rle.ddstrb$_DFF_P_/CLK (sky130_fd_sc_hd__dfxtp_1)
+                         -0.04   -0.04   library hold time
+                                 -0.04   data required time
+-----------------------------------------------------------------------------
+                                 -0.04   data required time
+                                 -0.29   data arrival time
+-----------------------------------------------------------------------------
+                                  0.33   slack (MET)
+
+
+
+==========================================================================
+global place report_checks -path_delay max
+--------------------------------------------------------------------------
+Startpoint: rst (input port clocked by clk)
+Endpoint: fdct_zigzag.dct_mod.ddcnt$_DFFE_PN1P_
+          (recovery check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          1.60    1.60 ^ input external delay
+    65    0.50    0.00    0.00    1.60 ^ rst (in)
+                                         rst (net)
+                  0.30    0.15    1.75 ^ fdct_zigzag.dct_mod.ddcnt$_DFFE_PN1P_/SET_B (sky130_fd_sc_hd__dfstp_2)
+                                  1.75   data arrival time
+
+                  0.00    8.00    8.00   clock clk (rise edge)
+                          0.00    8.00   clock network delay (ideal)
+                          0.00    8.00   clock reconvergence pessimism
+                                  8.00 ^ fdct_zigzag.dct_mod.ddcnt$_DFFE_PN1P_/CLK (sky130_fd_sc_hd__dfstp_2)
+                          0.10    8.10   library recovery time
+                                  8.10   data required time
+-----------------------------------------------------------------------------
+                                  8.10   data required time
+                                 -1.75   data arrival time
+-----------------------------------------------------------------------------
+                                  6.35   slack (MET)
+
+
+Startpoint: fdct_zigzag.dct_mod.ddgo$_DFFE_PN0P_
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.result[14]$_DFFE_PP_
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ fdct_zigzag.dct_mod.ddgo$_DFFE_PN0P_/CLK (sky130_fd_sc_hd__dfrtp_1)
+  2469    8.85   74.92   52.39   52.39 ^ fdct_zigzag.dct_mod.ddgo$_DFFE_PN0P_/Q (sky130_fd_sc_hd__dfrtp_1)
+                                         fdct_zigzag.dct_mod.dct_block_0.dct_unit_0.ddgo (net)
+                 74.94    1.03   53.42 ^ _55662_/A (sky130_fd_sc_hd__clkinv_1)
+   178    1.93    0.00   69.86  123.28 v _55662_/Y (sky130_fd_sc_hd__clkinv_1)
+                                         _04709_ (net)
+                  0.00    0.14  123.42 v _63137_/D1 (sky130_fd_sc_hd__o2111ai_1)
+     1    0.00    0.17    0.05  123.47 ^ _63137_/Y (sky130_fd_sc_hd__o2111ai_1)
+                                         _11108_ (net)
+                  0.17    0.00  123.47 ^ _63138_/C1 (sky130_fd_sc_hd__o211ai_1)
+     1    0.00    7.65    0.12  123.59 v _63138_/Y (sky130_fd_sc_hd__o211ai_1)
+                                         _01546_ (net)
+                  7.65    0.00  123.59 v fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.result[14]$_DFFE_PP_/D (sky130_fd_sc_hd__edfxtp_1)
+                                123.59   data arrival time
+
+                  0.00    8.00    8.00   clock clk (rise edge)
+                          0.00    8.00   clock network delay (ideal)
+                          0.00    8.00   clock reconvergence pessimism
+                                  8.00 ^ fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.result[14]$_DFFE_PP_/CLK (sky130_fd_sc_hd__edfxtp_1)
+                         -2.57    5.43   library setup time
+                                  5.43   data required time
+-----------------------------------------------------------------------------
+                                  5.43   data required time
+                               -123.59   data arrival time
+-----------------------------------------------------------------------------
+                               -118.16   slack (VIOLATED)
+
+
+
+==========================================================================
+global place report_checks -unconstrained
+--------------------------------------------------------------------------
+Startpoint: rst (input port clocked by clk)
+Endpoint: fdct_zigzag.dct_mod.ddcnt$_DFFE_PN1P_
+          (recovery check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          1.60    1.60 ^ input external delay
+    65    0.50    0.00    0.00    1.60 ^ rst (in)
+                                         rst (net)
+                  0.30    0.15    1.75 ^ fdct_zigzag.dct_mod.ddcnt$_DFFE_PN1P_/SET_B (sky130_fd_sc_hd__dfstp_2)
+                                  1.75   data arrival time
+
+                  0.00    8.00    8.00   clock clk (rise edge)
+                          0.00    8.00   clock network delay (ideal)
+                          0.00    8.00   clock reconvergence pessimism
+                                  8.00 ^ fdct_zigzag.dct_mod.ddcnt$_DFFE_PN1P_/CLK (sky130_fd_sc_hd__dfstp_2)
+                          0.10    8.10   library recovery time
+                                  8.10   data required time
+-----------------------------------------------------------------------------
+                                  8.10   data required time
+                                 -1.75   data arrival time
+-----------------------------------------------------------------------------
+                                  6.35   slack (MET)
+
+
+Startpoint: fdct_zigzag.dct_mod.ddgo$_DFFE_PN0P_
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.result[14]$_DFFE_PP_
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ fdct_zigzag.dct_mod.ddgo$_DFFE_PN0P_/CLK (sky130_fd_sc_hd__dfrtp_1)
+  2469    8.85   74.92   52.39   52.39 ^ fdct_zigzag.dct_mod.ddgo$_DFFE_PN0P_/Q (sky130_fd_sc_hd__dfrtp_1)
+                                         fdct_zigzag.dct_mod.dct_block_0.dct_unit_0.ddgo (net)
+                 74.94    1.03   53.42 ^ _55662_/A (sky130_fd_sc_hd__clkinv_1)
+   178    1.93    0.00   69.86  123.28 v _55662_/Y (sky130_fd_sc_hd__clkinv_1)
+                                         _04709_ (net)
+                  0.00    0.14  123.42 v _63137_/D1 (sky130_fd_sc_hd__o2111ai_1)
+     1    0.00    0.17    0.05  123.47 ^ _63137_/Y (sky130_fd_sc_hd__o2111ai_1)
+                                         _11108_ (net)
+                  0.17    0.00  123.47 ^ _63138_/C1 (sky130_fd_sc_hd__o211ai_1)
+     1    0.00    7.65    0.12  123.59 v _63138_/Y (sky130_fd_sc_hd__o211ai_1)
+                                         _01546_ (net)
+                  7.65    0.00  123.59 v fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.result[14]$_DFFE_PP_/D (sky130_fd_sc_hd__edfxtp_1)
+                                123.59   data arrival time
+
+                  0.00    8.00    8.00   clock clk (rise edge)
+                          0.00    8.00   clock network delay (ideal)
+                          0.00    8.00   clock reconvergence pessimism
+                                  8.00 ^ fdct_zigzag.dct_mod.dct_block_6.dct_unit_6.macu.result[14]$_DFFE_PP_/CLK (sky130_fd_sc_hd__edfxtp_1)
+                         -2.57    5.43   library setup time
+                                  5.43   data required time
+-----------------------------------------------------------------------------
+                                  5.43   data required time
+                               -123.59   data arrival time
+-----------------------------------------------------------------------------
+                               -118.16   slack (VIOLATED)
+
+
+
+==========================================================================
+global place report_power
+--------------------------------------------------------------------------
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             6.35e-02   1.08e-02   4.32e-08   7.44e-02  14.3%
+Combinational          2.03e-01   2.43e-01   1.84e-07   4.47e-01  85.7%
+Clock                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  2.67e-01   2.54e-01   2.27e-07   5.21e-01 100.0%
+                          51.2%      48.8%       0.0%

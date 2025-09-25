@@ -1,0 +1,1210 @@
+
+* cell parameterized_sync_reset_counter
+* pin count[7]
+* pin count[0]
+* pin count[6]
+* pin tc
+* pin enable
+* pin count[1]
+* pin count[4]
+* pin count[3]
+* pin count[5]
+* pin clk
+* pin sync_rst
+* pin count[2]
+.SUBCKT parameterized_sync_reset_counter 3 10 14 21 36 37 49 50 55 56 59 60
+* net 3 count[7]
+* net 10 count[0]
+* net 14 count[6]
+* net 21 tc
+* net 36 enable
+* net 37 count[1]
+* net 49 count[4]
+* net 50 count[3]
+* net 55 count[5]
+* net 56 clk
+* net 59 sync_rst
+* net 60 count[2]
+* cell instance $210 m0 *1 7.82,29.92
+X$210 2 6 10 1 2 1 sky130_fd_sc_hd__clkbuf_1
+* cell instance $214 m0 *1 11.96,29.92
+X$214 2 6 15 11 25 2 1 1 sky130_fd_sc_hd__or3b_1
+* cell instance $229 m0 *1 26.68,29.92
+X$229 2 29 11 28 2 1 1 sky130_fd_sc_hd__nand2_1
+* cell instance $232 m0 *1 29.44,29.92
+X$232 2 12 4 35 2 1 1 sky130_fd_sc_hd__nand2_1
+* cell instance $234 m0 *1 30.82,29.92
+X$234 1 13 17 18 2 2 1 sky130_fd_sc_hd__dfxtp_1
+* cell instance $237 m0 *1 38.18,29.92
+X$237 2 7 4 16 2 27 1 1 sky130_fd_sc_hd__o21ai_0
+* cell instance $238 m0 *1 40.02,29.92
+X$238 2 16 7 4 26 2 1 1 sky130_fd_sc_hd__or3_1
+* cell instance $249 m0 *1 45.54,29.92
+X$249 2 15 19 8 1 2 33 1 sky130_fd_sc_hd__a21oi_1
+* cell instance $251 m0 *1 47.38,29.92
+X$251 2 5 12 9 2 19 1 1 sky130_fd_sc_hd__o21ai_0
+* cell instance $252 m0 *1 49.22,29.92
+X$252 2 9 5 12 8 2 1 1 sky130_fd_sc_hd__or3_1
+* cell instance $254 m0 *1 51.52,29.92
+X$254 2 13 3 1 2 1 sky130_fd_sc_hd__clkbuf_1
+* cell instance $261 m0 *1 58.42,29.92
+X$261 2 9 14 1 2 1 sky130_fd_sc_hd__clkbuf_1
+* cell instance $265 r0 *1 1.38,29.92
+X$265 2 20 37 1 2 1 sky130_fd_sc_hd__clkbuf_1
+* cell instance $267 r0 *1 3.68,29.92
+X$267 2 36 2 1 11 1 sky130_fd_sc_hd__buf_4
+* cell instance $270 r0 *1 7.82,29.92
+X$270 2 22 21 1 2 1 sky130_fd_sc_hd__clkbuf_1
+* cell instance $273 r0 *1 10.58,29.92
+X$273 2 6 11 39 1 2 1 sky130_fd_sc_hd__nand2b_1
+* cell instance $274 r0 *1 12.88,29.92
+X$274 2 22 25 39 15 23 1 2 1 sky130_fd_sc_hd__o22ai_1
+* cell instance $277 r0 *1 15.64,29.92
+X$277 1 6 17 23 2 2 1 sky130_fd_sc_hd__dfxtp_1
+* cell instance $278 r0 *1 23,29.92
+X$278 1 40 29 6 20 2 2 1 sky130_fd_sc_hd__ha_1
+* cell instance $279 r0 *1 27.6,29.92
+X$279 2 24 13 29 34 1 2 22 1 sky130_fd_sc_hd__and4_1
+* cell instance $280 r0 *1 30.82,29.92
+X$280 2 35 24 43 13 15 2 18 1 1 sky130_fd_sc_hd__a311oi_1
+* cell instance $281 r0 *1 34.04,29.92
+X$281 2 13 24 38 1 2 43 1 sky130_fd_sc_hd__a21oi_1
+* cell instance $282 r0 *1 35.88,29.92
+X$282 2 30 44 45 1 2 1 sky130_fd_sc_hd__nor2_1
+* cell instance $285 r0 *1 38.64,29.92
+X$285 2 30 27 26 1 2 42 1 sky130_fd_sc_hd__a21oi_1
+* cell instance $286 r0 *1 40.48,29.92
+X$286 2 31 32 7 2 1 1 sky130_fd_sc_hd__nand2_1
+* cell instance $290 r0 *1 43.24,29.92
+X$290 1 9 41 33 2 2 1 sky130_fd_sc_hd__dfxtp_1
+* cell instance $292 r0 *1 51.52,29.92
+X$292 2 31 16 32 5 2 1 1 sky130_fd_sc_hd__nand3_1
+* cell instance $303 m0 *1 7.36,35.36
+X$303 1 20 17 46 2 2 1 sky130_fd_sc_hd__dfxtp_1
+* cell instance $305 m0 *1 15.18,35.36
+X$305 2 15 47 46 1 2 1 sky130_fd_sc_hd__nor2_1
+* cell instance $306 m0 *1 16.56,35.36
+X$306 1 48 17 2 2 1 sky130_fd_sc_hd__clkbuf_8
+* cell instance $307 m0 *1 21.62,35.36
+X$307 1 47 20 40 11 2 2 1 sky130_fd_sc_hd__mux2i_1
+* cell instance $309 m0 *1 25.76,35.36
+X$309 2 11 20 6 34 1 2 38 1 sky130_fd_sc_hd__and4_1
+* cell instance $311 m0 *1 29.44,35.36
+X$311 2 34 29 11 12 2 1 1 sky130_fd_sc_hd__nand3_1
+* cell instance $312 m0 *1 31.28,35.36
+X$312 1 30 51 24 13 15 2 2 1 sky130_fd_sc_hd__a31o_1
+* cell instance $313 m0 *1 34.5,35.36
+X$313 2 38 31 44 2 1 1 sky130_fd_sc_hd__xnor2_1
+* cell instance $314 m0 *1 37.72,35.36
+X$314 1 16 41 42 2 2 1 sky130_fd_sc_hd__dfxtp_1
+* cell instance $315 m0 *1 45.08,35.36
+X$315 2 9 32 16 31 1 2 24 1 sky130_fd_sc_hd__and4_1
+* cell instance $317 m0 *1 51.98,35.36
+X$317 2 32 49 1 2 1 sky130_fd_sc_hd__clkbuf_1
+* cell instance $322 m0 *1 57.04,35.36
+X$322 2 31 50 1 2 1 sky130_fd_sc_hd__clkbuf_1
+* cell instance $335 r0 *1 21.62,35.36
+X$335 2 15 52 57 1 2 1 sky130_fd_sc_hd__nor2_1
+* cell instance $336 r0 *1 23,35.36
+X$336 2 20 34 6 11 2 4 1 1 sky130_fd_sc_hd__nand4_1
+* cell instance $337 r0 *1 25.3,35.36
+X$337 2 28 34 2 52 1 1 sky130_fd_sc_hd__xor2_1
+* cell instance $339 r0 *1 28.98,35.36
+X$339 1 56 48 2 2 1 sky130_fd_sc_hd__clkbuf_8
+* cell instance $341 r0 *1 34.5,35.36
+X$341 1 31 41 45 2 2 1 sky130_fd_sc_hd__dfxtp_1
+* cell instance $345 r0 *1 43.24,35.36
+X$345 1 48 41 2 2 1 sky130_fd_sc_hd__clkbuf_8
+* cell instance $348 r0 *1 51.06,35.36
+X$348 2 16 55 1 2 1 sky130_fd_sc_hd__clkbuf_1
+* cell instance $362 m0 *1 21.16,40.8
+X$362 1 34 17 57 2 2 1 sky130_fd_sc_hd__dfxtp_2
+* cell instance $364 m0 *1 29.44,40.8
+X$364 1 29 51 34 11 2 2 1 sky130_fd_sc_hd__and3_1
+* cell instance $365 m0 *1 31.74,40.8
+X$365 2 29 31 34 11 2 53 1 1 sky130_fd_sc_hd__nand4_1
+* cell instance $367 m0 *1 37.72,40.8
+X$367 2 53 32 2 54 1 1 sky130_fd_sc_hd__xor2_1
+* cell instance $369 m0 *1 41.4,40.8
+X$369 2 15 54 58 1 2 1 sky130_fd_sc_hd__nor2_1
+* cell instance $373 m0 *1 43.24,40.8
+X$373 1 32 41 58 2 2 1 sky130_fd_sc_hd__dfxtp_1
+* cell instance $424 m0 *1 24.84,46.24
+X$424 2 59 2 1 15 1 sky130_fd_sc_hd__clkbuf_2
+* cell instance $531 r0 *1 33.12,57.12
+X$531 2 34 60 1 2 1 sky130_fd_sc_hd__clkbuf_1
+.ENDS parameterized_sync_reset_counter
+
+* cell sky130_fd_sc_hd__or3_1
+* pin VPB
+* pin A
+* pin B
+* pin C
+* pin X
+* pin VPWR
+* pin VGND
+* pin 
+.SUBCKT sky130_fd_sc_hd__or3_1 1 2 3 4 5 6 7 9
+* net 1 VPB
+* net 2 A
+* net 3 B
+* net 4 C
+* net 5 X
+* net 6 VPWR
+* net 7 VGND
+* device instance $1 r0 *1 0.48,1.695 pfet_01v8_hvt
+M$1 11 4 8 1 pfet_01v8_hvt L=150000U W=420000U AS=109200000000P AD=44100000000P
++ PS=1360000U PD=630000U
+* device instance $2 r0 *1 0.84,1.695 pfet_01v8_hvt
+M$2 10 3 11 1 pfet_01v8_hvt L=150000U W=420000U AS=44100000000P AD=69300000000P
++ PS=630000U PD=750000U
+* device instance $3 r0 *1 1.32,1.695 pfet_01v8_hvt
+M$3 6 2 10 1 pfet_01v8_hvt L=150000U W=420000U AS=69300000000P AD=148250000000P
++ PS=750000U PD=1340000U
+* device instance $4 r0 *1 1.81,1.985 pfet_01v8_hvt
+M$4 5 8 6 1 pfet_01v8_hvt L=150000U W=1000000U AS=148250000000P
++ AD=280000000000P PS=1340000U PD=2560000U
+* device instance $5 r0 *1 0.48,0.475 nfet_01v8
+M$5 7 4 8 9 nfet_01v8 L=150000U W=420000U AS=109200000000P AD=56700000000P
++ PS=1360000U PD=690000U
+* device instance $6 r0 *1 0.9,0.475 nfet_01v8
+M$6 8 3 7 9 nfet_01v8 L=150000U W=420000U AS=56700000000P AD=56700000000P
++ PS=690000U PD=690000U
+* device instance $7 r0 *1 1.32,0.475 nfet_01v8
+M$7 8 2 7 9 nfet_01v8 L=150000U W=420000U AS=101875000000P AD=56700000000P
++ PS=990000U PD=690000U
+* device instance $8 r0 *1 1.81,0.56 nfet_01v8
+M$8 5 8 7 9 nfet_01v8 L=150000U W=650000U AS=101875000000P AD=182000000000P
++ PS=990000U PD=1860000U
+.ENDS sky130_fd_sc_hd__or3_1
+
+* cell sky130_fd_sc_hd__o21ai_0
+* pin VPB
+* pin A1
+* pin A2
+* pin B1
+* pin VPWR
+* pin Y
+* pin VGND
+* pin 
+.SUBCKT sky130_fd_sc_hd__o21ai_0 1 2 3 4 5 6 8 9
+* net 1 VPB
+* net 2 A1
+* net 3 A2
+* net 4 B1
+* net 5 VPWR
+* net 6 Y
+* net 8 VGND
+* device instance $1 r0 *1 0.525,2.165 pfet_01v8_hvt
+M$1 10 2 5 1 pfet_01v8_hvt L=150000U W=640000U AS=169600000000P AD=76800000000P
++ PS=1810000U PD=880000U
+* device instance $2 r0 *1 0.915,2.165 pfet_01v8_hvt
+M$2 6 3 10 1 pfet_01v8_hvt L=150000U W=640000U AS=76800000000P AD=89600000000P
++ PS=880000U PD=920000U
+* device instance $3 r0 *1 1.345,2.165 pfet_01v8_hvt
+M$3 5 4 6 1 pfet_01v8_hvt L=150000U W=640000U AS=89600000000P AD=182400000000P
++ PS=920000U PD=1850000U
+* device instance $4 r0 *1 0.5,0.445 nfet_01v8
+M$4 8 2 7 9 nfet_01v8 L=150000U W=420000U AS=111300000000P AD=58800000000P
++ PS=1370000U PD=700000U
+* device instance $5 r0 *1 0.93,0.445 nfet_01v8
+M$5 7 3 8 9 nfet_01v8 L=150000U W=420000U AS=58800000000P AD=58800000000P
++ PS=700000U PD=700000U
+* device instance $6 r0 *1 1.36,0.445 nfet_01v8
+M$6 6 4 7 9 nfet_01v8 L=150000U W=420000U AS=58800000000P AD=111300000000P
++ PS=700000U PD=1370000U
+.ENDS sky130_fd_sc_hd__o21ai_0
+
+* cell sky130_fd_sc_hd__or3b_1
+* pin VPB
+* pin A
+* pin B
+* pin C_N
+* pin X
+* pin VPWR
+* pin VGND
+* pin 
+.SUBCKT sky130_fd_sc_hd__or3b_1 1 2 3 5 6 7 8 10
+* net 1 VPB
+* net 2 A
+* net 3 B
+* net 5 C_N
+* net 6 X
+* net 7 VPWR
+* net 8 VGND
+* device instance $1 r0 *1 1.41,1.695 pfet_01v8_hvt
+M$1 11 4 9 1 pfet_01v8_hvt L=150000U W=420000U AS=109200000000P AD=44100000000P
++ PS=1360000U PD=630000U
+* device instance $2 r0 *1 1.77,1.695 pfet_01v8_hvt
+M$2 12 3 11 1 pfet_01v8_hvt L=150000U W=420000U AS=44100000000P AD=68250000000P
++ PS=630000U PD=745000U
+* device instance $3 r0 *1 2.245,1.695 pfet_01v8_hvt
+M$3 7 2 12 1 pfet_01v8_hvt L=150000U W=420000U AS=68250000000P AD=148250000000P
++ PS=745000U PD=1340000U
+* device instance $4 r0 *1 2.735,1.985 pfet_01v8_hvt
+M$4 6 9 7 1 pfet_01v8_hvt L=150000U W=1000000U AS=148250000000P
++ AD=275000000000P PS=1340000U PD=2550000U
+* device instance $5 r0 *1 0.47,1.695 pfet_01v8_hvt
+M$5 4 5 7 1 pfet_01v8_hvt L=150000U W=420000U AS=109200000000P AD=109200000000P
++ PS=1360000U PD=1360000U
+* device instance $6 r0 *1 1.41,0.475 nfet_01v8
+M$6 8 4 9 10 nfet_01v8 L=150000U W=420000U AS=109200000000P AD=56700000000P
++ PS=1360000U PD=690000U
+* device instance $7 r0 *1 1.83,0.475 nfet_01v8
+M$7 9 3 8 10 nfet_01v8 L=150000U W=420000U AS=56700000000P AD=56700000000P
++ PS=690000U PD=690000U
+* device instance $8 r0 *1 2.25,0.475 nfet_01v8
+M$8 9 2 8 10 nfet_01v8 L=150000U W=420000U AS=100250000000P AD=56700000000P
++ PS=985000U PD=690000U
+* device instance $9 r0 *1 2.735,0.56 nfet_01v8
+M$9 6 9 8 10 nfet_01v8 L=150000U W=650000U AS=100250000000P AD=178750000000P
++ PS=985000U PD=1850000U
+* device instance $10 r0 *1 0.47,0.675 nfet_01v8
+M$10 4 5 8 10 nfet_01v8 L=150000U W=420000U AS=109200000000P AD=109200000000P
++ PS=1360000U PD=1360000U
+.ENDS sky130_fd_sc_hd__or3b_1
+
+* cell sky130_fd_sc_hd__dfxtp_2
+* pin VGND
+* pin Q
+* pin CLK
+* pin D
+* pin VPWR
+* pin VPB
+* pin 
+.SUBCKT sky130_fd_sc_hd__dfxtp_2 1 9 12 13 14 15 18
+* net 1 VGND
+* net 9 Q
+* net 12 CLK
+* net 13 D
+* net 14 VPWR
+* net 15 VPB
+* device instance $1 r0 *1 6.42,1.985 pfet_01v8_hvt
+M$1 14 7 8 15 pfet_01v8_hvt L=150000U W=1000000U AS=270000000000P
++ AD=135000000000P PS=2540000U PD=1270000U
+* device instance $2 r0 *1 6.84,1.985 pfet_01v8_hvt
+M$2 9 8 14 15 pfet_01v8_hvt L=150000U W=2000000U AS=270000000000P
++ AD=395000000000P PS=2540000U PD=3790000U
+* device instance $4 r0 *1 1.83,2.275 pfet_01v8_hvt
+M$4 4 13 14 15 pfet_01v8_hvt L=150000U W=420000U AS=109200000000P
++ AD=57750000000P PS=1360000U PD=695000U
+* device instance $5 r0 *1 2.255,2.275 pfet_01v8_hvt
+M$5 5 3 4 15 pfet_01v8_hvt L=150000U W=420000U AS=57750000000P AD=68250000000P
++ PS=695000U PD=745000U
+* device instance $6 r0 *1 2.73,2.275 pfet_01v8_hvt
+M$6 16 2 5 15 pfet_01v8_hvt L=150000U W=420000U AS=68250000000P AD=76650000000P
++ PS=745000U PD=785000U
+* device instance $7 r0 *1 3.245,2.275 pfet_01v8_hvt
+M$7 16 6 14 15 pfet_01v8_hvt L=150000U W=420000U AS=178875000000P
++ AD=76650000000P PS=1260000U PD=785000U
+* device instance $8 r0 *1 3.905,2.11 pfet_01v8_hvt
+M$8 6 5 14 15 pfet_01v8_hvt L=150000U W=750000U AS=178875000000P
++ AD=109500000000P PS=1260000U PD=1075000U
+* device instance $9 r0 *1 4.38,2.275 pfet_01v8_hvt
+M$9 7 2 6 15 pfet_01v8_hvt L=150000U W=420000U AS=109500000000P AD=56700000000P
++ PS=1075000U PD=690000U
+* device instance $10 r0 *1 4.8,2.275 pfet_01v8_hvt
+M$10 17 3 7 15 pfet_01v8_hvt L=150000U W=420000U AS=56700000000P
++ AD=88200000000P PS=690000U PD=840000U
+* device instance $11 r0 *1 5.37,2.275 pfet_01v8_hvt
+M$11 14 8 17 15 pfet_01v8_hvt L=150000U W=420000U AS=88200000000P
++ AD=111300000000P PS=840000U PD=1370000U
+* device instance $12 r0 *1 0.47,2.135 pfet_01v8_hvt
+M$12 14 12 2 15 pfet_01v8_hvt L=150000U W=640000U AS=166400000000P
++ AD=86400000000P PS=1800000U PD=910000U
+* device instance $13 r0 *1 0.89,2.135 pfet_01v8_hvt
+M$13 3 2 14 15 pfet_01v8_hvt L=150000U W=640000U AS=86400000000P
++ AD=166400000000P PS=910000U PD=1800000U
+* device instance $14 r0 *1 6.43,0.56 nfet_01v8
+M$14 1 7 8 18 nfet_01v8 L=150000U W=650000U AS=169000000000P AD=87750000000P
++ PS=1820000U PD=920000U
+* device instance $15 r0 *1 6.85,0.56 nfet_01v8
+M$15 9 8 1 18 nfet_01v8 L=150000U W=1300000U AS=175500000000P AD=256750000000P
++ PS=1840000U PD=2740000U
+* device instance $17 r0 *1 0.47,0.445 nfet_01v8
+M$17 1 12 2 18 nfet_01v8 L=150000U W=420000U AS=109200000000P AD=56700000000P
++ PS=1360000U PD=690000U
+* device instance $18 r0 *1 0.89,0.445 nfet_01v8
+M$18 3 2 1 18 nfet_01v8 L=150000U W=420000U AS=56700000000P AD=109200000000P
++ PS=690000U PD=1360000U
+* device instance $19 r0 *1 2.39,0.415 nfet_01v8
+M$19 5 2 4 18 nfet_01v8 L=150000U W=360000U AS=81300000000P AD=62100000000P
++ PS=830000U PD=705000U
+* device instance $20 r0 *1 2.885,0.415 nfet_01v8
+M$20 10 3 5 18 nfet_01v8 L=150000U W=360000U AS=62100000000P AD=69600000000P
++ PS=705000U PD=765000U
+* device instance $21 r0 *1 4.48,0.415 nfet_01v8
+M$21 7 3 6 18 nfet_01v8 L=150000U W=360000U AS=98900000000P AD=68400000000P
++ PS=995000U PD=740000U
+* device instance $22 r0 *1 5.01,0.415 nfet_01v8
+M$22 11 2 7 18 nfet_01v8 L=150000U W=360000U AS=68400000000P AD=66000000000P
++ PS=740000U PD=745000U
+* device instance $23 r0 *1 1.83,0.445 nfet_01v8
+M$23 4 13 1 18 nfet_01v8 L=150000U W=420000U AS=109200000000P AD=81300000000P
++ PS=1360000U PD=830000U
+* device instance $24 r0 *1 3.38,0.445 nfet_01v8
+M$24 1 6 10 18 nfet_01v8 L=150000U W=420000U AS=69600000000P AD=120950000000P
++ PS=765000U PD=1085000U
+* device instance $25 r0 *1 5.485,0.445 nfet_01v8
+M$25 1 8 11 18 nfet_01v8 L=150000U W=420000U AS=66000000000P AD=109200000000P
++ PS=745000U PD=1360000U
+* device instance $26 r0 *1 3.975,0.555 nfet_01v8
+M$26 6 5 1 18 nfet_01v8 L=150000U W=640000U AS=120950000000P AD=98900000000P
++ PS=1085000U PD=995000U
+.ENDS sky130_fd_sc_hd__dfxtp_2
+
+* cell sky130_fd_sc_hd__and3_1
+* pin VGND
+* pin B
+* pin X
+* pin A
+* pin C
+* pin VPWR
+* pin VPB
+* pin 
+.SUBCKT sky130_fd_sc_hd__and3_1 1 2 3 6 7 9 10 11
+* net 1 VGND
+* net 2 B
+* net 3 X
+* net 6 A
+* net 7 C
+* net 9 VPWR
+* net 10 VPB
+* device instance $1 r0 *1 0.47,1.71 pfet_01v8_hvt
+M$1 9 6 8 10 pfet_01v8_hvt L=150000U W=420000U AS=109200000000P AD=56700000000P
++ PS=1360000U PD=690000U
+* device instance $2 r0 *1 0.89,1.71 pfet_01v8_hvt
+M$2 8 2 9 10 pfet_01v8_hvt L=150000U W=420000U AS=56700000000P AD=66150000000P
++ PS=690000U PD=735000U
+* device instance $3 r0 *1 1.355,1.71 pfet_01v8_hvt
+M$3 8 7 9 10 pfet_01v8_hvt L=150000U W=420000U AS=142225000000P AD=66150000000P
++ PS=1335000U PD=735000U
+* device instance $4 r0 *1 1.83,1.985 pfet_01v8_hvt
+M$4 3 8 9 10 pfet_01v8_hvt L=150000U W=1000000U AS=142225000000P
++ AD=260000000000P PS=1335000U PD=2520000U
+* device instance $5 r0 *1 0.47,0.445 nfet_01v8
+M$5 5 6 8 11 nfet_01v8 L=150000U W=420000U AS=109200000000P AD=44100000000P
++ PS=1360000U PD=630000U
+* device instance $6 r0 *1 0.83,0.445 nfet_01v8
+M$6 4 2 5 11 nfet_01v8 L=150000U W=420000U AS=44100000000P AD=44100000000P
++ PS=630000U PD=630000U
+* device instance $7 r0 *1 1.19,0.445 nfet_01v8
+M$7 1 7 4 11 nfet_01v8 L=150000U W=420000U AS=44100000000P AD=131650000000P
++ PS=630000U PD=1140000U
+* device instance $8 r0 *1 1.83,0.56 nfet_01v8
+M$8 3 8 1 11 nfet_01v8 L=150000U W=650000U AS=131650000000P AD=169000000000P
++ PS=1140000U PD=1820000U
+.ENDS sky130_fd_sc_hd__and3_1
+
+* cell sky130_fd_sc_hd__clkbuf_2
+* pin VPB
+* pin A
+* pin VPWR
+* pin VGND
+* pin X
+* pin 
+.SUBCKT sky130_fd_sc_hd__clkbuf_2 1 2 3 4 6 7
+* net 1 VPB
+* net 2 A
+* net 3 VPWR
+* net 4 VGND
+* net 6 X
+* device instance $1 r0 *1 0.475,1.985 pfet_01v8_hvt
+M$1 3 2 5 1 pfet_01v8_hvt L=150000U W=1000000U AS=265000000000P
++ AD=162500000000P PS=2530000U PD=1325000U
+* device instance $2 r0 *1 0.95,1.985 pfet_01v8_hvt
+M$2 6 5 3 1 pfet_01v8_hvt L=150000U W=2000000U AS=297500000000P
++ AD=395000000000P PS=2595000U PD=3790000U
+* device instance $4 r0 *1 0.475,0.445 nfet_01v8
+M$4 4 2 5 7 nfet_01v8 L=150000U W=420000U AS=111300000000P AD=68250000000P
++ PS=1370000U PD=745000U
+* device instance $5 r0 *1 0.95,0.445 nfet_01v8
+M$5 6 5 4 7 nfet_01v8 L=150000U W=840000U AS=124950000000P AD=165900000000P
++ PS=1435000U PD=2050000U
+.ENDS sky130_fd_sc_hd__clkbuf_2
+
+* cell sky130_fd_sc_hd__xor2_1
+* pin VPB
+* pin B
+* pin A
+* pin VPWR
+* pin X
+* pin VGND
+* pin 
+.SUBCKT sky130_fd_sc_hd__xor2_1 1 2 3 6 7 8 9
+* net 1 VPB
+* net 2 B
+* net 3 A
+* net 6 VPWR
+* net 7 X
+* net 8 VGND
+* device instance $1 r0 *1 2.71,1.985 pfet_01v8_hvt
+M$1 7 4 5 1 pfet_01v8_hvt L=150000U W=1000000U AS=260000000000P
++ AD=300000000000P PS=2520000U PD=2600000U
+* device instance $2 r0 *1 0.51,1.985 pfet_01v8_hvt
+M$2 10 2 4 1 pfet_01v8_hvt L=150000U W=1000000U AS=260000000000P
++ AD=135000000000P PS=2520000U PD=1270000U
+* device instance $3 r0 *1 0.93,1.985 pfet_01v8_hvt
+M$3 6 3 10 1 pfet_01v8_hvt L=150000U W=1000000U AS=135000000000P
++ AD=135000000000P PS=1270000U PD=1270000U
+* device instance $4 r0 *1 1.35,1.985 pfet_01v8_hvt
+M$4 5 3 6 1 pfet_01v8_hvt L=150000U W=1000000U AS=135000000000P
++ AD=135000000000P PS=1270000U PD=1270000U
+* device instance $5 r0 *1 1.77,1.985 pfet_01v8_hvt
+M$5 6 2 5 1 pfet_01v8_hvt L=150000U W=1000000U AS=135000000000P
++ AD=260000000000P PS=1270000U PD=2520000U
+* device instance $6 r0 *1 0.51,0.56 nfet_01v8
+M$6 4 2 8 9 nfet_01v8 L=150000U W=650000U AS=169000000000P AD=87750000000P
++ PS=1820000U PD=920000U
+* device instance $7 r0 *1 0.93,0.56 nfet_01v8
+M$7 8 3 4 9 nfet_01v8 L=150000U W=650000U AS=87750000000P AD=87750000000P
++ PS=920000U PD=920000U
+* device instance $8 r0 *1 1.35,0.56 nfet_01v8
+M$8 11 3 8 9 nfet_01v8 L=150000U W=650000U AS=87750000000P AD=87750000000P
++ PS=920000U PD=920000U
+* device instance $9 r0 *1 1.77,0.56 nfet_01v8
+M$9 7 2 11 9 nfet_01v8 L=150000U W=650000U AS=87750000000P AD=250250000000P
++ PS=920000U PD=1420000U
+* device instance $10 r0 *1 2.69,0.56 nfet_01v8
+M$10 8 4 7 9 nfet_01v8 L=150000U W=650000U AS=250250000000P AD=208000000000P
++ PS=1420000U PD=1940000U
+.ENDS sky130_fd_sc_hd__xor2_1
+
+* cell sky130_fd_sc_hd__clkbuf_1
+* pin VPB
+* pin A
+* pin X
+* pin VGND
+* pin VPWR
+* pin 
+.SUBCKT sky130_fd_sc_hd__clkbuf_1 1 3 4 5 6 7
+* net 1 VPB
+* net 3 A
+* net 4 X
+* net 5 VGND
+* net 6 VPWR
+* device instance $1 r0 *1 0.47,2.09 pfet_01v8_hvt
+M$1 6 2 4 1 pfet_01v8_hvt L=150000U W=790000U AS=205400000000P AD=114550000000P
++ PS=2100000U PD=1080000U
+* device instance $2 r0 *1 0.91,2.09 pfet_01v8_hvt
+M$2 2 3 6 1 pfet_01v8_hvt L=150000U W=790000U AS=114550000000P AD=205400000000P
++ PS=1080000U PD=2100000U
+* device instance $3 r0 *1 0.47,0.495 nfet_01v8
+M$3 5 2 4 7 nfet_01v8 L=150000U W=520000U AS=135200000000P AD=75400000000P
++ PS=1560000U PD=810000U
+* device instance $4 r0 *1 0.91,0.495 nfet_01v8
+M$4 2 3 5 7 nfet_01v8 L=150000U W=520000U AS=75400000000P AD=135200000000P
++ PS=810000U PD=1560000U
+.ENDS sky130_fd_sc_hd__clkbuf_1
+
+* cell sky130_fd_sc_hd__dfxtp_1
+* pin VGND
+* pin Q
+* pin CLK
+* pin D
+* pin VPWR
+* pin VPB
+* pin 
+.SUBCKT sky130_fd_sc_hd__dfxtp_1 1 9 12 13 14 15 18
+* net 1 VGND
+* net 9 Q
+* net 12 CLK
+* net 13 D
+* net 14 VPWR
+* net 15 VPB
+* device instance $1 r0 *1 1.83,2.275 pfet_01v8_hvt
+M$1 4 13 14 15 pfet_01v8_hvt L=150000U W=420000U AS=109200000000P
++ AD=57750000000P PS=1360000U PD=695000U
+* device instance $2 r0 *1 2.255,2.275 pfet_01v8_hvt
+M$2 5 3 4 15 pfet_01v8_hvt L=150000U W=420000U AS=57750000000P AD=68250000000P
++ PS=695000U PD=745000U
+* device instance $3 r0 *1 2.73,2.275 pfet_01v8_hvt
+M$3 16 2 5 15 pfet_01v8_hvt L=150000U W=420000U AS=68250000000P AD=76650000000P
++ PS=745000U PD=785000U
+* device instance $4 r0 *1 3.245,2.275 pfet_01v8_hvt
+M$4 16 6 14 15 pfet_01v8_hvt L=150000U W=420000U AS=178875000000P
++ AD=76650000000P PS=1260000U PD=785000U
+* device instance $5 r0 *1 3.905,2.11 pfet_01v8_hvt
+M$5 6 5 14 15 pfet_01v8_hvt L=150000U W=750000U AS=178875000000P
++ AD=109500000000P PS=1260000U PD=1075000U
+* device instance $6 r0 *1 4.38,2.275 pfet_01v8_hvt
+M$6 7 2 6 15 pfet_01v8_hvt L=150000U W=420000U AS=109500000000P AD=56700000000P
++ PS=1075000U PD=690000U
+* device instance $7 r0 *1 4.8,2.275 pfet_01v8_hvt
+M$7 17 3 7 15 pfet_01v8_hvt L=150000U W=420000U AS=56700000000P AD=88200000000P
++ PS=690000U PD=840000U
+* device instance $8 r0 *1 5.37,2.275 pfet_01v8_hvt
+M$8 14 8 17 15 pfet_01v8_hvt L=150000U W=420000U AS=88200000000P
++ AD=111300000000P PS=840000U PD=1370000U
+* device instance $9 r0 *1 0.47,2.135 pfet_01v8_hvt
+M$9 14 12 2 15 pfet_01v8_hvt L=150000U W=640000U AS=166400000000P
++ AD=86400000000P PS=1800000U PD=910000U
+* device instance $10 r0 *1 0.89,2.135 pfet_01v8_hvt
+M$10 3 2 14 15 pfet_01v8_hvt L=150000U W=640000U AS=86400000000P
++ AD=166400000000P PS=910000U PD=1800000U
+* device instance $11 r0 *1 6.42,1.985 pfet_01v8_hvt
+M$11 14 7 8 15 pfet_01v8_hvt L=150000U W=1000000U AS=270000000000P
++ AD=135000000000P PS=2540000U PD=1270000U
+* device instance $12 r0 *1 6.84,1.985 pfet_01v8_hvt
+M$12 9 8 14 15 pfet_01v8_hvt L=150000U W=1000000U AS=135000000000P
++ AD=260000000000P PS=1270000U PD=2520000U
+* device instance $13 r0 *1 6.43,0.56 nfet_01v8
+M$13 1 7 8 18 nfet_01v8 L=150000U W=650000U AS=169000000000P AD=87750000000P
++ PS=1820000U PD=920000U
+* device instance $14 r0 *1 6.85,0.56 nfet_01v8
+M$14 9 8 1 18 nfet_01v8 L=150000U W=650000U AS=87750000000P AD=169000000000P
++ PS=920000U PD=1820000U
+* device instance $15 r0 *1 0.47,0.445 nfet_01v8
+M$15 1 12 2 18 nfet_01v8 L=150000U W=420000U AS=109200000000P AD=56700000000P
++ PS=1360000U PD=690000U
+* device instance $16 r0 *1 0.89,0.445 nfet_01v8
+M$16 3 2 1 18 nfet_01v8 L=150000U W=420000U AS=56700000000P AD=109200000000P
++ PS=690000U PD=1360000U
+* device instance $17 r0 *1 2.39,0.415 nfet_01v8
+M$17 5 2 4 18 nfet_01v8 L=150000U W=360000U AS=81300000000P AD=62100000000P
++ PS=830000U PD=705000U
+* device instance $18 r0 *1 2.885,0.415 nfet_01v8
+M$18 11 3 5 18 nfet_01v8 L=150000U W=360000U AS=62100000000P AD=69600000000P
++ PS=705000U PD=765000U
+* device instance $19 r0 *1 4.48,0.415 nfet_01v8
+M$19 7 3 6 18 nfet_01v8 L=150000U W=360000U AS=98900000000P AD=68400000000P
++ PS=995000U PD=740000U
+* device instance $20 r0 *1 5.01,0.415 nfet_01v8
+M$20 10 2 7 18 nfet_01v8 L=150000U W=360000U AS=68400000000P AD=66000000000P
++ PS=740000U PD=745000U
+* device instance $21 r0 *1 1.83,0.445 nfet_01v8
+M$21 4 13 1 18 nfet_01v8 L=150000U W=420000U AS=109200000000P AD=81300000000P
++ PS=1360000U PD=830000U
+* device instance $22 r0 *1 3.38,0.445 nfet_01v8
+M$22 1 6 11 18 nfet_01v8 L=150000U W=420000U AS=69600000000P AD=120950000000P
++ PS=765000U PD=1085000U
+* device instance $23 r0 *1 5.485,0.445 nfet_01v8
+M$23 1 8 10 18 nfet_01v8 L=150000U W=420000U AS=66000000000P AD=109200000000P
++ PS=745000U PD=1360000U
+* device instance $24 r0 *1 3.975,0.555 nfet_01v8
+M$24 6 5 1 18 nfet_01v8 L=150000U W=640000U AS=120950000000P AD=98900000000P
++ PS=1085000U PD=995000U
+.ENDS sky130_fd_sc_hd__dfxtp_1
+
+* cell sky130_fd_sc_hd__clkbuf_8
+* pin VGND
+* pin A
+* pin X
+* pin VPWR
+* pin VPB
+* pin 
+.SUBCKT sky130_fd_sc_hd__clkbuf_8 1 2 4 5 6 7
+* net 1 VGND
+* net 2 A
+* net 4 X
+* net 5 VPWR
+* net 6 VPB
+* device instance $1 r0 *1 0.475,1.985 pfet_01v8_hvt
+M$1 3 2 5 6 pfet_01v8_hvt L=150000U W=2000000U AS=405000000000P
++ AD=280000000000P PS=3810000U PD=2560000U
+* device instance $3 r0 *1 1.335,1.985 pfet_01v8_hvt
+M$3 4 3 5 6 pfet_01v8_hvt L=150000U W=8000000U AS=1.12e+12P AD=1.245e+12P
++ PS=10240000U PD=11490000U
+* device instance $11 r0 *1 0.475,0.445 nfet_01v8
+M$11 3 2 1 7 nfet_01v8 L=150000U W=840000U AS=170100000000P AD=117600000000P
++ PS=2070000U PD=1400000U
+* device instance $13 r0 *1 1.335,0.445 nfet_01v8
+M$13 4 3 1 7 nfet_01v8 L=150000U W=3360000U AS=470400000000P AD=525000000000P
++ PS=5600000U PD=6280000U
+.ENDS sky130_fd_sc_hd__clkbuf_8
+
+* cell sky130_fd_sc_hd__ha_1
+* pin VGND
+* pin SUM
+* pin COUT
+* pin A
+* pin B
+* pin VPWR
+* pin VPB
+* pin 
+.SUBCKT sky130_fd_sc_hd__ha_1 1 2 5 8 9 10 11 13
+* net 1 VGND
+* net 2 SUM
+* net 5 COUT
+* net 8 A
+* net 9 B
+* net 10 VPWR
+* net 11 VPB
+* device instance $1 r0 *1 0.47,1.985 pfet_01v8_hvt
+M$1 10 3 2 11 pfet_01v8_hvt L=150000U W=1000000U AS=260000000000P
++ AD=236050000000P PS=2520000U PD=1765000U
+* device instance $2 r0 *1 1.385,2.275 pfet_01v8_hvt
+M$2 3 7 10 11 pfet_01v8_hvt L=150000U W=420000U AS=236050000000P
++ AD=56700000000P PS=1765000U PD=690000U
+* device instance $3 r0 *1 1.805,2.275 pfet_01v8_hvt
+M$3 12 9 3 11 pfet_01v8_hvt L=150000U W=420000U AS=56700000000P AD=84000000000P
++ PS=690000U PD=820000U
+* device instance $4 r0 *1 2.355,2.275 pfet_01v8_hvt
+M$4 10 8 12 11 pfet_01v8_hvt L=150000U W=420000U AS=84000000000P
++ AD=149100000000P PS=820000U PD=1130000U
+* device instance $5 r0 *1 3.215,2.275 pfet_01v8_hvt
+M$5 7 9 10 11 pfet_01v8_hvt L=150000U W=420000U AS=149100000000P
++ AD=60900000000P PS=1130000U PD=710000U
+* device instance $6 r0 *1 3.655,2.275 pfet_01v8_hvt
+M$6 7 8 10 11 pfet_01v8_hvt L=150000U W=420000U AS=140750000000P
++ AD=60900000000P PS=1325000U PD=710000U
+* device instance $7 r0 *1 4.13,1.985 pfet_01v8_hvt
+M$7 5 7 10 11 pfet_01v8_hvt L=150000U W=1000000U AS=140750000000P
++ AD=260000000000P PS=1325000U PD=2520000U
+* device instance $8 r0 *1 3.295,0.445 nfet_01v8
+M$8 6 9 7 13 nfet_01v8 L=150000U W=420000U AS=109200000000P AD=44100000000P
++ PS=1360000U PD=630000U
+* device instance $9 r0 *1 3.655,0.445 nfet_01v8
+M$9 1 8 6 13 nfet_01v8 L=150000U W=420000U AS=44100000000P AD=97000000000P
++ PS=630000U PD=975000U
+* device instance $10 r0 *1 4.13,0.56 nfet_01v8
+M$10 5 7 1 13 nfet_01v8 L=150000U W=650000U AS=97000000000P AD=169000000000P
++ PS=975000U PD=1820000U
+* device instance $11 r0 *1 1.41,0.445 nfet_01v8
+M$11 4 7 3 13 nfet_01v8 L=150000U W=420000U AS=109200000000P AD=56700000000P
++ PS=1360000U PD=690000U
+* device instance $12 r0 *1 1.83,0.445 nfet_01v8
+M$12 1 9 4 13 nfet_01v8 L=150000U W=420000U AS=56700000000P AD=56700000000P
++ PS=690000U PD=690000U
+* device instance $13 r0 *1 2.25,0.445 nfet_01v8
+M$13 4 8 1 13 nfet_01v8 L=150000U W=420000U AS=56700000000P AD=109200000000P
++ PS=690000U PD=1360000U
+* device instance $14 r0 *1 0.47,0.56 nfet_01v8
+M$14 1 3 2 13 nfet_01v8 L=150000U W=650000U AS=169000000000P AD=169000000000P
++ PS=1820000U PD=1820000U
+.ENDS sky130_fd_sc_hd__ha_1
+
+* cell sky130_fd_sc_hd__a311oi_1
+* pin VPB
+* pin A3
+* pin A2
+* pin B1
+* pin A1
+* pin C1
+* pin VPWR
+* pin Y
+* pin VGND
+* pin 
+.SUBCKT sky130_fd_sc_hd__a311oi_1 1 2 3 4 5 6 7 9 10 11
+* net 1 VPB
+* net 2 A3
+* net 3 A2
+* net 4 B1
+* net 5 A1
+* net 6 C1
+* net 7 VPWR
+* net 9 Y
+* net 10 VGND
+* device instance $1 r0 *1 0.47,1.985 pfet_01v8_hvt
+M$1 8 2 7 1 pfet_01v8_hvt L=150000U W=1000000U AS=260000000000P
++ AD=137500000000P PS=2520000U PD=1275000U
+* device instance $2 r0 *1 0.895,1.985 pfet_01v8_hvt
+M$2 7 3 8 1 pfet_01v8_hvt L=150000U W=1000000U AS=137500000000P
++ AD=140000000000P PS=1275000U PD=1280000U
+* device instance $3 r0 *1 1.325,1.985 pfet_01v8_hvt
+M$3 8 5 7 1 pfet_01v8_hvt L=150000U W=1000000U AS=140000000000P
++ AD=165000000000P PS=1280000U PD=1330000U
+* device instance $4 r0 *1 1.805,1.985 pfet_01v8_hvt
+M$4 12 4 8 1 pfet_01v8_hvt L=150000U W=1000000U AS=165000000000P
++ AD=172500000000P PS=1330000U PD=1345000U
+* device instance $5 r0 *1 2.3,1.985 pfet_01v8_hvt
+M$5 9 6 12 1 pfet_01v8_hvt L=150000U W=1000000U AS=172500000000P
++ AD=260000000000P PS=1345000U PD=2520000U
+* device instance $6 r0 *1 0.47,0.56 nfet_01v8
+M$6 14 2 10 11 nfet_01v8 L=150000U W=650000U AS=169000000000P AD=89375000000P
++ PS=1820000U PD=925000U
+* device instance $7 r0 *1 0.895,0.56 nfet_01v8
+M$7 13 3 14 11 nfet_01v8 L=150000U W=650000U AS=89375000000P AD=91000000000P
++ PS=925000U PD=930000U
+* device instance $8 r0 *1 1.325,0.56 nfet_01v8
+M$8 9 5 13 11 nfet_01v8 L=150000U W=650000U AS=91000000000P AD=115375000000P
++ PS=930000U PD=1005000U
+* device instance $9 r0 *1 1.83,0.56 nfet_01v8
+M$9 10 4 9 11 nfet_01v8 L=150000U W=650000U AS=115375000000P AD=112125000000P
++ PS=1005000U PD=995000U
+* device instance $10 r0 *1 2.325,0.56 nfet_01v8
+M$10 9 6 10 11 nfet_01v8 L=150000U W=650000U AS=112125000000P AD=169000000000P
++ PS=995000U PD=1820000U
+.ENDS sky130_fd_sc_hd__a311oi_1
+
+* cell sky130_fd_sc_hd__nand3_1
+* pin VPB
+* pin A
+* pin B
+* pin C
+* pin Y
+* pin VPWR
+* pin VGND
+* pin 
+.SUBCKT sky130_fd_sc_hd__nand3_1 1 2 3 4 5 6 7 8
+* net 1 VPB
+* net 2 A
+* net 3 B
+* net 4 C
+* net 5 Y
+* net 6 VPWR
+* net 7 VGND
+* device instance $1 r0 *1 0.47,1.985 pfet_01v8_hvt
+M$1 5 4 6 1 pfet_01v8_hvt L=150000U W=1000000U AS=260000000000P
++ AD=135000000000P PS=2520000U PD=1270000U
+* device instance $2 r0 *1 0.89,1.985 pfet_01v8_hvt
+M$2 6 3 5 1 pfet_01v8_hvt L=150000U W=1000000U AS=135000000000P
++ AD=165000000000P PS=1270000U PD=1330000U
+* device instance $3 r0 *1 1.37,1.985 pfet_01v8_hvt
+M$3 5 2 6 1 pfet_01v8_hvt L=150000U W=1000000U AS=165000000000P
++ AD=260000000000P PS=1330000U PD=2520000U
+* device instance $4 r0 *1 0.47,0.56 nfet_01v8
+M$4 10 4 7 8 nfet_01v8 L=150000U W=650000U AS=169000000000P AD=87750000000P
++ PS=1820000U PD=920000U
+* device instance $5 r0 *1 0.89,0.56 nfet_01v8
+M$5 9 3 10 8 nfet_01v8 L=150000U W=650000U AS=87750000000P AD=107250000000P
++ PS=920000U PD=980000U
+* device instance $6 r0 *1 1.37,0.56 nfet_01v8
+M$6 5 2 9 8 nfet_01v8 L=150000U W=650000U AS=107250000000P AD=169000000000P
++ PS=980000U PD=1820000U
+.ENDS sky130_fd_sc_hd__nand3_1
+
+* cell sky130_fd_sc_hd__a21oi_1
+* pin VPB
+* pin B1
+* pin A1
+* pin A2
+* pin VGND
+* pin VPWR
+* pin Y
+* pin 
+.SUBCKT sky130_fd_sc_hd__a21oi_1 1 2 3 4 5 7 8 9
+* net 1 VPB
+* net 2 B1
+* net 3 A1
+* net 4 A2
+* net 5 VGND
+* net 7 VPWR
+* net 8 Y
+* device instance $1 r0 *1 0.49,1.985 pfet_01v8_hvt
+M$1 6 2 8 1 pfet_01v8_hvt L=150000U W=1000000U AS=265000000000P
++ AD=140000000000P PS=2530000U PD=1280000U
+* device instance $2 r0 *1 0.92,1.985 pfet_01v8_hvt
+M$2 7 3 6 1 pfet_01v8_hvt L=150000U W=1000000U AS=140000000000P
++ AD=147500000000P PS=1280000U PD=1295000U
+* device instance $3 r0 *1 1.365,1.985 pfet_01v8_hvt
+M$3 6 4 7 1 pfet_01v8_hvt L=150000U W=1000000U AS=147500000000P
++ AD=265000000000P PS=1295000U PD=2530000U
+* device instance $4 r0 *1 0.49,0.56 nfet_01v8
+M$4 8 2 5 9 nfet_01v8 L=150000U W=650000U AS=172250000000P AD=91000000000P
++ PS=1830000U PD=930000U
+* device instance $5 r0 *1 0.92,0.56 nfet_01v8
+M$5 10 3 8 9 nfet_01v8 L=150000U W=650000U AS=91000000000P AD=95875000000P
++ PS=930000U PD=945000U
+* device instance $6 r0 *1 1.365,0.56 nfet_01v8
+M$6 5 4 10 9 nfet_01v8 L=150000U W=650000U AS=95875000000P AD=172250000000P
++ PS=945000U PD=1830000U
+.ENDS sky130_fd_sc_hd__a21oi_1
+
+* cell sky130_fd_sc_hd__nand4_1
+* pin VPB
+* pin C
+* pin A
+* pin B
+* pin D
+* pin VPWR
+* pin Y
+* pin VGND
+* pin 
+.SUBCKT sky130_fd_sc_hd__nand4_1 1 2 3 4 5 6 7 8 9
+* net 1 VPB
+* net 2 C
+* net 3 A
+* net 4 B
+* net 5 D
+* net 6 VPWR
+* net 7 Y
+* net 8 VGND
+* device instance $1 r0 *1 0.47,1.985 pfet_01v8_hvt
+M$1 7 5 6 1 pfet_01v8_hvt L=150000U W=1000000U AS=260000000000P
++ AD=135000000000P PS=2520000U PD=1270000U
+* device instance $2 r0 *1 0.89,1.985 pfet_01v8_hvt
+M$2 6 2 7 1 pfet_01v8_hvt L=150000U W=1000000U AS=135000000000P
++ AD=135000000000P PS=1270000U PD=1270000U
+* device instance $3 r0 *1 1.31,1.985 pfet_01v8_hvt
+M$3 7 4 6 1 pfet_01v8_hvt L=150000U W=1000000U AS=135000000000P
++ AD=165000000000P PS=1270000U PD=1330000U
+* device instance $4 r0 *1 1.79,1.985 pfet_01v8_hvt
+M$4 6 3 7 1 pfet_01v8_hvt L=150000U W=1000000U AS=165000000000P
++ AD=300000000000P PS=1330000U PD=2600000U
+* device instance $5 r0 *1 0.47,0.56 nfet_01v8
+M$5 12 5 8 9 nfet_01v8 L=150000U W=650000U AS=169000000000P AD=87750000000P
++ PS=1820000U PD=920000U
+* device instance $6 r0 *1 0.89,0.56 nfet_01v8
+M$6 11 2 12 9 nfet_01v8 L=150000U W=650000U AS=87750000000P AD=87750000000P
++ PS=920000U PD=920000U
+* device instance $7 r0 *1 1.31,0.56 nfet_01v8
+M$7 10 4 11 9 nfet_01v8 L=150000U W=650000U AS=87750000000P AD=107250000000P
++ PS=920000U PD=980000U
+* device instance $8 r0 *1 1.79,0.56 nfet_01v8
+M$8 7 3 10 9 nfet_01v8 L=150000U W=650000U AS=107250000000P AD=195000000000P
++ PS=980000U PD=1900000U
+.ENDS sky130_fd_sc_hd__nand4_1
+
+* cell sky130_fd_sc_hd__xnor2_1
+* pin VPB
+* pin B
+* pin A
+* pin Y
+* pin VPWR
+* pin VGND
+* pin 
+.SUBCKT sky130_fd_sc_hd__xnor2_1 1 2 3 4 5 7 9
+* net 1 VPB
+* net 2 B
+* net 3 A
+* net 4 Y
+* net 5 VPWR
+* net 7 VGND
+* device instance $1 r0 *1 0.51,1.985 pfet_01v8_hvt
+M$1 8 2 5 1 pfet_01v8_hvt L=150000U W=1000000U AS=300000000000P
++ AD=135000000000P PS=2600000U PD=1270000U
+* device instance $2 r0 *1 0.93,1.985 pfet_01v8_hvt
+M$2 5 3 8 1 pfet_01v8_hvt L=150000U W=1000000U AS=135000000000P
++ AD=365000000000P PS=1270000U PD=1730000U
+* device instance $3 r0 *1 1.81,1.985 pfet_01v8_hvt
+M$3 10 3 5 1 pfet_01v8_hvt L=150000U W=1000000U AS=365000000000P
++ AD=105000000000P PS=1730000U PD=1210000U
+* device instance $4 r0 *1 2.17,1.985 pfet_01v8_hvt
+M$4 4 2 10 1 pfet_01v8_hvt L=150000U W=1000000U AS=105000000000P
++ AD=165000000000P PS=1210000U PD=1330000U
+* device instance $5 r0 *1 2.65,1.985 pfet_01v8_hvt
+M$5 5 8 4 1 pfet_01v8_hvt L=150000U W=1000000U AS=165000000000P
++ AD=360000000000P PS=1330000U PD=2720000U
+* device instance $6 r0 *1 2.29,0.56 nfet_01v8
+M$6 6 2 7 9 nfet_01v8 L=150000U W=650000U AS=169000000000P AD=87750000000P
++ PS=1820000U PD=920000U
+* device instance $7 r0 *1 2.71,0.56 nfet_01v8
+M$7 4 8 6 9 nfet_01v8 L=150000U W=650000U AS=87750000000P AD=195000000000P
++ PS=920000U PD=1900000U
+* device instance $8 r0 *1 0.57,0.56 nfet_01v8
+M$8 11 2 8 9 nfet_01v8 L=150000U W=650000U AS=169000000000P AD=68250000000P
++ PS=1820000U PD=860000U
+* device instance $9 r0 *1 0.93,0.56 nfet_01v8
+M$9 7 3 11 9 nfet_01v8 L=150000U W=650000U AS=68250000000P AD=87750000000P
++ PS=860000U PD=920000U
+* device instance $10 r0 *1 1.35,0.56 nfet_01v8
+M$10 6 3 7 9 nfet_01v8 L=150000U W=650000U AS=87750000000P AD=169000000000P
++ PS=920000U PD=1820000U
+.ENDS sky130_fd_sc_hd__xnor2_1
+
+* cell sky130_fd_sc_hd__a31o_1
+* pin VGND
+* pin X
+* pin A3
+* pin A2
+* pin A1
+* pin B1
+* pin VPWR
+* pin VPB
+* pin 
+.SUBCKT sky130_fd_sc_hd__a31o_1 1 2 6 7 8 9 11 12 13
+* net 1 VGND
+* net 2 X
+* net 6 A3
+* net 7 A2
+* net 8 A1
+* net 9 B1
+* net 11 VPWR
+* net 12 VPB
+* device instance $1 r0 *1 0.475,1.985 pfet_01v8_hvt
+M$1 11 3 2 12 pfet_01v8_hvt L=150000U W=1000000U AS=265000000000P
++ AD=172500000000P PS=2530000U PD=1345000U
+* device instance $2 r0 *1 0.97,1.985 pfet_01v8_hvt
+M$2 10 6 11 12 pfet_01v8_hvt L=150000U W=1000000U AS=172500000000P
++ AD=160000000000P PS=1345000U PD=1320000U
+* device instance $3 r0 *1 1.44,1.985 pfet_01v8_hvt
+M$3 11 7 10 12 pfet_01v8_hvt L=150000U W=1000000U AS=160000000000P
++ AD=165000000000P PS=1320000U PD=1330000U
+* device instance $4 r0 *1 1.92,1.985 pfet_01v8_hvt
+M$4 10 8 11 12 pfet_01v8_hvt L=150000U W=1000000U AS=165000000000P
++ AD=165000000000P PS=1330000U PD=1330000U
+* device instance $5 r0 *1 2.4,1.985 pfet_01v8_hvt
+M$5 3 9 10 12 pfet_01v8_hvt L=150000U W=1000000U AS=165000000000P
++ AD=320000000000P PS=1330000U PD=2640000U
+* device instance $6 r0 *1 0.475,0.56 nfet_01v8
+M$6 1 3 2 13 nfet_01v8 L=150000U W=650000U AS=172250000000P AD=112125000000P
++ PS=1830000U PD=995000U
+* device instance $7 r0 *1 0.97,0.56 nfet_01v8
+M$7 4 6 1 13 nfet_01v8 L=150000U W=650000U AS=112125000000P AD=104000000000P
++ PS=995000U PD=970000U
+* device instance $8 r0 *1 1.44,0.56 nfet_01v8
+M$8 5 7 4 13 nfet_01v8 L=150000U W=650000U AS=104000000000P AD=107250000000P
++ PS=970000U PD=980000U
+* device instance $9 r0 *1 1.92,0.56 nfet_01v8
+M$9 3 8 5 13 nfet_01v8 L=150000U W=650000U AS=107250000000P AD=107250000000P
++ PS=980000U PD=980000U
+* device instance $10 r0 *1 2.4,0.56 nfet_01v8
+M$10 1 9 3 13 nfet_01v8 L=150000U W=650000U AS=107250000000P AD=208000000000P
++ PS=980000U PD=1940000U
+.ENDS sky130_fd_sc_hd__a31o_1
+
+* cell sky130_fd_sc_hd__nand2_1
+* pin VPB
+* pin A
+* pin B
+* pin Y
+* pin VPWR
+* pin VGND
+* pin 
+.SUBCKT sky130_fd_sc_hd__nand2_1 1 2 3 4 5 6 7
+* net 1 VPB
+* net 2 A
+* net 3 B
+* net 4 Y
+* net 5 VPWR
+* net 6 VGND
+* device instance $1 r0 *1 0.49,1.985 pfet_01v8_hvt
+M$1 4 3 5 1 pfet_01v8_hvt L=150000U W=1000000U AS=260000000000P
++ AD=135000000000P PS=2520000U PD=1270000U
+* device instance $2 r0 *1 0.91,1.985 pfet_01v8_hvt
+M$2 5 2 4 1 pfet_01v8_hvt L=150000U W=1000000U AS=135000000000P
++ AD=260000000000P PS=1270000U PD=2520000U
+* device instance $3 r0 *1 0.49,0.56 nfet_01v8
+M$3 8 3 6 7 nfet_01v8 L=150000U W=650000U AS=169000000000P AD=87750000000P
++ PS=1820000U PD=920000U
+* device instance $4 r0 *1 0.91,0.56 nfet_01v8
+M$4 4 2 8 7 nfet_01v8 L=150000U W=650000U AS=87750000000P AD=169000000000P
++ PS=920000U PD=1820000U
+.ENDS sky130_fd_sc_hd__nand2_1
+
+* cell sky130_fd_sc_hd__nor2_1
+* pin VPB
+* pin A
+* pin B
+* pin Y
+* pin VGND
+* pin VPWR
+* pin 
+.SUBCKT sky130_fd_sc_hd__nor2_1 1 2 3 4 5 6 7
+* net 1 VPB
+* net 2 A
+* net 3 B
+* net 4 Y
+* net 5 VGND
+* net 6 VPWR
+* device instance $1 r0 *1 0.47,1.985 pfet_01v8_hvt
+M$1 8 3 4 1 pfet_01v8_hvt L=150000U W=1000000U AS=260000000000P
++ AD=105000000000P PS=2520000U PD=1210000U
+* device instance $2 r0 *1 0.83,1.985 pfet_01v8_hvt
+M$2 6 2 8 1 pfet_01v8_hvt L=150000U W=1000000U AS=105000000000P
++ AD=260000000000P PS=1210000U PD=2520000U
+* device instance $3 r0 *1 0.47,0.56 nfet_01v8
+M$3 4 3 5 7 nfet_01v8 L=150000U W=650000U AS=169000000000P AD=87750000000P
++ PS=1820000U PD=920000U
+* device instance $4 r0 *1 0.89,0.56 nfet_01v8
+M$4 5 2 4 7 nfet_01v8 L=150000U W=650000U AS=87750000000P AD=169000000000P
++ PS=920000U PD=1820000U
+.ENDS sky130_fd_sc_hd__nor2_1
+
+* cell sky130_fd_sc_hd__mux2i_1
+* pin VGND
+* pin Y
+* pin A0
+* pin A1
+* pin S
+* pin VPWR
+* pin VPB
+* pin 
+.SUBCKT sky130_fd_sc_hd__mux2i_1 1 3 6 7 8 10 11 13
+* net 1 VGND
+* net 3 Y
+* net 6 A0
+* net 7 A1
+* net 8 S
+* net 10 VPWR
+* net 11 VPB
+* device instance $1 r0 *1 3.21,1.985 pfet_01v8_hvt
+M$1 10 8 5 11 pfet_01v8_hvt L=150000U W=1000000U AS=290000000000P
++ AD=260000000000P PS=2580000U PD=2520000U
+* device instance $2 r0 *1 0.49,1.985 pfet_01v8_hvt
+M$2 3 6 9 11 pfet_01v8_hvt L=150000U W=1000000U AS=280000000000P
++ AD=152500000000P PS=2560000U PD=1305000U
+* device instance $3 r0 *1 0.945,1.985 pfet_01v8_hvt
+M$3 12 7 3 11 pfet_01v8_hvt L=150000U W=1000000U AS=152500000000P
++ AD=197500000000P PS=1305000U PD=1395000U
+* device instance $4 r0 *1 1.49,1.985 pfet_01v8_hvt
+M$4 10 5 12 11 pfet_01v8_hvt L=150000U W=1000000U AS=197500000000P
++ AD=300000000000P PS=1395000U PD=1600000U
+* device instance $5 r0 *1 2.24,1.985 pfet_01v8_hvt
+M$5 9 8 10 11 pfet_01v8_hvt L=150000U W=1000000U AS=300000000000P
++ AD=260000000000P PS=1600000U PD=2520000U
+* device instance $6 r0 *1 3.21,0.56 nfet_01v8
+M$6 1 8 5 13 nfet_01v8 L=150000U W=650000U AS=169000000000P AD=169000000000P
++ PS=1820000U PD=1820000U
+* device instance $7 r0 *1 1.85,0.56 nfet_01v8
+M$7 1 5 2 13 nfet_01v8 L=150000U W=650000U AS=169000000000P AD=87750000000P
++ PS=1820000U PD=920000U
+* device instance $8 r0 *1 2.27,0.56 nfet_01v8
+M$8 4 8 1 13 nfet_01v8 L=150000U W=650000U AS=87750000000P AD=169000000000P
++ PS=920000U PD=1820000U
+* device instance $9 r0 *1 0.47,0.56 nfet_01v8
+M$9 3 6 2 13 nfet_01v8 L=150000U W=650000U AS=169000000000P AD=87750000000P
++ PS=1820000U PD=920000U
+* device instance $10 r0 *1 0.89,0.56 nfet_01v8
+M$10 4 7 3 13 nfet_01v8 L=150000U W=650000U AS=87750000000P AD=182000000000P
++ PS=920000U PD=1860000U
+.ENDS sky130_fd_sc_hd__mux2i_1
+
+* cell sky130_fd_sc_hd__o22ai_1
+* pin VPB
+* pin B1
+* pin B2
+* pin A2
+* pin A1
+* pin Y
+* pin VGND
+* pin VPWR
+* pin 
+.SUBCKT sky130_fd_sc_hd__o22ai_1 1 2 3 4 5 7 8 9 10
+* net 1 VPB
+* net 2 B1
+* net 3 B2
+* net 4 A2
+* net 5 A1
+* net 7 Y
+* net 8 VGND
+* net 9 VPWR
+* device instance $1 r0 *1 0.47,1.985 pfet_01v8_hvt
+M$1 12 2 9 1 pfet_01v8_hvt L=150000U W=1000000U AS=260000000000P
++ AD=112500000000P PS=2520000U PD=1225000U
+* device instance $2 r0 *1 0.845,1.985 pfet_01v8_hvt
+M$2 7 3 12 1 pfet_01v8_hvt L=150000U W=1000000U AS=112500000000P
++ AD=232500000000P PS=1225000U PD=1465000U
+* device instance $3 r0 *1 1.46,1.985 pfet_01v8_hvt
+M$3 11 4 7 1 pfet_01v8_hvt L=150000U W=1000000U AS=232500000000P
++ AD=105000000000P PS=1465000U PD=1210000U
+* device instance $4 r0 *1 1.82,1.985 pfet_01v8_hvt
+M$4 9 5 11 1 pfet_01v8_hvt L=150000U W=1000000U AS=105000000000P
++ AD=270000000000P PS=1210000U PD=2540000U
+* device instance $5 r0 *1 0.47,0.56 nfet_01v8
+M$5 7 2 6 10 nfet_01v8 L=150000U W=650000U AS=169000000000P AD=92625000000P
++ PS=1820000U PD=935000U
+* device instance $6 r0 *1 0.905,0.56 nfet_01v8
+M$6 6 3 7 10 nfet_01v8 L=150000U W=650000U AS=92625000000P AD=115375000000P
++ PS=935000U PD=1005000U
+* device instance $7 r0 *1 1.41,0.56 nfet_01v8
+M$7 8 4 6 10 nfet_01v8 L=150000U W=650000U AS=115375000000P AD=87750000000P
++ PS=1005000U PD=920000U
+* device instance $8 r0 *1 1.83,0.56 nfet_01v8
+M$8 6 5 8 10 nfet_01v8 L=150000U W=650000U AS=87750000000P AD=169000000000P
++ PS=920000U PD=1820000U
+.ENDS sky130_fd_sc_hd__o22ai_1
+
+* cell sky130_fd_sc_hd__and4_1
+* pin VPB
+* pin D
+* pin C
+* pin B
+* pin A
+* pin VGND
+* pin VPWR
+* pin X
+* pin 
+.SUBCKT sky130_fd_sc_hd__and4_1 1 3 4 5 6 7 8 9 10
+* net 1 VPB
+* net 3 D
+* net 4 C
+* net 5 B
+* net 6 A
+* net 7 VGND
+* net 8 VPWR
+* net 9 X
+* device instance $1 r0 *1 0.47,2.275 pfet_01v8_hvt
+M$1 2 6 8 1 pfet_01v8_hvt L=150000U W=420000U AS=109200000000P AD=73500000000P
++ PS=1360000U PD=770000U
+* device instance $2 r0 *1 0.97,2.275 pfet_01v8_hvt
+M$2 8 5 2 1 pfet_01v8_hvt L=150000U W=420000U AS=73500000000P AD=77700000000P
++ PS=770000U PD=790000U
+* device instance $3 r0 *1 1.49,2.275 pfet_01v8_hvt
+M$3 2 4 8 1 pfet_01v8_hvt L=150000U W=420000U AS=77700000000P AD=58800000000P
++ PS=790000U PD=700000U
+* device instance $4 r0 *1 1.92,2.275 pfet_01v8_hvt
+M$4 2 3 8 1 pfet_01v8_hvt L=150000U W=420000U AS=312450000000P AD=58800000000P
++ PS=1680000U PD=700000U
+* device instance $5 r0 *1 2.75,1.985 pfet_01v8_hvt
+M$5 9 2 8 1 pfet_01v8_hvt L=150000U W=1000000U AS=312450000000P
++ AD=260000000000P PS=1680000U PD=2520000U
+* device instance $6 r0 *1 0.47,0.445 nfet_01v8
+M$6 13 6 2 10 nfet_01v8 L=150000U W=420000U AS=109200000000P AD=60900000000P
++ PS=1360000U PD=710000U
+* device instance $7 r0 *1 0.91,0.445 nfet_01v8
+M$7 11 5 13 10 nfet_01v8 L=150000U W=420000U AS=60900000000P AD=79800000000P
++ PS=710000U PD=800000U
+* device instance $8 r0 *1 1.44,0.445 nfet_01v8
+M$8 12 4 11 10 nfet_01v8 L=150000U W=420000U AS=79800000000P AD=69300000000P
++ PS=800000U PD=750000U
+* device instance $9 r0 *1 1.92,0.445 nfet_01v8
+M$9 7 3 12 10 nfet_01v8 L=150000U W=420000U AS=69300000000P AD=196275000000P
++ PS=750000U PD=1330000U
+* device instance $10 r0 *1 2.75,0.56 nfet_01v8
+M$10 9 2 7 10 nfet_01v8 L=150000U W=650000U AS=196275000000P AD=169000000000P
++ PS=1330000U PD=1820000U
+.ENDS sky130_fd_sc_hd__and4_1
+
+* cell sky130_fd_sc_hd__nand2b_1
+* pin VPB
+* pin B
+* pin A_N
+* pin Y
+* pin VGND
+* pin VPWR
+* pin 
+.SUBCKT sky130_fd_sc_hd__nand2b_1 1 2 4 5 6 7 8
+* net 1 VPB
+* net 2 B
+* net 4 A_N
+* net 5 Y
+* net 6 VGND
+* net 7 VPWR
+* device instance $1 r0 *1 0.47,1.695 pfet_01v8_hvt
+M$1 7 4 3 1 pfet_01v8_hvt L=150000U W=420000U AS=109200000000P AD=145750000000P
++ PS=1360000U PD=1335000U
+* device instance $2 r0 *1 0.955,1.985 pfet_01v8_hvt
+M$2 5 2 7 1 pfet_01v8_hvt L=150000U W=1000000U AS=145750000000P
++ AD=135000000000P PS=1335000U PD=1270000U
+* device instance $3 r0 *1 1.375,1.985 pfet_01v8_hvt
+M$3 7 3 5 1 pfet_01v8_hvt L=150000U W=1000000U AS=135000000000P
++ AD=265000000000P PS=1270000U PD=2530000U
+* device instance $4 r0 *1 0.47,0.675 nfet_01v8
+M$4 3 4 6 8 nfet_01v8 L=150000U W=420000U AS=100250000000P AD=109200000000P
++ PS=985000U PD=1360000U
+* device instance $5 r0 *1 0.955,0.56 nfet_01v8
+M$5 9 2 6 8 nfet_01v8 L=150000U W=650000U AS=100250000000P AD=87750000000P
++ PS=985000U PD=920000U
+* device instance $6 r0 *1 1.375,0.56 nfet_01v8
+M$6 5 3 9 8 nfet_01v8 L=150000U W=650000U AS=87750000000P AD=169000000000P
++ PS=920000U PD=1820000U
+.ENDS sky130_fd_sc_hd__nand2b_1
+
+* cell sky130_fd_sc_hd__buf_4
+* pin VPB
+* pin A
+* pin VPWR
+* pin VGND
+* pin X
+* pin 
+.SUBCKT sky130_fd_sc_hd__buf_4 1 3 4 5 6 7
+* net 1 VPB
+* net 3 A
+* net 4 VPWR
+* net 5 VGND
+* net 6 X
+* device instance $1 r0 *1 0.47,1.985 pfet_01v8_hvt
+M$1 4 3 2 1 pfet_01v8_hvt L=150000U W=1000000U AS=260000000000P
++ AD=135000000000P PS=2520000U PD=1270000U
+* device instance $2 r0 *1 0.89,1.985 pfet_01v8_hvt
+M$2 6 2 4 1 pfet_01v8_hvt L=150000U W=4000000U AS=540000000000P
++ AD=665000000000P PS=5080000U PD=6330000U
+* device instance $6 r0 *1 0.47,0.56 nfet_01v8
+M$6 5 3 2 7 nfet_01v8 L=150000U W=650000U AS=169000000000P AD=87750000000P
++ PS=1820000U PD=920000U
+* device instance $7 r0 *1 0.89,0.56 nfet_01v8
+M$7 6 2 5 7 nfet_01v8 L=150000U W=2600000U AS=351000000000P AD=432250000000P
++ PS=3680000U PD=4580000U
+.ENDS sky130_fd_sc_hd__buf_4

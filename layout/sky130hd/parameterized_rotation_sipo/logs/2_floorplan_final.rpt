@@ -2,17 +2,22 @@
 ==========================================================================
 floorplan final report_tns
 --------------------------------------------------------------------------
-tns 0.00
+tns max 0.00
 
 ==========================================================================
 floorplan final report_wns
 --------------------------------------------------------------------------
-wns 0.00
+wns max 0.00
 
 ==========================================================================
 floorplan final report_worst_slack
 --------------------------------------------------------------------------
-worst slack 4.29
+worst slack max 4.29
+
+==========================================================================
+floorplan final report_clock_min_period
+--------------------------------------------------------------------------
+core_clock period_min = 0.71 fmax = 1405.23
 
 ==========================================================================
 floorplan final report_checks -path_delay min
@@ -30,23 +35,20 @@ Fanout     Cap    Slew   Delay    Time   Description
                           0.20    0.20 ^ input external delay
      1    0.00    0.00    0.00    0.20 ^ rst_n (in)
                                          rst_n (net)
-                  0.00    0.00    0.20 ^ hold1/A (sky130_fd_sc_hd__dlygate4sd3_1)
-     1    0.00    0.06    0.53    0.73 ^ hold1/X (sky130_fd_sc_hd__dlygate4sd3_1)
-                                         net1 (net)
-                  0.06    0.00    0.73 ^ parallel_out[1]$_DFFE_PN0P_/RESET_B (sky130_fd_sc_hd__dfrtp_1)
-                                  0.73   data arrival time
+                  0.00    0.00    0.20 ^ parallel_out[1]$_DFFE_PN0P_/RESET_B (sky130_fd_sc_hd__dfrtp_1)
+                                  0.20   data arrival time
 
                   0.00    0.00    0.00   clock core_clock (rise edge)
                           0.00    0.00   clock network delay (ideal)
                           0.00    0.00   clock reconvergence pessimism
                                   0.00 ^ parallel_out[1]$_DFFE_PN0P_/CLK (sky130_fd_sc_hd__dfrtp_1)
-                          0.31    0.31   library removal time
-                                  0.31   data required time
+                          0.30    0.30   library removal time
+                                  0.30   data required time
 -----------------------------------------------------------------------------
-                                  0.31   data required time
-                                 -0.73   data arrival time
+                                  0.30   data required time
+                                 -0.20   data arrival time
 -----------------------------------------------------------------------------
-                                  0.41   slack (MET)
+                                 -0.10   slack (VIOLATED)
 
 
 Startpoint: load (input port clocked by core_clock)
@@ -98,23 +100,20 @@ Fanout     Cap    Slew   Delay    Time   Description
                           0.20    0.20 ^ input external delay
      1    0.00    0.00    0.00    0.20 ^ rst_n (in)
                                          rst_n (net)
-                  0.00    0.00    0.20 ^ hold1/A (sky130_fd_sc_hd__dlygate4sd3_1)
-     1    0.00    0.06    0.53    0.73 ^ hold1/X (sky130_fd_sc_hd__dlygate4sd3_1)
-                                         net1 (net)
-                  0.06    0.00    0.73 ^ parallel_out[1]$_DFFE_PN0P_/RESET_B (sky130_fd_sc_hd__dfrtp_1)
-                                  0.73   data arrival time
+                  0.00    0.00    0.20 ^ parallel_out[1]$_DFFE_PN0P_/RESET_B (sky130_fd_sc_hd__dfrtp_1)
+                                  0.20   data arrival time
 
                   0.00    5.00    5.00   clock core_clock (rise edge)
                           0.00    5.00   clock network delay (ideal)
                           0.00    5.00   clock reconvergence pessimism
                                   5.00 ^ parallel_out[1]$_DFFE_PN0P_/CLK (sky130_fd_sc_hd__dfrtp_1)
-                          0.21    5.21   library recovery time
-                                  5.21   data required time
+                          0.23    5.23   library recovery time
+                                  5.23   data required time
 -----------------------------------------------------------------------------
-                                  5.21   data required time
-                                 -0.73   data arrival time
+                                  5.23   data required time
+                                 -0.20   data arrival time
 -----------------------------------------------------------------------------
-                                  4.48   slack (MET)
+                                  5.03   slack (MET)
 
 
 Startpoint: parallel_out[1]$_DFFE_PN0P_
@@ -167,23 +166,20 @@ Fanout     Cap    Slew   Delay    Time   Description
                           0.20    0.20 ^ input external delay
      1    0.00    0.00    0.00    0.20 ^ rst_n (in)
                                          rst_n (net)
-                  0.00    0.00    0.20 ^ hold1/A (sky130_fd_sc_hd__dlygate4sd3_1)
-     1    0.00    0.06    0.53    0.73 ^ hold1/X (sky130_fd_sc_hd__dlygate4sd3_1)
-                                         net1 (net)
-                  0.06    0.00    0.73 ^ parallel_out[1]$_DFFE_PN0P_/RESET_B (sky130_fd_sc_hd__dfrtp_1)
-                                  0.73   data arrival time
+                  0.00    0.00    0.20 ^ parallel_out[1]$_DFFE_PN0P_/RESET_B (sky130_fd_sc_hd__dfrtp_1)
+                                  0.20   data arrival time
 
                   0.00    5.00    5.00   clock core_clock (rise edge)
                           0.00    5.00   clock network delay (ideal)
                           0.00    5.00   clock reconvergence pessimism
                                   5.00 ^ parallel_out[1]$_DFFE_PN0P_/CLK (sky130_fd_sc_hd__dfrtp_1)
-                          0.21    5.21   library recovery time
-                                  5.21   data required time
+                          0.23    5.23   library recovery time
+                                  5.23   data required time
 -----------------------------------------------------------------------------
-                                  5.21   data required time
-                                 -0.73   data arrival time
+                                  5.23   data required time
+                                 -0.20   data arrival time
 -----------------------------------------------------------------------------
-                                  4.48   slack (MET)
+                                  5.03   slack (MET)
 
 
 Startpoint: parallel_out[1]$_DFFE_PN0P_
@@ -226,11 +222,11 @@ floorplan final report_power
 Group                  Internal  Switching    Leakage      Total
                           Power      Power      Power      Power (Watts)
 ----------------------------------------------------------------
-Sequential             8.25e-06   5.77e-09   8.75e-12   8.25e-06  92.5%
-Combinational          5.53e-07   1.19e-07   4.22e-11   6.72e-07   7.5%
+Sequential             8.24e-06   2.69e-17   8.75e-12   8.24e-06  96.1%
+Combinational          3.61e-09   3.27e-07   4.77e-11   3.31e-07   3.9%
 Clock                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 ----------------------------------------------------------------
-Total                  8.80e-06   1.25e-07   5.10e-11   8.93e-06 100.0%
-                          98.6%       1.4%       0.0%
+Total                  8.25e-06   3.27e-07   5.65e-11   8.57e-06 100.0%
+                          96.2%       3.8%       0.0%

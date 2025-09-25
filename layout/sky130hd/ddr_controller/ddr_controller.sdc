@@ -5,7 +5,7 @@ current_design ddr_controller
 ###############################################################################
 # Timing Constraints
 ###############################################################################
-create_clock -name core_clock -period 5.0000 [get_ports {clk}]
+create_clock -name core_clock -period 20.0000 [get_ports {clk}]
 set_propagated_clock [get_clocks {core_clock}]
 set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {cmd_addr[0]}]
 set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {cmd_addr[10]}]

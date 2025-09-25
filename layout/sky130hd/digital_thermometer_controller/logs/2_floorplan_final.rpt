@@ -2,24 +2,28 @@
 ==========================================================================
 floorplan final report_tns
 --------------------------------------------------------------------------
-tns 0.00
+tns max 0.00
 
 ==========================================================================
 floorplan final report_wns
 --------------------------------------------------------------------------
-wns 0.00
+wns max 0.00
 
 ==========================================================================
 floorplan final report_worst_slack
 --------------------------------------------------------------------------
-worst slack 3.69
+worst slack max 3.69
+
+==========================================================================
+floorplan final report_clock_min_period
+--------------------------------------------------------------------------
+core_clock period_min = 1.31 fmax = 764.31
 
 ==========================================================================
 floorplan final report_checks -path_delay min
 --------------------------------------------------------------------------
 Startpoint: rst_n (input port clocked by core_clock)
-Endpoint: status[0]$_DFFE_PN1P_
-          (removal check against rising-edge clock core_clock)
+Endpoint: alert$_DFFE_PN0P_ (removal check against rising-edge clock core_clock)
 Path Group: asynchronous
 Path Type: min
 
@@ -28,22 +32,22 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock core_clock (rise edge)
                           0.00    0.00   clock network delay (ideal)
                           0.20    0.20 ^ input external delay
-     2    0.01    0.00    0.00    0.20 ^ rst_n (in)
+    25    0.09    0.00    0.00    0.20 ^ rst_n (in)
                                          rst_n (net)
-                  0.00    0.00    0.20 ^ status[0]$_DFFE_PN1P_/SET_B (sky130_fd_sc_hd__dfstp_2)
+                  0.00    0.00    0.20 ^ alert$_DFFE_PN0P_/RESET_B (sky130_fd_sc_hd__dfrtp_1)
                                   0.20   data arrival time
 
                   0.00    0.00    0.00   clock core_clock (rise edge)
                           0.00    0.00   clock network delay (ideal)
                           0.00    0.00   clock reconvergence pessimism
-                                  0.00 ^ status[0]$_DFFE_PN1P_/CLK (sky130_fd_sc_hd__dfstp_2)
-                          0.15    0.15   library removal time
-                                  0.15   data required time
+                                  0.00 ^ alert$_DFFE_PN0P_/CLK (sky130_fd_sc_hd__dfrtp_1)
+                          0.30    0.30   library removal time
+                                  0.30   data required time
 -----------------------------------------------------------------------------
-                                  0.15   data required time
+                                  0.30   data required time
                                  -0.20   data arrival time
 -----------------------------------------------------------------------------
-                                  0.05   slack (MET)
+                                 -0.10   slack (VIOLATED)
 
 
 Startpoint: units_select (input port clocked by core_clock)
@@ -61,7 +65,7 @@ Fanout     Cap    Slew   Delay    Time   Description
                                          units_select (net)
                   0.00    0.00    0.20 ^ _143_/A (sky130_fd_sc_hd__nor3_1)
      1    0.00    0.03    0.02    0.22 v _143_/Y (sky130_fd_sc_hd__nor3_1)
-                                         _024_ (net)
+                                         _027_ (net)
                   0.03    0.00    0.22 v temperature[6]$_DFFE_PN0P_/D (sky130_fd_sc_hd__dfrtp_1)
                                   0.22   data arrival time
 
@@ -83,7 +87,7 @@ Fanout     Cap    Slew   Delay    Time   Description
 floorplan final report_checks -path_delay max
 --------------------------------------------------------------------------
 Startpoint: rst_n (input port clocked by core_clock)
-Endpoint: alert$_DFFE_PN0P_
+Endpoint: status[0]$_DFFE_PN1P_
           (recovery check against rising-edge clock core_clock)
 Path Group: asynchronous
 Path Type: max
@@ -93,25 +97,22 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock core_clock (rise edge)
                           0.00    0.00   clock network delay (ideal)
                           0.20    0.20 ^ input external delay
-     2    0.01    0.00    0.00    0.20 ^ rst_n (in)
+    25    0.09    0.00    0.00    0.20 ^ rst_n (in)
                                          rst_n (net)
-                  0.00    0.00    0.20 ^ hold1/A (sky130_fd_sc_hd__dlygate4sd3_1)
-    24    0.09    0.85    1.09    1.29 ^ hold1/X (sky130_fd_sc_hd__dlygate4sd3_1)
-                                         net1 (net)
-                  0.85    0.00    1.29 ^ alert$_DFFE_PN0P_/RESET_B (sky130_fd_sc_hd__dfrtp_1)
-                                  1.29   data arrival time
+                  0.00    0.00    0.20 ^ status[0]$_DFFE_PN1P_/SET_B (sky130_fd_sc_hd__dfstp_2)
+                                  0.20   data arrival time
 
                   0.00    5.00    5.00   clock core_clock (rise edge)
                           0.00    5.00   clock network delay (ideal)
                           0.00    5.00   clock reconvergence pessimism
-                                  5.00 ^ alert$_DFFE_PN0P_/CLK (sky130_fd_sc_hd__dfrtp_1)
-                          0.00    5.00   library recovery time
-                                  5.00   data required time
+                                  5.00 ^ status[0]$_DFFE_PN1P_/CLK (sky130_fd_sc_hd__dfstp_2)
+                          0.13    5.13   library recovery time
+                                  5.13   data required time
 -----------------------------------------------------------------------------
-                                  5.00   data required time
-                                 -1.29   data arrival time
+                                  5.13   data required time
+                                 -0.20   data arrival time
 -----------------------------------------------------------------------------
-                                  3.71   slack (MET)
+                                  4.93   slack (MET)
 
 
 Startpoint: input_count[0]$_DFFE_PN0P_
@@ -133,19 +134,19 @@ Fanout     Cap    Slew   Delay    Time   Description
                                          _001_ (net)
                   0.04    0.00    0.45 ^ _149_/A (sky130_fd_sc_hd__ha_1)
      1    0.00    0.05    0.13    0.57 ^ _149_/COUT (sky130_fd_sc_hd__ha_1)
-                                         _073_ (net)
+                                         _003_ (net)
                   0.05    0.00    0.57 ^ _082_/A (sky130_fd_sc_hd__inv_1)
      2    0.00    0.03    0.04    0.62 v _082_/Y (sky130_fd_sc_hd__inv_1)
-                                         _051_ (net)
+                                         _054_ (net)
                   0.03    0.00    0.62 v _084_/C (sky130_fd_sc_hd__nor4_1)
      2    0.00    0.24    0.23    0.84 ^ _084_/Y (sky130_fd_sc_hd__nor4_1)
-                                         _053_ (net)
+                                         _056_ (net)
                   0.24    0.00    0.84 ^ _085_/A (sky130_fd_sc_hd__buf_2)
     10    0.03    0.14    0.23    1.07 ^ _085_/X (sky130_fd_sc_hd__buf_2)
-                                         _054_ (net)
+                                         _057_ (net)
                   0.14    0.00    1.07 ^ _123_/A1 (sky130_fd_sc_hd__o21ai_0)
      1    0.00    0.07    0.10    1.17 v _123_/Y (sky130_fd_sc_hd__o21ai_0)
-                                         _018_ (net)
+                                         _021_ (net)
                   0.07    0.00    1.17 v status[2]$_DFFE_PN0P_/D (sky130_fd_sc_hd__dfrtp_1)
                                   1.17   data arrival time
 
@@ -167,7 +168,7 @@ Fanout     Cap    Slew   Delay    Time   Description
 floorplan final report_checks -unconstrained
 --------------------------------------------------------------------------
 Startpoint: rst_n (input port clocked by core_clock)
-Endpoint: alert$_DFFE_PN0P_
+Endpoint: status[0]$_DFFE_PN1P_
           (recovery check against rising-edge clock core_clock)
 Path Group: asynchronous
 Path Type: max
@@ -177,25 +178,22 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock core_clock (rise edge)
                           0.00    0.00   clock network delay (ideal)
                           0.20    0.20 ^ input external delay
-     2    0.01    0.00    0.00    0.20 ^ rst_n (in)
+    25    0.09    0.00    0.00    0.20 ^ rst_n (in)
                                          rst_n (net)
-                  0.00    0.00    0.20 ^ hold1/A (sky130_fd_sc_hd__dlygate4sd3_1)
-    24    0.09    0.85    1.09    1.29 ^ hold1/X (sky130_fd_sc_hd__dlygate4sd3_1)
-                                         net1 (net)
-                  0.85    0.00    1.29 ^ alert$_DFFE_PN0P_/RESET_B (sky130_fd_sc_hd__dfrtp_1)
-                                  1.29   data arrival time
+                  0.00    0.00    0.20 ^ status[0]$_DFFE_PN1P_/SET_B (sky130_fd_sc_hd__dfstp_2)
+                                  0.20   data arrival time
 
                   0.00    5.00    5.00   clock core_clock (rise edge)
                           0.00    5.00   clock network delay (ideal)
                           0.00    5.00   clock reconvergence pessimism
-                                  5.00 ^ alert$_DFFE_PN0P_/CLK (sky130_fd_sc_hd__dfrtp_1)
-                          0.00    5.00   library recovery time
-                                  5.00   data required time
+                                  5.00 ^ status[0]$_DFFE_PN1P_/CLK (sky130_fd_sc_hd__dfstp_2)
+                          0.13    5.13   library recovery time
+                                  5.13   data required time
 -----------------------------------------------------------------------------
-                                  5.00   data required time
-                                 -1.29   data arrival time
+                                  5.13   data required time
+                                 -0.20   data arrival time
 -----------------------------------------------------------------------------
-                                  3.71   slack (MET)
+                                  4.93   slack (MET)
 
 
 Startpoint: input_count[0]$_DFFE_PN0P_
@@ -217,19 +215,19 @@ Fanout     Cap    Slew   Delay    Time   Description
                                          _001_ (net)
                   0.04    0.00    0.45 ^ _149_/A (sky130_fd_sc_hd__ha_1)
      1    0.00    0.05    0.13    0.57 ^ _149_/COUT (sky130_fd_sc_hd__ha_1)
-                                         _073_ (net)
+                                         _003_ (net)
                   0.05    0.00    0.57 ^ _082_/A (sky130_fd_sc_hd__inv_1)
      2    0.00    0.03    0.04    0.62 v _082_/Y (sky130_fd_sc_hd__inv_1)
-                                         _051_ (net)
+                                         _054_ (net)
                   0.03    0.00    0.62 v _084_/C (sky130_fd_sc_hd__nor4_1)
      2    0.00    0.24    0.23    0.84 ^ _084_/Y (sky130_fd_sc_hd__nor4_1)
-                                         _053_ (net)
+                                         _056_ (net)
                   0.24    0.00    0.84 ^ _085_/A (sky130_fd_sc_hd__buf_2)
     10    0.03    0.14    0.23    1.07 ^ _085_/X (sky130_fd_sc_hd__buf_2)
-                                         _054_ (net)
+                                         _057_ (net)
                   0.14    0.00    1.07 ^ _123_/A1 (sky130_fd_sc_hd__o21ai_0)
      1    0.00    0.07    0.10    1.17 v _123_/Y (sky130_fd_sc_hd__o21ai_0)
-                                         _018_ (net)
+                                         _021_ (net)
                   0.07    0.00    1.17 v status[2]$_DFFE_PN0P_/D (sky130_fd_sc_hd__dfrtp_1)
                                   1.17   data arrival time
 
@@ -253,11 +251,11 @@ floorplan final report_power
 Group                  Internal  Switching    Leakage      Total
                           Power      Power      Power      Power (Watts)
 ----------------------------------------------------------------
-Sequential             2.50e-04   2.18e-05   3.08e-10   2.72e-04  79.9%
-Combinational          3.97e-05   2.85e-05   2.35e-10   6.83e-05  20.1%
+Sequential             2.50e-04   2.20e-05   3.07e-10   2.72e-04  80.5%
+Combinational          3.96e-05   2.61e-05   2.34e-10   6.57e-05  19.5%
 Clock                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 ----------------------------------------------------------------
-Total                  2.90e-04   5.04e-05   5.43e-10   3.40e-04 100.0%
-                          85.2%      14.8%       0.0%
+Total                  2.90e-04   4.81e-05   5.41e-10   3.38e-04 100.0%
+                          85.8%      14.2%       0.0%

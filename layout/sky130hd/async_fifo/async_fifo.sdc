@@ -5,7 +5,7 @@ current_design async_fifo
 ###############################################################################
 # Timing Constraints
 ###############################################################################
-create_clock -name core_clock -period 5.0000 
+create_clock -name core_clock -period 10.0000 
 set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {rd_clk}]
 set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {rd_en}]
 set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {rd_rst_n}]

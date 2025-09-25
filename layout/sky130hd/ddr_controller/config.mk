@@ -3,4 +3,4 @@
 DESIGN_NAME = ddr_controller
 PLATFORM = sky130hd
 DESIGN_DESCRIPTION = "ddr_controller"
-CLOCK_CYCLE = 5.0
+CLOCK_CYCLE = 20.0

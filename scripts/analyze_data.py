@@ -121,6 +121,7 @@ def plot_stdcell_coverage_scatter(platform_stdcell_dir, platform_stdcell_coverag
     fig.suptitle('Standard Cell Coverage vs Standard Cell Count by PDK', fontsize=24, fontweight='bold', y=1.0)
 
     colors = ['red', 'green', 'blue']
+    labels = ['(a)', '(b)', '(c)']
     
     for idx, (platform, color) in enumerate(zip(platforms, colors)):
         # Get data for current platform
@@ -140,8 +141,8 @@ def plot_stdcell_coverage_scatter(platform_stdcell_dir, platform_stdcell_coverag
                          label=f'Mean Coverage: {mean_coverage:.2%}')
         
         # Set subplot properties
-        axes[idx].set_title(f'{platforms_title[platform]}', fontsize=18, fontweight='bold', pad=10)
-        axes[idx].set_xlabel('Standard Cell Count', fontsize=18, fontweight='bold')
+        axes[idx].set_title(platforms_title[platform], fontsize=18, fontweight='bold', pad=10)
+        axes[idx].set_xlabel('Standard Cell Count (log scale)', fontsize=18, fontweight='bold')
         axes[idx].set_ylabel('Coverage Ratio', fontsize=18, fontweight='bold')
         axes[idx].grid(True, alpha=0.3)
         axes[idx].legend(fontsize=12)
@@ -155,7 +156,11 @@ def plot_stdcell_coverage_scatter(platform_stdcell_dir, platform_stdcell_coverag
         # Set x-axis ticks to show actual values in scientific notation
         x_ticks = np.array([1, 10, 1e2, 1e3, 1e4, 1e5, 1e6])
         axes[idx].set_xticks(x_ticks)
-        axes[idx].set_xticklabels([f'$10^{int(np.log10(x))}$' for x in x_ticks])
+        axes[idx].set_xticklabels([f'$10^{{int(np.log10(x))}}$' for x in x_ticks])
+
+        # 在每个子图下方中央添加(a)(b)(c)标识
+        axes[idx].text(0.5, -0.25, labels[idx], transform=axes[idx].transAxes,
+                      fontsize=16, fontweight='bold', ha='center', va='center')
 
     # Adjust layout
     plt.tight_layout()

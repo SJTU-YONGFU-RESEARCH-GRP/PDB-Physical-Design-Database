@@ -60,8 +60,6 @@ For detailed usage instructions, configuration options, and examples, please ref
 
 The `scripts` directory provides a comprehensive suite of utilities for layout verification, analysis, and metadata collection:
 
-- `drc_freepdk45.lydrc`: KLayout DRC rule set for Nangate45
-- `lvs_freepdk45.lylvs`: KLayout LVS rule set for Nangate45 (fixes a bug of adding a connection between PWELL and VSS at line 227)
 - `flatten.lydrc`: Hierarchical layout flattening utility for direct shape manipulation in KLayout DRC environment
 - `generate_json.py`: Python utility for metadata generation
 - `analysis_data.py`: Python script for dataset analysis report generation, producing `DATASET.md` in the repository root

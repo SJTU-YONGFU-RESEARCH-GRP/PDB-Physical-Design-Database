@@ -3,4 +3,4 @@
 DESIGN_NAME = ddr_controller
 PLATFORM = gf180
 DESIGN_DESCRIPTION = "ddr_controller"
-CLOCK_CYCLE = 10.0
+CLOCK_CYCLE = 20.0

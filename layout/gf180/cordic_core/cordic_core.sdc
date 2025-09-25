@@ -5,7 +5,7 @@ current_design cordic_core
 ###############################################################################
 # Timing Constraints
 ###############################################################################
-create_clock -name core_clock -period 10.0000 
+create_clock -name core_clock -period 20.0000 
 set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {x_in[0]}]
 set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {x_in[10]}]
 set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {x_in[11]}]

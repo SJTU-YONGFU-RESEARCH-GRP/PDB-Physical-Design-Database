@@ -2,5 +2,5 @@
 
 DESIGN_NAME = ibex
 PLATFORM = gf180
-DESIGN_DESCRIPTION = "A 32 bit RISC-V CPU core with a two stage pipeline"
+DESIGN_DESCRIPTION = "ibex"
 CLOCK_CYCLE = 10.0

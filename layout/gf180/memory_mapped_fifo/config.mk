@@ -3,4 +3,4 @@
 DESIGN_NAME = memory_mapped_fifo
 PLATFORM = gf180
 DESIGN_DESCRIPTION = "memory_mapped_fifo"
-CLOCK_CYCLE = 10.0
+CLOCK_CYCLE = 20.0

@@ -3,4 +3,4 @@
 DESIGN_NAME = cordic_core
 PLATFORM = gf180
 DESIGN_DESCRIPTION = "cordic_core"
-CLOCK_CYCLE = 10.0
+CLOCK_CYCLE = 20.0

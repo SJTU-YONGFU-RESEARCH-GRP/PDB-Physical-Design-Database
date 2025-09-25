@@ -5,7 +5,7 @@ current_design memory_mapped_fifo
 ###############################################################################
 # Timing Constraints
 ###############################################################################
-create_clock -name core_clock -period 10.0000 [get_ports {clk}]
+create_clock -name core_clock -period 20.0000 [get_ports {clk}]
 set_propagated_clock [get_clocks {core_clock}]
 set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {ext_rd_en}]
 set_input_delay 0.2000 -clock [get_clocks {core_clock}] -add_delay [get_ports {ext_wr_data[0]}]

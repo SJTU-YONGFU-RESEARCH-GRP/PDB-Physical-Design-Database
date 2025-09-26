@@ -49,8 +49,8 @@ The repository includes a powerful layout generation tool (`layout_generator/`) 
 - Supports multiple PDKs including Nangate45, Sky130HD, and GF180
 - Handles both combinational and sequential circuit designs
 - Automatically generates timing constraints and physical design configurations
-- Provides comprehensive verification and analysis capabilities
 - Generates standardized metadata for each design
+- DRC and LVS check flow for each design, with rules files and SPICE netlists models for standard cells of each PDK
 
 The tool uses a JSON-based configuration system to specify design parameters, constraints, and physical design settings. It integrates with OpenROAD-Flow-Scripts to generate layouts and KLayout for verification.
 
@@ -88,12 +88,12 @@ To generate metadata JSON for a specific design:
 make DESIGN_CONFIG=./layout/$(pdk_name)/$(design_name)/config.mk
 ```
 
-To generate the comprehensive dataset analysis markdown report (for designs in Nangate45 only):
+To generate the comprehensive dataset analysis markdown report:
 ```bash
 make analysis
 ```
 
-[DATASET.md](DATASET.md) in the root folder shows the analysis result of the physical designs in Nangate45.
+[DATASET.md](DATASET.md) in the root folder shows the analysis result of the physical designs.
 
 ## License
 
